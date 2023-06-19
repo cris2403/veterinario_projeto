@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -28,6 +29,8 @@ namespace veterinario_projeto
             Form1 Login = new Form1();
 
             Login.Show();
+
+            this.Hide();
         }
 
         private void buttonRegisto_Click(object sender, EventArgs e)
@@ -40,21 +43,39 @@ namespace veterinario_projeto
             string password = textBoxPassword.Text;
 
             string insertQuery = "Insert into users (username, email, password) Values (@username, @email, @password)";
-
-            using (mySqlConnection)
+            if (ValidarEmail(email))
             {
-                mySqlConnection.Open();
-
-                using (MySqlCommand command = new MySqlCommand(insertQuery, mySqlConnection))
+                using (mySqlConnection)
                 {
-                    command.Parameters.AddWithValue("@username", username);
-                    command.Parameters.AddWithValue("@email", email);
-                    command.Parameters.AddWithValue("@password", password);
-                    command.ExecuteNonQuery();
-                }
+                    mySqlConnection.Open();
 
-                MessageBox.Show("Registo bem sucedido!");
+                    using (MySqlCommand command = new MySqlCommand(insertQuery, mySqlConnection))
+                    {
+                        command.Parameters.AddWithValue("@username", username);
+                        command.Parameters.AddWithValue("@email", email);
+                        command.Parameters.AddWithValue("@password", password);
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Registo bem sucedido!");
+                }
             }
+            else
+            {
+                MessageBox.Show("Email inválido. Por favor, insira um email válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+        public bool ValidarEmail(string email)
+        {
+            // Expressão regular para validar o formato de email
+            string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+
+            // Verificar se o email fornecido corresponde ao padrão
+            Match match = Regex.Match(email, pattern);
+
+            // Retorna true se o email for válido, false caso contrário
+            return match.Success;
         }
     }
 }

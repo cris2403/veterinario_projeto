@@ -47,6 +47,7 @@ namespace veterinario_projeto
                     }
                     mySqlConnection.Close();
                 }
+
         }
 
         private void buttonRegisto_Click(object sender, EventArgs e)
@@ -54,6 +55,8 @@ namespace veterinario_projeto
             Form2 registo = new Form2();
 
             registo.Show();
+
+            this.Hide();
 
         }
 
