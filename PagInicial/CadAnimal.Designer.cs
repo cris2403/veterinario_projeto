@@ -64,6 +64,7 @@
             btn_limparAnimal.TabIndex = 1;
             btn_limparAnimal.Text = "Limpar";
             btn_limparAnimal.UseVisualStyleBackColor = true;
+            btn_limparAnimal.Click += btn_limparAnimal_Click;
             // 
             // btn_cancelarAnimal
             // 
@@ -73,6 +74,7 @@
             btn_cancelarAnimal.TabIndex = 2;
             btn_cancelarAnimal.Text = "Cancelar";
             btn_cancelarAnimal.UseVisualStyleBackColor = true;
+            btn_cancelarAnimal.Click += btn_cancelarAnimal_Click;
             // 
             // lbl_nomeAnimal
             // 

@@ -18,25 +18,11 @@ namespace veterinario_projeto
             InitializeComponent();
         }
 
-        private void btn_colab_Click(object sender, EventArgs e)
+        private void button_cAnimal_Click(object sender, EventArgs e)
         {
+            CadAnimal c1 = new CadAnimal();
 
-        }
-
-        private void btn_donos_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btn_canimal_Click_1(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btn_canimal_Click(object sender, EventArgs e)
-        {
-            CadAnimal CAnimal = new CadAnimal();
-
-            CAnimal.Show();
+            c1.Show();
 
             this.Hide();
         }

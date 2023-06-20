@@ -57,6 +57,25 @@ namespace veterinario_projeto.PagInicial
                 }
             }
         }
+
+        private void btn_limparAnimal_Click(object sender, EventArgs e)
+        {
+            txt_dono.Text = string.Empty;
+            txt_nome.Text = string.Empty;
+            txt_tipo.Text = string.Empty;
+            txt_raca.Text = string.Empty;
+            txt_idade.Text = string.Empty;
+            txt_peso.Text = string.Empty;
+        }
+
+        private void btn_cancelarAnimal_Click(object sender, EventArgs e)
+        {
+            PaginaInicial paginaInicial = new PaginaInicial();
+
+            paginaInicial.Show();
+
+            this.Hide();
+        }
     }
 }
 
