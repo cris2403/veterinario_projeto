@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -58,6 +59,9 @@ namespace veterinario_projeto
                     }
 
                     MessageBox.Show("Registo bem sucedido!");
+
+                    
+
                 }
             }
             else
@@ -65,7 +69,10 @@ namespace veterinario_projeto
                 MessageBox.Show("Email inválido. Por favor, insira um email válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+
         }
+
+
         public bool ValidarEmail(string email)
         {
             // Expressão regular para validar o formato de email
