@@ -27,11 +27,16 @@ namespace veterinario_projeto
         {
         }
 
+        private void btn_canimal_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
         private void btn_canimal_Click(object sender, EventArgs e)
         {
-            veterinario_projeto.PagInicial.CadAnimal registoAnimal = new veterinario_projeto.PagInicial.CadAnimal();
+            CadAnimal CAnimal = new CadAnimal();
 
-            registoAnimal.Show();
+            CAnimal.Show();
 
             this.Hide();
         }

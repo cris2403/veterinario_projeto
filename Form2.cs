@@ -60,7 +60,11 @@ namespace veterinario_projeto
 
                     MessageBox.Show("Registo bem sucedido!");
 
-                    
+                    PaginaInicial paginaInicial = new PaginaInicial();
+
+                    paginaInicial.Show();
+
+                    this.Hide();
 
                 }
             }

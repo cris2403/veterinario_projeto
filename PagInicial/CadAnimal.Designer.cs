@@ -37,12 +37,12 @@
             lbl_idadeAnimal = new Label();
             lbl_pesoAnimal = new Label();
             lbl_donoAnimal = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            txt_dono = new TextBox();
+            txt_nome = new TextBox();
+            txt_tipo = new TextBox();
+            txt_raca = new TextBox();
+            txt_idade = new TextBox();
+            txt_peso = new TextBox();
             btn_pagDonoAnimal = new Button();
             SuspendLayout();
             // 
@@ -54,6 +54,7 @@
             btn_salvarAnimal.TabIndex = 0;
             btn_salvarAnimal.Text = "Salvar";
             btn_salvarAnimal.UseVisualStyleBackColor = true;
+            btn_salvarAnimal.Click += btn_salvarAnimal_Click;
             // 
             // btn_limparAnimal
             // 
@@ -127,47 +128,47 @@
             lbl_donoAnimal.TabIndex = 8;
             lbl_donoAnimal.Text = "Dono";
             // 
-            // textBox1
+            // txt_dono
             // 
-            textBox1.Location = new Point(137, 63);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(389, 23);
-            textBox1.TabIndex = 12;
+            txt_dono.Location = new Point(137, 63);
+            txt_dono.Name = "txt_dono";
+            txt_dono.Size = new Size(389, 23);
+            txt_dono.TabIndex = 12;
             // 
-            // textBox2
+            // txt_nome
             // 
-            textBox2.Location = new Point(137, 106);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(389, 23);
-            textBox2.TabIndex = 13;
+            txt_nome.Location = new Point(137, 106);
+            txt_nome.Name = "txt_nome";
+            txt_nome.Size = new Size(389, 23);
+            txt_nome.TabIndex = 13;
             // 
-            // textBox3
+            // txt_tipo
             // 
-            textBox3.Location = new Point(137, 150);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(389, 23);
-            textBox3.TabIndex = 14;
+            txt_tipo.Location = new Point(137, 150);
+            txt_tipo.Name = "txt_tipo";
+            txt_tipo.Size = new Size(389, 23);
+            txt_tipo.TabIndex = 14;
             // 
-            // textBox4
+            // txt_raca
             // 
-            textBox4.Location = new Point(137, 196);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(389, 23);
-            textBox4.TabIndex = 15;
+            txt_raca.Location = new Point(137, 196);
+            txt_raca.Name = "txt_raca";
+            txt_raca.Size = new Size(389, 23);
+            txt_raca.TabIndex = 15;
             // 
-            // textBox5
+            // txt_idade
             // 
-            textBox5.Location = new Point(137, 241);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(389, 23);
-            textBox5.TabIndex = 16;
+            txt_idade.Location = new Point(137, 241);
+            txt_idade.Name = "txt_idade";
+            txt_idade.Size = new Size(389, 23);
+            txt_idade.TabIndex = 16;
             // 
-            // textBox6
+            // txt_peso
             // 
-            textBox6.Location = new Point(137, 284);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(389, 23);
-            textBox6.TabIndex = 17;
+            txt_peso.Location = new Point(137, 284);
+            txt_peso.Name = "txt_peso";
+            txt_peso.Size = new Size(389, 23);
+            txt_peso.TabIndex = 17;
             // 
             // btn_pagDonoAnimal
             // 
@@ -184,12 +185,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btn_pagDonoAnimal);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txt_peso);
+            Controls.Add(txt_idade);
+            Controls.Add(txt_raca);
+            Controls.Add(txt_tipo);
+            Controls.Add(txt_nome);
+            Controls.Add(txt_dono);
             Controls.Add(lbl_donoAnimal);
             Controls.Add(lbl_pesoAnimal);
             Controls.Add(lbl_idadeAnimal);
@@ -217,12 +218,12 @@
         private Label lbl_idadeAnimal;
         private Label lbl_pesoAnimal;
         private Label lbl_donoAnimal;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox txt_dono;
+        private TextBox txt_nome;
+        private TextBox txt_tipo;
+        private TextBox txt_raca;
+        private TextBox txt_idade;
+        private TextBox txt_peso;
         private Button btn_pagDonoAnimal;
     }
 }

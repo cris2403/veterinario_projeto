@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,5 +22,41 @@ namespace veterinario_projeto.PagInicial
         {
 
         }
+
+        private void btn_salvarAnimal_Click(object sender, EventArgs e)
+        {
+            string mysqlconn = "server=127.0.0.1;user=root;database=canimal;password=";
+            MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
+
+            string Dono = txt_dono.Text;
+            string Nome = txt_nome.Text;
+            string Tipo = txt_tipo.Text;
+            string Raca = txt_raca.Text;
+            string Idade = txt_idade.Text;
+            string Peso = txt_peso.Text;
+
+            string insertQuery = "Insert into ranimal (Dono, Nome, Tipo, Raca, Idade, Peso) Values (@Dono, @Nome, @Tipo, @Raca, @Idade, @Peso)";
+            if (Validate())
+            {
+                using (mySqlConnection)
+                {
+                    mySqlConnection.Open();
+
+                    using (MySqlCommand command = new MySqlCommand(insertQuery, mySqlConnection))
+                    {
+                        command.Parameters.AddWithValue("@Dono", Dono);
+                        command.Parameters.AddWithValue("@Nome", Nome);
+                        command.Parameters.AddWithValue("@Tipo", Tipo);
+                        command.Parameters.AddWithValue("@Raca", Raca);
+                        command.Parameters.AddWithValue("@Idade", Idade);
+                        command.Parameters.AddWithValue("@Peso", Peso);
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Registo bem sucedido!");
+                }
+            }
+        }
     }
 }
+

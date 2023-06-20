@@ -39,7 +39,14 @@ namespace veterinario_projeto
                         if (username.Equals(reader.GetString("username")) && password.Equals(reader.GetString("password")))
                         {
                             MessageBox.Show("Login efetuado com sucesso");
-                        }
+
+                            PaginaInicial paginaInicial = new PaginaInicial();
+
+                            paginaInicial.Show();
+
+                            this.Hide();
+
+                    }
                         else
                         {
                             MessageBox.Show("Login invalido");
