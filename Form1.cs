@@ -3,6 +3,7 @@
 
 
 using MySql.Data.MySqlClient;
+using veterinario_projeto.login;
 
 namespace veterinario_projeto
 {
@@ -39,6 +40,7 @@ namespace veterinario_projeto
                         if (username.Equals(reader.GetString("username")) && password.Equals(reader.GetString("password")))
                         {
                             MessageBox.Show("Login efetuado com sucesso");
+                            
                         }
                         else
                         {
@@ -60,6 +62,15 @@ namespace veterinario_projeto
 
         }
 
+        private void buttonListar_Click(object sender, EventArgs e)
+        {
 
+            datagridLogin lista = new datagridLogin();
+
+            lista.Show();
+
+            this.Hide();
+
+        }
     }
 }

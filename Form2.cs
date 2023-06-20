@@ -58,6 +58,8 @@ namespace veterinario_projeto
                     }
 
                     MessageBox.Show("Registo bem sucedido!");
+
+                    
                 }
             }
             else

@@ -121,7 +121,7 @@
             this.Controls.Add(this.Email);
             this.Controls.Add(this.Username);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Registo";
             this.ResumeLayout(false);
             this.PerformLayout();
 
