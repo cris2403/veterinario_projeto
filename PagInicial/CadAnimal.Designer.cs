@@ -145,6 +145,7 @@
             this.txt_dono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_dono.Location = new System.Drawing.Point(232, 63);
             this.txt_dono.Name = "txt_dono";
+            this.txt_dono.PlaceholderText = "Ex: Joâozinho Madje";
             this.txt_dono.Size = new System.Drawing.Size(501, 29);
             this.txt_dono.TabIndex = 12;
             // 
@@ -154,6 +155,7 @@
             this.txt_nome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_nome.Location = new System.Drawing.Point(232, 106);
             this.txt_nome.Name = "txt_nome";
+            this.txt_nome.PlaceholderText = "Ex: Bobby";
             this.txt_nome.Size = new System.Drawing.Size(501, 29);
             this.txt_nome.TabIndex = 13;
             // 
@@ -163,6 +165,7 @@
             this.txt_tipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_tipo.Location = new System.Drawing.Point(232, 150);
             this.txt_tipo.Name = "txt_tipo";
+            this.txt_tipo.PlaceholderText = "Ex: Cão";
             this.txt_tipo.Size = new System.Drawing.Size(501, 29);
             this.txt_tipo.TabIndex = 14;
             // 
@@ -172,6 +175,7 @@
             this.txt_raca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_raca.Location = new System.Drawing.Point(232, 196);
             this.txt_raca.Name = "txt_raca";
+            this.txt_raca.PlaceholderText = "Ex: Pitbull";
             this.txt_raca.Size = new System.Drawing.Size(501, 29);
             this.txt_raca.TabIndex = 15;
             // 
@@ -181,6 +185,7 @@
             this.txt_idade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_idade.Location = new System.Drawing.Point(232, 241);
             this.txt_idade.Name = "txt_idade";
+            this.txt_idade.PlaceholderText = "Ex: 4";
             this.txt_idade.Size = new System.Drawing.Size(501, 29);
             this.txt_idade.TabIndex = 16;
             // 
@@ -190,6 +195,7 @@
             this.txt_peso.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_peso.Location = new System.Drawing.Point(232, 284);
             this.txt_peso.Name = "txt_peso";
+            this.txt_peso.PlaceholderText = "Ex: 20";
             this.txt_peso.Size = new System.Drawing.Size(501, 29);
             this.txt_peso.TabIndex = 17;
             // 

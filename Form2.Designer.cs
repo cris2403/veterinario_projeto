@@ -75,6 +75,7 @@
             this.textBoxUsername.Location = new System.Drawing.Point(272, 38);
             this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.PlaceholderText = "Ex: Joãozinho Madje";
             this.textBoxUsername.Size = new System.Drawing.Size(362, 29);
             this.textBoxUsername.TabIndex = 3;
             // 
@@ -84,6 +85,7 @@
             this.textBoxEmail.Location = new System.Drawing.Point(272, 86);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.PlaceholderText = "Ex: joaozinho69@gmail.com";
             this.textBoxEmail.Size = new System.Drawing.Size(362, 29);
             this.textBoxEmail.TabIndex = 4;
             // 
@@ -93,8 +95,10 @@
             this.textBoxPassword.Location = new System.Drawing.Point(272, 126);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PlaceholderText = "●●●●●●●●●●";
             this.textBoxPassword.Size = new System.Drawing.Size(362, 29);
             this.textBoxPassword.TabIndex = 5;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // buttonRegisto
             // 

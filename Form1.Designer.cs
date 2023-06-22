@@ -62,6 +62,7 @@
             this.textBoxUsername.Location = new System.Drawing.Point(234, 30);
             this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.PlaceholderText = "Ex: Joâozinho Madje";
             this.textBoxUsername.Size = new System.Drawing.Size(372, 29);
             this.textBoxUsername.TabIndex = 2;
             // 
@@ -71,6 +72,7 @@
             this.textBoxPasword.Location = new System.Drawing.Point(234, 90);
             this.textBoxPasword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPasword.Name = "textBoxPasword";
+            this.textBoxPasword.PlaceholderText = "●●●●●●●●●●";
             this.textBoxPasword.Size = new System.Drawing.Size(372, 29);
             this.textBoxPasword.TabIndex = 3;
             // 
