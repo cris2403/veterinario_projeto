@@ -26,5 +26,23 @@ namespace veterinario_projeto
 
             this.Hide();
         }
+
+        private void btn_donos_Click(object sender, EventArgs e)
+        {
+            Donos d1 = new Donos();
+
+            d1.Show();
+
+            this.Hide();
+        }
+
+        private void btn_colaboradores_Click(object sender, EventArgs e)
+        {
+            Colaboradores c2 = new Colaboradores();
+
+            c2.Show();
+
+            this.Hide();
+        }
     }
 }

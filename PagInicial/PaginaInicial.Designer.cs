@@ -64,6 +64,7 @@
             btn_donos.TabIndex = 2;
             btn_donos.Text = "Donos";
             btn_donos.UseVisualStyleBackColor = true;
+            btn_donos.Click += btn_donos_Click;
             // 
             // btn_produtos
             // 
@@ -82,6 +83,7 @@
             btn_colaboradores.TabIndex = 4;
             btn_colaboradores.Text = "Colaboradores";
             btn_colaboradores.UseVisualStyleBackColor = true;
+            btn_colaboradores.Click += btn_colaboradores_Click;
             // 
             // btn_consultas
             // 
