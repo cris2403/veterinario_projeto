@@ -28,94 +28,109 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button_cAnimal = new Button();
-            btn_fmedica = new Button();
-            btn_donos = new Button();
-            btn_produtos = new Button();
-            btn_colaboradores = new Button();
-            btn_consultas = new Button();
-            btn_pagamentos = new Button();
-            SuspendLayout();
+            this.button_cAnimal = new System.Windows.Forms.Button();
+            this.btn_fmedica = new System.Windows.Forms.Button();
+            this.btn_donos = new System.Windows.Forms.Button();
+            this.btn_produtos = new System.Windows.Forms.Button();
+            this.btn_colaboradores = new System.Windows.Forms.Button();
+            this.btn_consultas = new System.Windows.Forms.Button();
+            this.btn_pagamentos = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // button_cAnimal
             // 
-            button_cAnimal.Location = new Point(36, 28);
-            button_cAnimal.Name = "button_cAnimal";
-            button_cAnimal.Size = new Size(126, 36);
-            button_cAnimal.TabIndex = 0;
-            button_cAnimal.Text = "Cadastro do Animal";
-            button_cAnimal.UseVisualStyleBackColor = true;
-            button_cAnimal.Click += button_cAnimal_Click;
+            this.button_cAnimal.BackColor = System.Drawing.Color.LightGray;
+            this.button_cAnimal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button_cAnimal.Location = new System.Drawing.Point(12, 26);
+            this.button_cAnimal.Name = "button_cAnimal";
+            this.button_cAnimal.Size = new System.Drawing.Size(163, 70);
+            this.button_cAnimal.TabIndex = 0;
+            this.button_cAnimal.Text = "Cadastro do Animal";
+            this.button_cAnimal.UseVisualStyleBackColor = false;
             // 
             // btn_fmedica
             // 
-            btn_fmedica.Location = new Point(136, 249);
-            btn_fmedica.Name = "btn_fmedica";
-            btn_fmedica.Size = new Size(118, 36);
-            btn_fmedica.TabIndex = 1;
-            btn_fmedica.Text = "Ficha Médica";
-            btn_fmedica.UseVisualStyleBackColor = true;
+            this.btn_fmedica.BackColor = System.Drawing.Color.LightGray;
+            this.btn_fmedica.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_fmedica.Location = new System.Drawing.Point(122, 269);
+            this.btn_fmedica.Name = "btn_fmedica";
+            this.btn_fmedica.Size = new System.Drawing.Size(155, 70);
+            this.btn_fmedica.TabIndex = 1;
+            this.btn_fmedica.Text = "Ficha Médica";
+            this.btn_fmedica.UseVisualStyleBackColor = false;
             // 
             // btn_donos
             // 
-            btn_donos.Location = new Point(36, 102);
-            btn_donos.Name = "btn_donos";
-            btn_donos.Size = new Size(126, 36);
-            btn_donos.TabIndex = 2;
-            btn_donos.Text = "Donos";
-            btn_donos.UseVisualStyleBackColor = true;
+            this.btn_donos.BackColor = System.Drawing.Color.LightGray;
+            this.btn_donos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_donos.Location = new System.Drawing.Point(12, 102);
+            this.btn_donos.Name = "btn_donos";
+            this.btn_donos.Size = new System.Drawing.Size(163, 70);
+            this.btn_donos.TabIndex = 2;
+            this.btn_donos.Text = "Donos";
+            this.btn_donos.UseVisualStyleBackColor = false;
             // 
             // btn_produtos
             // 
-            btn_produtos.Location = new Point(219, 28);
-            btn_produtos.Name = "btn_produtos";
-            btn_produtos.Size = new Size(126, 36);
-            btn_produtos.TabIndex = 3;
-            btn_produtos.Text = "Produtos";
-            btn_produtos.UseVisualStyleBackColor = true;
+            this.btn_produtos.BackColor = System.Drawing.Color.LightGray;
+            this.btn_produtos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_produtos.Location = new System.Drawing.Point(233, 26);
+            this.btn_produtos.Name = "btn_produtos";
+            this.btn_produtos.Size = new System.Drawing.Size(163, 70);
+            this.btn_produtos.TabIndex = 3;
+            this.btn_produtos.Text = "Produtos";
+            this.btn_produtos.UseVisualStyleBackColor = false;
             // 
             // btn_colaboradores
             // 
-            btn_colaboradores.Location = new Point(36, 173);
-            btn_colaboradores.Name = "btn_colaboradores";
-            btn_colaboradores.Size = new Size(126, 36);
-            btn_colaboradores.TabIndex = 4;
-            btn_colaboradores.Text = "Colaboradores";
-            btn_colaboradores.UseVisualStyleBackColor = true;
+            this.btn_colaboradores.BackColor = System.Drawing.Color.LightGray;
+            this.btn_colaboradores.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_colaboradores.Location = new System.Drawing.Point(12, 178);
+            this.btn_colaboradores.Name = "btn_colaboradores";
+            this.btn_colaboradores.Size = new System.Drawing.Size(163, 70);
+            this.btn_colaboradores.TabIndex = 4;
+            this.btn_colaboradores.Text = "Colaboradores";
+            this.btn_colaboradores.UseVisualStyleBackColor = false;
             // 
             // btn_consultas
             // 
-            btn_consultas.Location = new Point(219, 102);
-            btn_consultas.Name = "btn_consultas";
-            btn_consultas.Size = new Size(126, 36);
-            btn_consultas.TabIndex = 5;
-            btn_consultas.Text = "Consultas";
-            btn_consultas.UseVisualStyleBackColor = true;
+            this.btn_consultas.BackColor = System.Drawing.Color.LightGray;
+            this.btn_consultas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_consultas.Location = new System.Drawing.Point(233, 102);
+            this.btn_consultas.Name = "btn_consultas";
+            this.btn_consultas.Size = new System.Drawing.Size(163, 70);
+            this.btn_consultas.TabIndex = 5;
+            this.btn_consultas.Text = "Consultas";
+            this.btn_consultas.UseVisualStyleBackColor = false;
             // 
             // btn_pagamentos
             // 
-            btn_pagamentos.Location = new Point(219, 173);
-            btn_pagamentos.Name = "btn_pagamentos";
-            btn_pagamentos.Size = new Size(126, 36);
-            btn_pagamentos.TabIndex = 6;
-            btn_pagamentos.Text = "Pagamentos";
-            btn_pagamentos.UseVisualStyleBackColor = true;
+            this.btn_pagamentos.BackColor = System.Drawing.Color.LightGray;
+            this.btn_pagamentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_pagamentos.Location = new System.Drawing.Point(233, 178);
+            this.btn_pagamentos.Name = "btn_pagamentos";
+            this.btn_pagamentos.Size = new System.Drawing.Size(163, 70);
+            this.btn_pagamentos.TabIndex = 6;
+            this.btn_pagamentos.Text = "Pagamentos";
+            this.btn_pagamentos.UseVisualStyleBackColor = false;
             // 
             // PaginaInicial
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(408, 366);
-            Controls.Add(btn_pagamentos);
-            Controls.Add(btn_consultas);
-            Controls.Add(btn_colaboradores);
-            Controls.Add(btn_produtos);
-            Controls.Add(btn_donos);
-            Controls.Add(btn_fmedica);
-            Controls.Add(button_cAnimal);
-            Name = "PaginaInicial";
-            Text = "Página Inicial";
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(408, 366);
+            this.Controls.Add(this.btn_pagamentos);
+            this.Controls.Add(this.btn_consultas);
+            this.Controls.Add(this.btn_colaboradores);
+            this.Controls.Add(this.btn_produtos);
+            this.Controls.Add(this.btn_donos);
+            this.Controls.Add(this.btn_fmedica);
+            this.Controls.Add(this.button_cAnimal);
+            this.Name = "PaginaInicial";
+            this.Text = "Página Inicial";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

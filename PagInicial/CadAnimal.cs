@@ -76,6 +76,11 @@ namespace veterinario_projeto.PagInicial
 
             this.Hide();
         }
+
+        private void CadAnimal_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
