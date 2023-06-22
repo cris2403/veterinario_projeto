@@ -20,40 +20,40 @@ namespace veterinario_projeto
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-           string mysqlconn = "server=127.0.0.1;user=root;database=login;password=";
-           MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
+            string mysqlconn = "server=127.0.0.1;user=root;database=login;password=";
+            MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
 
             string username = textBoxUsername.Text.ToString();
             string password = textBoxPasword.Text.ToString();
-                if (String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password))
+            if (String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Não permitido campos em branco");
+            }
+            else
+            {
+                mySqlConnection.Open();
+                MySqlCommand mySqlCommand = new MySqlCommand("select * from users", mySqlConnection);
+                MySqlDataReader reader = mySqlCommand.ExecuteReader();
+                while (reader.Read())
                 {
-                    MessageBox.Show("Não permitido campos em branco");
-                }
-                else
-                {
-                    mySqlConnection.Open();
-                    MySqlCommand mySqlCommand = new MySqlCommand("select * from users", mySqlConnection);
-                    MySqlDataReader reader = mySqlCommand.ExecuteReader();
-                    while (reader.Read())
+                    if (username.Equals(reader.GetString("username")) && password.Equals(reader.GetString("password")))
                     {
-                        if (username.Equals(reader.GetString("username")) && password.Equals(reader.GetString("password")))
-                        {
-                            MessageBox.Show("Login efetuado com sucesso");
+                        MessageBox.Show("Login efetuado com sucesso");
 
-                            PaginaInicial paginaInicial = new PaginaInicial();
+                        PaginaInicial paginaInicial = new PaginaInicial();
 
-                            paginaInicial.Show();
+                        paginaInicial.Show();
 
-                            this.Hide();
+                        this.Hide();
 
                     }
-                        else
-                        {
-                            MessageBox.Show("Login invalido");
-                        }
+                    else
+                    {
+                        MessageBox.Show("Login invalido");
                     }
-                    mySqlConnection.Close();
                 }
+                mySqlConnection.Close();
+            }
 
         }
 
@@ -67,6 +67,14 @@ namespace veterinario_projeto
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Listar usuarios = new Listar();
 
+            usuarios.Show();
+
+            this.Hide();
+
+        }
     }
 }

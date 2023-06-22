@@ -28,97 +28,111 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Username = new System.Windows.Forms.Label();
-            this.Password = new System.Windows.Forms.Label();
-            this.textBoxUsername = new System.Windows.Forms.TextBox();
-            this.textBoxPasword = new System.Windows.Forms.TextBox();
-            this.buttonLogin = new System.Windows.Forms.Button();
-            this.buttonRegisto = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            Username = new Label();
+            Password = new Label();
+            textBoxUsername = new TextBox();
+            textBoxPasword = new TextBox();
+            buttonLogin = new Button();
+            buttonRegisto = new Button();
+            button1 = new Button();
+            SuspendLayout();
             // 
             // Username
             // 
-            this.Username.AutoSize = true;
-            this.Username.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Username.Location = new System.Drawing.Point(92, 31);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(110, 23);
-            this.Username.TabIndex = 0;
-            this.Username.Text = "Username";
+            Username.AutoSize = true;
+            Username.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            Username.Location = new Point(92, 31);
+            Username.Name = "Username";
+            Username.Size = new Size(110, 23);
+            Username.TabIndex = 0;
+            Username.Text = "Username";
             // 
             // Password
             // 
-            this.Password.AutoSize = true;
-            this.Password.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Password.Location = new System.Drawing.Point(92, 93);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(104, 23);
-            this.Password.TabIndex = 1;
-            this.Password.Text = "Password";
+            Password.AutoSize = true;
+            Password.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            Password.Location = new Point(92, 93);
+            Password.Name = "Password";
+            Password.Size = new Size(104, 23);
+            Password.TabIndex = 1;
+            Password.Text = "Password";
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxUsername.Location = new System.Drawing.Point(234, 30);
-            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(372, 29);
-            this.textBoxUsername.TabIndex = 2;
+            textBoxUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxUsername.Location = new Point(234, 30);
+            textBoxUsername.Margin = new Padding(3, 2, 3, 2);
+            textBoxUsername.Name = "textBoxUsername";
+            textBoxUsername.Size = new Size(372, 29);
+            textBoxUsername.TabIndex = 2;
             // 
             // textBoxPasword
             // 
-            this.textBoxPasword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxPasword.Location = new System.Drawing.Point(234, 90);
-            this.textBoxPasword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxPasword.Name = "textBoxPasword";
-            this.textBoxPasword.Size = new System.Drawing.Size(372, 29);
-            this.textBoxPasword.TabIndex = 3;
+            textBoxPasword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPasword.Location = new Point(234, 90);
+            textBoxPasword.Margin = new Padding(3, 2, 3, 2);
+            textBoxPasword.Name = "textBoxPasword";
+            textBoxPasword.Size = new Size(372, 29);
+            textBoxPasword.TabIndex = 3;
             // 
             // buttonLogin
             // 
-            this.buttonLogin.BackColor = System.Drawing.Color.LightGray;
-            this.buttonLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonLogin.Location = new System.Drawing.Point(133, 187);
-            this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(173, 62);
-            this.buttonLogin.TabIndex = 5;
-            this.buttonLogin.Text = "Login";
-            this.buttonLogin.UseVisualStyleBackColor = false;
-            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            buttonLogin.BackColor = Color.LightGray;
+            buttonLogin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonLogin.Location = new Point(133, 164);
+            buttonLogin.Margin = new Padding(3, 2, 3, 2);
+            buttonLogin.Name = "buttonLogin";
+            buttonLogin.Size = new Size(173, 62);
+            buttonLogin.TabIndex = 5;
+            buttonLogin.Text = "Login";
+            buttonLogin.UseVisualStyleBackColor = false;
+            buttonLogin.Click += buttonLogin_Click;
             // 
             // buttonRegisto
             // 
-            this.buttonRegisto.BackColor = System.Drawing.Color.LightGray;
-            this.buttonRegisto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonRegisto.Location = new System.Drawing.Point(346, 187);
-            this.buttonRegisto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonRegisto.Name = "buttonRegisto";
-            this.buttonRegisto.Size = new System.Drawing.Size(192, 62);
-            this.buttonRegisto.TabIndex = 6;
-            this.buttonRegisto.Text = "Registo";
-            this.buttonRegisto.UseVisualStyleBackColor = false;
-            this.buttonRegisto.Click += new System.EventHandler(this.buttonRegisto_Click);
+            buttonRegisto.BackColor = Color.LightGray;
+            buttonRegisto.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonRegisto.Location = new Point(345, 164);
+            buttonRegisto.Margin = new Padding(3, 2, 3, 2);
+            buttonRegisto.Name = "buttonRegisto";
+            buttonRegisto.Size = new Size(192, 62);
+            buttonRegisto.TabIndex = 6;
+            buttonRegisto.Text = "Registo";
+            buttonRegisto.UseVisualStyleBackColor = false;
+            buttonRegisto.Click += buttonRegisto_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.LightGray;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(234, 243);
+            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(192, 62);
+            button1.TabIndex = 7;
+            button1.Text = "Listar";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(700, 338);
-            this.Controls.Add(this.buttonRegisto);
-            this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.textBoxPasword);
-            this.Controls.Add(this.textBoxUsername);
-            this.Controls.Add(this.Password);
-            this.Controls.Add(this.Username);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Azure;
+            ClientSize = new Size(700, 338);
+            Controls.Add(button1);
+            Controls.Add(buttonRegisto);
+            Controls.Add(buttonLogin);
+            Controls.Add(textBoxPasword);
+            Controls.Add(textBoxUsername);
+            Controls.Add(Password);
+            Controls.Add(Username);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -129,5 +143,6 @@
         private TextBox textBoxPasword;
         private Button buttonLogin;
         private Button buttonRegisto;
+        private Button button1;
     }
 }
