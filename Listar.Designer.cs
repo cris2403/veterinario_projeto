@@ -51,6 +51,7 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(240, 150);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btn_listarListar
             // 
@@ -80,6 +81,7 @@
             btn_editarListar.TabIndex = 3;
             btn_editarListar.Text = "Editar";
             btn_editarListar.UseVisualStyleBackColor = true;
+            btn_editarListar.Click += btn_editarListar_Click;
             // 
             // lbl_idListar
             // 

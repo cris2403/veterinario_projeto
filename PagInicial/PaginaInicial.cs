@@ -26,5 +26,14 @@ namespace veterinario_projeto
 
             this.Hide();
         }
+
+        private void button_cAnimal_Click_1(object sender, EventArgs e)
+        {
+            ListarCao cao = new ListarCao();
+
+            cao.Show();
+
+            this.Hide();
+        }
     }
 }
