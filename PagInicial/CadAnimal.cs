@@ -76,6 +76,20 @@ namespace veterinario_projeto.PagInicial
 
             this.Hide();
         }
+
+        private void CadAnimal_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonListar_Click(object sender, EventArgs e)
+        {
+            ListarAnimais listarAnimais = new ListarAnimais();
+
+            listarAnimais.Show();
+
+            this.Hide();
+        }
     }
 }
 
