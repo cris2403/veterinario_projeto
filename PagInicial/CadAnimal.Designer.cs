@@ -56,6 +56,7 @@
             this.btn_salvarAnimal.TabIndex = 0;
             this.btn_salvarAnimal.Text = "Salvar";
             this.btn_salvarAnimal.UseVisualStyleBackColor = true;
+            this.btn_salvarAnimal.Click += new System.EventHandler(this.btn_salvarAnimal_Click);
             // 
             // btn_limparAnimal
             // 
@@ -66,6 +67,7 @@
             this.btn_limparAnimal.TabIndex = 1;
             this.btn_limparAnimal.Text = "Limpar";
             this.btn_limparAnimal.UseVisualStyleBackColor = true;
+            this.btn_limparAnimal.Click += new System.EventHandler(this.btn_limparAnimal_Click);
             // 
             // btn_cancelarAnimal
             // 
@@ -76,6 +78,7 @@
             this.btn_cancelarAnimal.TabIndex = 2;
             this.btn_cancelarAnimal.Text = "Cancelar";
             this.btn_cancelarAnimal.UseVisualStyleBackColor = true;
+            this.btn_cancelarAnimal.Click += new System.EventHandler(this.btn_cancelarAnimal_Click);
             // 
             // lbl_nomeAnimal
             // 
@@ -188,6 +191,7 @@
             this.btn_pagDonoAnimal.TabIndex = 18;
             this.btn_pagDonoAnimal.Text = "Página do Dono";
             this.btn_pagDonoAnimal.UseVisualStyleBackColor = true;
+            this.btn_pagDonoAnimal.Click += new System.EventHandler(this.btn_pagDonoAnimal_Click);
             // 
             // buttonListar
             // 

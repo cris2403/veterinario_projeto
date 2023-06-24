@@ -28,259 +28,290 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbl_idColab = new Label();
-            lbl_nomeColab = new Label();
-            lbl_NascColab = new Label();
-            lbl_nifColab = new Label();
-            lbl_tipoColab = new Label();
-            lbl_funcaoColab = new Label();
-            lbl_datainicioColab = new Label();
-            lbl_datafimColab = new Label();
-            lbl_contactoColab = new Label();
-            lbl_disponibilidadeColab = new Label();
-            date_nascimentoColab = new DateTimePicker();
-            date_inicioColab = new DateTimePicker();
-            date_fimColab = new DateTimePicker();
-            txt_idColab = new TextBox();
-            txt_contactoColab = new TextBox();
-            txt_nifColab = new TextBox();
-            txt_nomeColab = new TextBox();
-            btn_salvarColab = new Button();
-            btn_cancelarColab = new Button();
-            btn_limparColab = new Button();
-            comboBox_tipoColab = new ComboBox();
-            comboBox_funcaoColab = new ComboBox();
-            txt_disponibilidadeColab = new TextBox();
-            SuspendLayout();
+            this.lbl_idColab = new System.Windows.Forms.Label();
+            this.lbl_nomeColab = new System.Windows.Forms.Label();
+            this.lbl_NascColab = new System.Windows.Forms.Label();
+            this.lbl_nifColab = new System.Windows.Forms.Label();
+            this.lbl_tipoColab = new System.Windows.Forms.Label();
+            this.lbl_funcaoColab = new System.Windows.Forms.Label();
+            this.lbl_datainicioColab = new System.Windows.Forms.Label();
+            this.lbl_datafimColab = new System.Windows.Forms.Label();
+            this.lbl_contactoColab = new System.Windows.Forms.Label();
+            this.lbl_disponibilidadeColab = new System.Windows.Forms.Label();
+            this.date_nascimentoColab = new System.Windows.Forms.DateTimePicker();
+            this.date_inicioColab = new System.Windows.Forms.DateTimePicker();
+            this.date_fimColab = new System.Windows.Forms.DateTimePicker();
+            this.txt_idColab = new System.Windows.Forms.TextBox();
+            this.txt_contactoColab = new System.Windows.Forms.TextBox();
+            this.txt_nifColab = new System.Windows.Forms.TextBox();
+            this.txt_nomeColab = new System.Windows.Forms.TextBox();
+            this.btn_salvarColab = new System.Windows.Forms.Button();
+            this.btn_cancelarColab = new System.Windows.Forms.Button();
+            this.btn_limparColab = new System.Windows.Forms.Button();
+            this.comboBox_tipoColab = new System.Windows.Forms.ComboBox();
+            this.comboBox_funcaoColab = new System.Windows.Forms.ComboBox();
+            this.txt_disponibilidadeColab = new System.Windows.Forms.TextBox();
+            this.buttonListar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // lbl_idColab
             // 
-            lbl_idColab.AutoSize = true;
-            lbl_idColab.Location = new Point(28, 26);
-            lbl_idColab.Name = "lbl_idColab";
-            lbl_idColab.Size = new Size(17, 15);
-            lbl_idColab.TabIndex = 0;
-            lbl_idColab.Text = "Id";
+            this.lbl_idColab.AutoSize = true;
+            this.lbl_idColab.Location = new System.Drawing.Point(32, 35);
+            this.lbl_idColab.Name = "lbl_idColab";
+            this.lbl_idColab.Size = new System.Drawing.Size(22, 20);
+            this.lbl_idColab.TabIndex = 0;
+            this.lbl_idColab.Text = "Id";
             // 
             // lbl_nomeColab
             // 
-            lbl_nomeColab.AutoSize = true;
-            lbl_nomeColab.Location = new Point(28, 55);
-            lbl_nomeColab.Name = "lbl_nomeColab";
-            lbl_nomeColab.Size = new Size(40, 15);
-            lbl_nomeColab.TabIndex = 1;
-            lbl_nomeColab.Text = "Nome";
+            this.lbl_nomeColab.AutoSize = true;
+            this.lbl_nomeColab.Location = new System.Drawing.Point(32, 73);
+            this.lbl_nomeColab.Name = "lbl_nomeColab";
+            this.lbl_nomeColab.Size = new System.Drawing.Size(50, 20);
+            this.lbl_nomeColab.TabIndex = 1;
+            this.lbl_nomeColab.Text = "Nome";
             // 
             // lbl_NascColab
             // 
-            lbl_NascColab.AutoSize = true;
-            lbl_NascColab.Location = new Point(28, 81);
-            lbl_NascColab.Name = "lbl_NascColab";
-            lbl_NascColab.Size = new Size(114, 15);
-            lbl_NascColab.TabIndex = 2;
-            lbl_NascColab.Text = "Data de Nascimento";
+            this.lbl_NascColab.AutoSize = true;
+            this.lbl_NascColab.Location = new System.Drawing.Point(32, 108);
+            this.lbl_NascColab.Name = "lbl_NascColab";
+            this.lbl_NascColab.Size = new System.Drawing.Size(145, 20);
+            this.lbl_NascColab.TabIndex = 2;
+            this.lbl_NascColab.Text = "Data de Nascimento";
             // 
             // lbl_nifColab
             // 
-            lbl_nifColab.AutoSize = true;
-            lbl_nifColab.Location = new Point(28, 113);
-            lbl_nifColab.Name = "lbl_nifColab";
-            lbl_nifColab.Size = new Size(25, 15);
-            lbl_nifColab.TabIndex = 3;
-            lbl_nifColab.Text = "NIF";
+            this.lbl_nifColab.AutoSize = true;
+            this.lbl_nifColab.Location = new System.Drawing.Point(32, 151);
+            this.lbl_nifColab.Name = "lbl_nifColab";
+            this.lbl_nifColab.Size = new System.Drawing.Size(31, 20);
+            this.lbl_nifColab.TabIndex = 3;
+            this.lbl_nifColab.Text = "NIF";
             // 
             // lbl_tipoColab
             // 
-            lbl_tipoColab.AutoSize = true;
-            lbl_tipoColab.Location = new Point(28, 139);
-            lbl_tipoColab.Name = "lbl_tipoColab";
-            lbl_tipoColab.Size = new Size(115, 15);
-            lbl_tipoColab.TabIndex = 4;
-            lbl_tipoColab.Text = "Tipo de Colaborador";
+            this.lbl_tipoColab.AutoSize = true;
+            this.lbl_tipoColab.Location = new System.Drawing.Point(32, 185);
+            this.lbl_tipoColab.Name = "lbl_tipoColab";
+            this.lbl_tipoColab.Size = new System.Drawing.Size(148, 20);
+            this.lbl_tipoColab.TabIndex = 4;
+            this.lbl_tipoColab.Text = "Tipo de Colaborador";
             // 
             // lbl_funcaoColab
             // 
-            lbl_funcaoColab.AutoSize = true;
-            lbl_funcaoColab.Location = new Point(28, 171);
-            lbl_funcaoColab.Name = "lbl_funcaoColab";
-            lbl_funcaoColab.Size = new Size(46, 15);
-            lbl_funcaoColab.TabIndex = 5;
-            lbl_funcaoColab.Text = "Função";
+            this.lbl_funcaoColab.AutoSize = true;
+            this.lbl_funcaoColab.Location = new System.Drawing.Point(32, 228);
+            this.lbl_funcaoColab.Name = "lbl_funcaoColab";
+            this.lbl_funcaoColab.Size = new System.Drawing.Size(56, 20);
+            this.lbl_funcaoColab.TabIndex = 5;
+            this.lbl_funcaoColab.Text = "Função";
             // 
             // lbl_datainicioColab
             // 
-            lbl_datainicioColab.AutoSize = true;
-            lbl_datainicioColab.Location = new Point(28, 232);
-            lbl_datainicioColab.Name = "lbl_datainicioColab";
-            lbl_datainicioColab.Size = new Size(165, 15);
-            lbl_datainicioColab.TabIndex = 6;
-            lbl_datainicioColab.Text = "Data de Inicio da Colaboração";
+            this.lbl_datainicioColab.AutoSize = true;
+            this.lbl_datainicioColab.Location = new System.Drawing.Point(32, 309);
+            this.lbl_datainicioColab.Name = "lbl_datainicioColab";
+            this.lbl_datainicioColab.Size = new System.Drawing.Size(212, 20);
+            this.lbl_datainicioColab.TabIndex = 6;
+            this.lbl_datainicioColab.Text = "Data de Inicio da Colaboração";
             // 
             // lbl_datafimColab
             // 
-            lbl_datafimColab.AutoSize = true;
-            lbl_datafimColab.Location = new Point(28, 261);
-            lbl_datafimColab.Name = "lbl_datafimColab";
-            lbl_datafimColab.Size = new Size(157, 15);
-            lbl_datafimColab.TabIndex = 7;
-            lbl_datafimColab.Text = "Data do Fim da Colaboração";
+            this.lbl_datafimColab.AutoSize = true;
+            this.lbl_datafimColab.Location = new System.Drawing.Point(32, 348);
+            this.lbl_datafimColab.Name = "lbl_datafimColab";
+            this.lbl_datafimColab.Size = new System.Drawing.Size(201, 20);
+            this.lbl_datafimColab.TabIndex = 7;
+            this.lbl_datafimColab.Text = "Data do Fim da Colaboração";
             // 
             // lbl_contactoColab
             // 
-            lbl_contactoColab.AutoSize = true;
-            lbl_contactoColab.Location = new Point(28, 200);
-            lbl_contactoColab.Name = "lbl_contactoColab";
-            lbl_contactoColab.Size = new Size(56, 15);
-            lbl_contactoColab.TabIndex = 8;
-            lbl_contactoColab.Text = "Contacto";
+            this.lbl_contactoColab.AutoSize = true;
+            this.lbl_contactoColab.Location = new System.Drawing.Point(32, 267);
+            this.lbl_contactoColab.Name = "lbl_contactoColab";
+            this.lbl_contactoColab.Size = new System.Drawing.Size(69, 20);
+            this.lbl_contactoColab.TabIndex = 8;
+            this.lbl_contactoColab.Text = "Contacto";
             // 
             // lbl_disponibilidadeColab
             // 
-            lbl_disponibilidadeColab.AutoSize = true;
-            lbl_disponibilidadeColab.Location = new Point(28, 358);
-            lbl_disponibilidadeColab.Name = "lbl_disponibilidadeColab";
-            lbl_disponibilidadeColab.Size = new Size(131, 15);
-            lbl_disponibilidadeColab.TabIndex = 9;
-            lbl_disponibilidadeColab.Text = "Disponibilidade Horária";
+            this.lbl_disponibilidadeColab.AutoSize = true;
+            this.lbl_disponibilidadeColab.Location = new System.Drawing.Point(32, 477);
+            this.lbl_disponibilidadeColab.Name = "lbl_disponibilidadeColab";
+            this.lbl_disponibilidadeColab.Size = new System.Drawing.Size(169, 20);
+            this.lbl_disponibilidadeColab.TabIndex = 9;
+            this.lbl_disponibilidadeColab.Text = "Disponibilidade Horária";
             // 
             // date_nascimentoColab
             // 
-            date_nascimentoColab.Location = new Point(210, 81);
-            date_nascimentoColab.Name = "date_nascimentoColab";
-            date_nascimentoColab.Size = new Size(227, 23);
-            date_nascimentoColab.TabIndex = 10;
+            this.date_nascimentoColab.Location = new System.Drawing.Point(240, 108);
+            this.date_nascimentoColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.date_nascimentoColab.Name = "date_nascimentoColab";
+            this.date_nascimentoColab.Size = new System.Drawing.Size(259, 27);
+            this.date_nascimentoColab.TabIndex = 10;
             // 
             // date_inicioColab
             // 
-            date_inicioColab.Location = new Point(210, 226);
-            date_inicioColab.Name = "date_inicioColab";
-            date_inicioColab.Size = new Size(227, 23);
-            date_inicioColab.TabIndex = 11;
+            this.date_inicioColab.Location = new System.Drawing.Point(240, 301);
+            this.date_inicioColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.date_inicioColab.Name = "date_inicioColab";
+            this.date_inicioColab.Size = new System.Drawing.Size(259, 27);
+            this.date_inicioColab.TabIndex = 11;
             // 
             // date_fimColab
             // 
-            date_fimColab.Location = new Point(210, 255);
-            date_fimColab.Name = "date_fimColab";
-            date_fimColab.Size = new Size(227, 23);
-            date_fimColab.TabIndex = 12;
+            this.date_fimColab.Location = new System.Drawing.Point(240, 340);
+            this.date_fimColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.date_fimColab.Name = "date_fimColab";
+            this.date_fimColab.Size = new System.Drawing.Size(259, 27);
+            this.date_fimColab.TabIndex = 12;
             // 
             // txt_idColab
             // 
-            txt_idColab.Location = new Point(210, 23);
-            txt_idColab.Name = "txt_idColab";
-            txt_idColab.Size = new Size(227, 23);
-            txt_idColab.TabIndex = 14;
+            this.txt_idColab.Location = new System.Drawing.Point(240, 31);
+            this.txt_idColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_idColab.Name = "txt_idColab";
+            this.txt_idColab.Size = new System.Drawing.Size(259, 27);
+            this.txt_idColab.TabIndex = 14;
             // 
             // txt_contactoColab
             // 
-            txt_contactoColab.Location = new Point(210, 197);
-            txt_contactoColab.Name = "txt_contactoColab";
-            txt_contactoColab.Size = new Size(227, 23);
-            txt_contactoColab.TabIndex = 16;
+            this.txt_contactoColab.Location = new System.Drawing.Point(240, 263);
+            this.txt_contactoColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_contactoColab.Name = "txt_contactoColab";
+            this.txt_contactoColab.Size = new System.Drawing.Size(259, 27);
+            this.txt_contactoColab.TabIndex = 16;
             // 
             // txt_nifColab
             // 
-            txt_nifColab.Location = new Point(210, 110);
-            txt_nifColab.Name = "txt_nifColab";
-            txt_nifColab.Size = new Size(227, 23);
-            txt_nifColab.TabIndex = 19;
+            this.txt_nifColab.Location = new System.Drawing.Point(240, 147);
+            this.txt_nifColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_nifColab.Name = "txt_nifColab";
+            this.txt_nifColab.Size = new System.Drawing.Size(259, 27);
+            this.txt_nifColab.TabIndex = 19;
             // 
             // txt_nomeColab
             // 
-            txt_nomeColab.Location = new Point(210, 52);
-            txt_nomeColab.Name = "txt_nomeColab";
-            txt_nomeColab.Size = new Size(227, 23);
-            txt_nomeColab.TabIndex = 20;
+            this.txt_nomeColab.Location = new System.Drawing.Point(240, 69);
+            this.txt_nomeColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_nomeColab.Name = "txt_nomeColab";
+            this.txt_nomeColab.Size = new System.Drawing.Size(259, 27);
+            this.txt_nomeColab.TabIndex = 20;
             // 
             // btn_salvarColab
             // 
-            btn_salvarColab.Location = new Point(12, 477);
-            btn_salvarColab.Name = "btn_salvarColab";
-            btn_salvarColab.Size = new Size(100, 36);
-            btn_salvarColab.TabIndex = 21;
-            btn_salvarColab.Text = "Salvar";
-            btn_salvarColab.UseVisualStyleBackColor = true;
-            btn_salvarColab.Click += btn_salvarColab_Click;
+            this.btn_salvarColab.Location = new System.Drawing.Point(14, 636);
+            this.btn_salvarColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_salvarColab.Name = "btn_salvarColab";
+            this.btn_salvarColab.Size = new System.Drawing.Size(114, 48);
+            this.btn_salvarColab.TabIndex = 21;
+            this.btn_salvarColab.Text = "Salvar";
+            this.btn_salvarColab.UseVisualStyleBackColor = true;
+            this.btn_salvarColab.Click += new System.EventHandler(this.btn_salvarColab_Click);
             // 
             // btn_cancelarColab
             // 
-            btn_cancelarColab.Location = new Point(425, 477);
-            btn_cancelarColab.Name = "btn_cancelarColab";
-            btn_cancelarColab.Size = new Size(100, 36);
-            btn_cancelarColab.TabIndex = 22;
-            btn_cancelarColab.Text = "Cancelar";
-            btn_cancelarColab.UseVisualStyleBackColor = true;
-            btn_cancelarColab.Click += btn_cancelarColab_Click;
+            this.btn_cancelarColab.Location = new System.Drawing.Point(486, 636);
+            this.btn_cancelarColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cancelarColab.Name = "btn_cancelarColab";
+            this.btn_cancelarColab.Size = new System.Drawing.Size(114, 48);
+            this.btn_cancelarColab.TabIndex = 22;
+            this.btn_cancelarColab.Text = "Cancelar";
+            this.btn_cancelarColab.UseVisualStyleBackColor = true;
+            this.btn_cancelarColab.Click += new System.EventHandler(this.btn_cancelarColab_Click);
             // 
             // btn_limparColab
             // 
-            btn_limparColab.Location = new Point(232, 477);
-            btn_limparColab.Name = "btn_limparColab";
-            btn_limparColab.Size = new Size(100, 36);
-            btn_limparColab.TabIndex = 23;
-            btn_limparColab.Text = "Limpar";
-            btn_limparColab.UseVisualStyleBackColor = true;
-            btn_limparColab.Click += btn_limparColab_Click;
+            this.btn_limparColab.Location = new System.Drawing.Point(265, 636);
+            this.btn_limparColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_limparColab.Name = "btn_limparColab";
+            this.btn_limparColab.Size = new System.Drawing.Size(114, 48);
+            this.btn_limparColab.TabIndex = 23;
+            this.btn_limparColab.Text = "Limpar";
+            this.btn_limparColab.UseVisualStyleBackColor = true;
+            this.btn_limparColab.Click += new System.EventHandler(this.btn_limparColab_Click);
             // 
             // comboBox_tipoColab
             // 
-            comboBox_tipoColab.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox_tipoColab.FormattingEnabled = true;
-            comboBox_tipoColab.Items.AddRange(new object[] { "Interno", "Externo" });
-            comboBox_tipoColab.Location = new Point(210, 139);
-            comboBox_tipoColab.Name = "comboBox_tipoColab";
-            comboBox_tipoColab.Size = new Size(227, 23);
-            comboBox_tipoColab.TabIndex = 24;
+            this.comboBox_tipoColab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_tipoColab.FormattingEnabled = true;
+            this.comboBox_tipoColab.Items.AddRange(new object[] {
+            "Interno",
+            "Externo"});
+            this.comboBox_tipoColab.Location = new System.Drawing.Point(240, 185);
+            this.comboBox_tipoColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox_tipoColab.Name = "comboBox_tipoColab";
+            this.comboBox_tipoColab.Size = new System.Drawing.Size(259, 28);
+            this.comboBox_tipoColab.TabIndex = 24;
             // 
             // comboBox_funcaoColab
             // 
-            comboBox_funcaoColab.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox_funcaoColab.FormattingEnabled = true;
-            comboBox_funcaoColab.Items.AddRange(new object[] { "Médico Veterinário", "Assistente" });
-            comboBox_funcaoColab.Location = new Point(210, 168);
-            comboBox_funcaoColab.Name = "comboBox_funcaoColab";
-            comboBox_funcaoColab.Size = new Size(227, 23);
-            comboBox_funcaoColab.TabIndex = 25;
+            this.comboBox_funcaoColab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_funcaoColab.FormattingEnabled = true;
+            this.comboBox_funcaoColab.Items.AddRange(new object[] {
+            "Médico Veterinário",
+            "Assistente"});
+            this.comboBox_funcaoColab.Location = new System.Drawing.Point(240, 224);
+            this.comboBox_funcaoColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox_funcaoColab.Name = "comboBox_funcaoColab";
+            this.comboBox_funcaoColab.Size = new System.Drawing.Size(259, 28);
+            this.comboBox_funcaoColab.TabIndex = 25;
             // 
             // txt_disponibilidadeColab
             // 
-            txt_disponibilidadeColab.Location = new Point(210, 355);
-            txt_disponibilidadeColab.Name = "txt_disponibilidadeColab";
-            txt_disponibilidadeColab.Size = new Size(227, 23);
-            txt_disponibilidadeColab.TabIndex = 26;
+            this.txt_disponibilidadeColab.Location = new System.Drawing.Point(240, 473);
+            this.txt_disponibilidadeColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_disponibilidadeColab.Name = "txt_disponibilidadeColab";
+            this.txt_disponibilidadeColab.Size = new System.Drawing.Size(259, 27);
+            this.txt_disponibilidadeColab.TabIndex = 26;
+            // 
+            // buttonListar
+            // 
+            this.buttonListar.Location = new System.Drawing.Point(240, 538);
+            this.buttonListar.Name = "buttonListar";
+            this.buttonListar.Size = new System.Drawing.Size(148, 54);
+            this.buttonListar.TabIndex = 27;
+            this.buttonListar.Text = "Listar";
+            this.buttonListar.UseVisualStyleBackColor = true;
+            this.buttonListar.Click += new System.EventHandler(this.buttonListar_Click);
             // 
             // Colaboradores
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(537, 536);
-            Controls.Add(txt_disponibilidadeColab);
-            Controls.Add(comboBox_funcaoColab);
-            Controls.Add(comboBox_tipoColab);
-            Controls.Add(btn_limparColab);
-            Controls.Add(btn_cancelarColab);
-            Controls.Add(btn_salvarColab);
-            Controls.Add(txt_nomeColab);
-            Controls.Add(txt_nifColab);
-            Controls.Add(txt_contactoColab);
-            Controls.Add(txt_idColab);
-            Controls.Add(date_fimColab);
-            Controls.Add(date_inicioColab);
-            Controls.Add(date_nascimentoColab);
-            Controls.Add(lbl_disponibilidadeColab);
-            Controls.Add(lbl_contactoColab);
-            Controls.Add(lbl_datafimColab);
-            Controls.Add(lbl_datainicioColab);
-            Controls.Add(lbl_funcaoColab);
-            Controls.Add(lbl_tipoColab);
-            Controls.Add(lbl_nifColab);
-            Controls.Add(lbl_NascColab);
-            Controls.Add(lbl_nomeColab);
-            Controls.Add(lbl_idColab);
-            Name = "Colaboradores";
-            Text = "Colaboradores";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(614, 715);
+            this.Controls.Add(this.buttonListar);
+            this.Controls.Add(this.txt_disponibilidadeColab);
+            this.Controls.Add(this.comboBox_funcaoColab);
+            this.Controls.Add(this.comboBox_tipoColab);
+            this.Controls.Add(this.btn_limparColab);
+            this.Controls.Add(this.btn_cancelarColab);
+            this.Controls.Add(this.btn_salvarColab);
+            this.Controls.Add(this.txt_nomeColab);
+            this.Controls.Add(this.txt_nifColab);
+            this.Controls.Add(this.txt_contactoColab);
+            this.Controls.Add(this.txt_idColab);
+            this.Controls.Add(this.date_fimColab);
+            this.Controls.Add(this.date_inicioColab);
+            this.Controls.Add(this.date_nascimentoColab);
+            this.Controls.Add(this.lbl_disponibilidadeColab);
+            this.Controls.Add(this.lbl_contactoColab);
+            this.Controls.Add(this.lbl_datafimColab);
+            this.Controls.Add(this.lbl_datainicioColab);
+            this.Controls.Add(this.lbl_funcaoColab);
+            this.Controls.Add(this.lbl_tipoColab);
+            this.Controls.Add(this.lbl_nifColab);
+            this.Controls.Add(this.lbl_NascColab);
+            this.Controls.Add(this.lbl_nomeColab);
+            this.Controls.Add(this.lbl_idColab);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Colaboradores";
+            this.Text = "Colaboradores";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -308,5 +339,6 @@
         private ComboBox comboBox_tipoColab;
         private ComboBox comboBox_funcaoColab;
         private TextBox txt_disponibilidadeColab;
+        private Button buttonListar;
     }
 }

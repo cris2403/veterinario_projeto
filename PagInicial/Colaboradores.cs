@@ -87,5 +87,14 @@ namespace veterinario_projeto.PagInicial
                 }
             }
         }
+
+        private void buttonListar_Click(object sender, EventArgs e)
+        {
+            ListarColaborador listaColaborador = new ListarColaborador();
+
+            listaColaborador.Show();
+
+            this.Hide();
+        }
     }
 }

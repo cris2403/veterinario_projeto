@@ -44,5 +44,25 @@ namespace veterinario_projeto
 
             this.Hide();
         }
+
+        private void btn_pagamentos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_consultas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_produtos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_fmedica_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

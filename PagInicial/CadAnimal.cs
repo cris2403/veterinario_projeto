@@ -90,6 +90,15 @@ namespace veterinario_projeto.PagInicial
 
             this.Hide();
         }
+
+        private void btn_pagDonoAnimal_Click(object sender, EventArgs e)
+        {
+            Donos dono = new Donos();
+
+            dono.Show();
+
+            this.Hide();
+        }
     }
 }
 

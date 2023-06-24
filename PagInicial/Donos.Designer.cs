@@ -28,153 +28,176 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbl_idDono = new Label();
-            lbl_nomeDono = new Label();
-            lbl_nascimentoDono = new Label();
-            lbl_nifDono = new Label();
-            lbl_contactoDono = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            txt_idDono = new TextBox();
-            txt_nomeDono = new TextBox();
-            txt_nifDono = new TextBox();
-            txt_contactoDono = new TextBox();
-            btn_salvarDono = new Button();
-            btn_limparDono = new Button();
-            btn_cancelarDono = new Button();
-            SuspendLayout();
+            this.lbl_idDono = new System.Windows.Forms.Label();
+            this.lbl_nomeDono = new System.Windows.Forms.Label();
+            this.lbl_nascimentoDono = new System.Windows.Forms.Label();
+            this.lbl_nifDono = new System.Windows.Forms.Label();
+            this.lbl_contactoDono = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txt_idDono = new System.Windows.Forms.TextBox();
+            this.txt_nomeDono = new System.Windows.Forms.TextBox();
+            this.txt_nifDono = new System.Windows.Forms.TextBox();
+            this.txt_contactoDono = new System.Windows.Forms.TextBox();
+            this.btn_salvarDono = new System.Windows.Forms.Button();
+            this.btn_limparDono = new System.Windows.Forms.Button();
+            this.btn_cancelarDono = new System.Windows.Forms.Button();
+            this.buttonListar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // lbl_idDono
             // 
-            lbl_idDono.AutoSize = true;
-            lbl_idDono.Location = new Point(12, 40);
-            lbl_idDono.Name = "lbl_idDono";
-            lbl_idDono.Size = new Size(75, 15);
-            lbl_idDono.TabIndex = 0;
-            lbl_idDono.Text = "Id de Registo";
+            this.lbl_idDono.AutoSize = true;
+            this.lbl_idDono.Location = new System.Drawing.Point(14, 53);
+            this.lbl_idDono.Name = "lbl_idDono";
+            this.lbl_idDono.Size = new System.Drawing.Size(97, 20);
+            this.lbl_idDono.TabIndex = 0;
+            this.lbl_idDono.Text = "Id de Registo";
             // 
             // lbl_nomeDono
             // 
-            lbl_nomeDono.AutoSize = true;
-            lbl_nomeDono.Location = new Point(12, 78);
-            lbl_nomeDono.Name = "lbl_nomeDono";
-            lbl_nomeDono.Size = new Size(40, 15);
-            lbl_nomeDono.TabIndex = 1;
-            lbl_nomeDono.Text = "Nome";
+            this.lbl_nomeDono.AutoSize = true;
+            this.lbl_nomeDono.Location = new System.Drawing.Point(14, 104);
+            this.lbl_nomeDono.Name = "lbl_nomeDono";
+            this.lbl_nomeDono.Size = new System.Drawing.Size(50, 20);
+            this.lbl_nomeDono.TabIndex = 1;
+            this.lbl_nomeDono.Text = "Nome";
             // 
             // lbl_nascimentoDono
             // 
-            lbl_nascimentoDono.AutoSize = true;
-            lbl_nascimentoDono.Location = new Point(12, 119);
-            lbl_nascimentoDono.Name = "lbl_nascimentoDono";
-            lbl_nascimentoDono.Size = new Size(114, 15);
-            lbl_nascimentoDono.TabIndex = 2;
-            lbl_nascimentoDono.Text = "Data de Nascimento";
+            this.lbl_nascimentoDono.AutoSize = true;
+            this.lbl_nascimentoDono.Location = new System.Drawing.Point(14, 159);
+            this.lbl_nascimentoDono.Name = "lbl_nascimentoDono";
+            this.lbl_nascimentoDono.Size = new System.Drawing.Size(145, 20);
+            this.lbl_nascimentoDono.TabIndex = 2;
+            this.lbl_nascimentoDono.Text = "Data de Nascimento";
             // 
             // lbl_nifDono
             // 
-            lbl_nifDono.AutoSize = true;
-            lbl_nifDono.Location = new Point(12, 160);
-            lbl_nifDono.Name = "lbl_nifDono";
-            lbl_nifDono.Size = new Size(25, 15);
-            lbl_nifDono.TabIndex = 3;
-            lbl_nifDono.Text = "NIF";
+            this.lbl_nifDono.AutoSize = true;
+            this.lbl_nifDono.Location = new System.Drawing.Point(14, 213);
+            this.lbl_nifDono.Name = "lbl_nifDono";
+            this.lbl_nifDono.Size = new System.Drawing.Size(31, 20);
+            this.lbl_nifDono.TabIndex = 3;
+            this.lbl_nifDono.Text = "NIF";
             // 
             // lbl_contactoDono
             // 
-            lbl_contactoDono.AutoSize = true;
-            lbl_contactoDono.Location = new Point(12, 206);
-            lbl_contactoDono.Name = "lbl_contactoDono";
-            lbl_contactoDono.Size = new Size(56, 15);
-            lbl_contactoDono.TabIndex = 4;
-            lbl_contactoDono.Text = "Contacto";
+            this.lbl_contactoDono.AutoSize = true;
+            this.lbl_contactoDono.Location = new System.Drawing.Point(14, 275);
+            this.lbl_contactoDono.Name = "lbl_contactoDono";
+            this.lbl_contactoDono.Size = new System.Drawing.Size(69, 20);
+            this.lbl_contactoDono.TabIndex = 4;
+            this.lbl_contactoDono.Text = "Contacto";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(132, 113);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 5;
+            this.dateTimePicker1.Location = new System.Drawing.Point(151, 151);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(228, 27);
+            this.dateTimePicker1.TabIndex = 5;
             // 
             // txt_idDono
             // 
-            txt_idDono.Location = new Point(132, 37);
-            txt_idDono.Name = "txt_idDono";
-            txt_idDono.Size = new Size(200, 23);
-            txt_idDono.TabIndex = 6;
+            this.txt_idDono.Location = new System.Drawing.Point(151, 49);
+            this.txt_idDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_idDono.Name = "txt_idDono";
+            this.txt_idDono.Size = new System.Drawing.Size(228, 27);
+            this.txt_idDono.TabIndex = 6;
             // 
             // txt_nomeDono
             // 
-            txt_nomeDono.Location = new Point(132, 75);
-            txt_nomeDono.Name = "txt_nomeDono";
-            txt_nomeDono.Size = new Size(200, 23);
-            txt_nomeDono.TabIndex = 7;
+            this.txt_nomeDono.Location = new System.Drawing.Point(151, 100);
+            this.txt_nomeDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_nomeDono.Name = "txt_nomeDono";
+            this.txt_nomeDono.Size = new System.Drawing.Size(228, 27);
+            this.txt_nomeDono.TabIndex = 7;
             // 
             // txt_nifDono
             // 
-            txt_nifDono.Location = new Point(132, 157);
-            txt_nifDono.Name = "txt_nifDono";
-            txt_nifDono.Size = new Size(200, 23);
-            txt_nifDono.TabIndex = 8;
+            this.txt_nifDono.Location = new System.Drawing.Point(151, 209);
+            this.txt_nifDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_nifDono.Name = "txt_nifDono";
+            this.txt_nifDono.Size = new System.Drawing.Size(228, 27);
+            this.txt_nifDono.TabIndex = 8;
             // 
             // txt_contactoDono
             // 
-            txt_contactoDono.Location = new Point(132, 203);
-            txt_contactoDono.Name = "txt_contactoDono";
-            txt_contactoDono.Size = new Size(200, 23);
-            txt_contactoDono.TabIndex = 9;
+            this.txt_contactoDono.Location = new System.Drawing.Point(151, 271);
+            this.txt_contactoDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_contactoDono.Name = "txt_contactoDono";
+            this.txt_contactoDono.Size = new System.Drawing.Size(228, 27);
+            this.txt_contactoDono.TabIndex = 9;
             // 
             // btn_salvarDono
             // 
-            btn_salvarDono.Location = new Point(25, 289);
-            btn_salvarDono.Name = "btn_salvarDono";
-            btn_salvarDono.Size = new Size(126, 36);
-            btn_salvarDono.TabIndex = 10;
-            btn_salvarDono.Text = "Salvar";
-            btn_salvarDono.UseVisualStyleBackColor = true;
-            btn_salvarDono.Click += btn_salvarDono_Click;
+            this.btn_salvarDono.Location = new System.Drawing.Point(29, 385);
+            this.btn_salvarDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_salvarDono.Name = "btn_salvarDono";
+            this.btn_salvarDono.Size = new System.Drawing.Size(144, 48);
+            this.btn_salvarDono.TabIndex = 10;
+            this.btn_salvarDono.Text = "Salvar";
+            this.btn_salvarDono.UseVisualStyleBackColor = true;
+            this.btn_salvarDono.Click += new System.EventHandler(this.btn_salvarDono_Click);
             // 
             // btn_limparDono
             // 
-            btn_limparDono.Location = new Point(170, 289);
-            btn_limparDono.Name = "btn_limparDono";
-            btn_limparDono.Size = new Size(126, 36);
-            btn_limparDono.TabIndex = 11;
-            btn_limparDono.Text = "Limpar";
-            btn_limparDono.UseVisualStyleBackColor = true;
-            btn_limparDono.Click += btn_limparDono_Click;
+            this.btn_limparDono.Location = new System.Drawing.Point(194, 385);
+            this.btn_limparDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_limparDono.Name = "btn_limparDono";
+            this.btn_limparDono.Size = new System.Drawing.Size(144, 48);
+            this.btn_limparDono.TabIndex = 11;
+            this.btn_limparDono.Text = "Limpar";
+            this.btn_limparDono.UseVisualStyleBackColor = true;
+            this.btn_limparDono.Click += new System.EventHandler(this.btn_limparDono_Click);
             // 
             // btn_cancelarDono
             // 
-            btn_cancelarDono.Location = new Point(316, 289);
-            btn_cancelarDono.Name = "btn_cancelarDono";
-            btn_cancelarDono.Size = new Size(126, 36);
-            btn_cancelarDono.TabIndex = 12;
-            btn_cancelarDono.Text = "Cancelar";
-            btn_cancelarDono.UseVisualStyleBackColor = true;
-            btn_cancelarDono.Click += btn_cancelarDono_Click;
+            this.btn_cancelarDono.Location = new System.Drawing.Point(361, 385);
+            this.btn_cancelarDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cancelarDono.Name = "btn_cancelarDono";
+            this.btn_cancelarDono.Size = new System.Drawing.Size(144, 48);
+            this.btn_cancelarDono.TabIndex = 12;
+            this.btn_cancelarDono.Text = "Cancelar";
+            this.btn_cancelarDono.UseVisualStyleBackColor = true;
+            this.btn_cancelarDono.Click += new System.EventHandler(this.btn_cancelarDono_Click);
+            // 
+            // buttonListar
+            // 
+            this.buttonListar.Location = new System.Drawing.Point(214, 320);
+            this.buttonListar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonListar.Name = "buttonListar";
+            this.buttonListar.Size = new System.Drawing.Size(103, 48);
+            this.buttonListar.TabIndex = 20;
+            this.buttonListar.Text = "Listar";
+            this.buttonListar.UseVisualStyleBackColor = true;
+            this.buttonListar.Click += new System.EventHandler(this.buttonListar_Click);
             // 
             // Donos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(469, 347);
-            Controls.Add(btn_cancelarDono);
-            Controls.Add(btn_limparDono);
-            Controls.Add(btn_salvarDono);
-            Controls.Add(txt_contactoDono);
-            Controls.Add(txt_nifDono);
-            Controls.Add(txt_nomeDono);
-            Controls.Add(txt_idDono);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(lbl_contactoDono);
-            Controls.Add(lbl_nifDono);
-            Controls.Add(lbl_nascimentoDono);
-            Controls.Add(lbl_nomeDono);
-            Controls.Add(lbl_idDono);
-            Name = "Donos";
-            Text = "Donos";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(536, 463);
+            this.Controls.Add(this.buttonListar);
+            this.Controls.Add(this.btn_cancelarDono);
+            this.Controls.Add(this.btn_limparDono);
+            this.Controls.Add(this.btn_salvarDono);
+            this.Controls.Add(this.txt_contactoDono);
+            this.Controls.Add(this.txt_nifDono);
+            this.Controls.Add(this.txt_nomeDono);
+            this.Controls.Add(this.txt_idDono);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.lbl_contactoDono);
+            this.Controls.Add(this.lbl_nifDono);
+            this.Controls.Add(this.lbl_nascimentoDono);
+            this.Controls.Add(this.lbl_nomeDono);
+            this.Controls.Add(this.lbl_idDono);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Donos";
+            this.Text = "Donos";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -192,5 +215,6 @@
         private Button btn_salvarDono;
         private Button btn_limparDono;
         private Button btn_cancelarDono;
+        private Button buttonListar;
     }
 }

@@ -67,5 +67,14 @@ namespace veterinario_projeto.PagInicial
 
             this.Hide();
         }
+
+        private void buttonListar_Click(object sender, EventArgs e)
+        {
+            ListarDonos listarDono = new ListarDonos();
+
+            listarDono.Show();
+
+            this.Hide();
+        }
     }
 }
