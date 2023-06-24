@@ -52,6 +52,7 @@
             this.dataGridView1.RowTemplate.Height = 29;
             this.dataGridView1.Size = new System.Drawing.Size(765, 203);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // buttonListar
             // 
@@ -75,7 +76,7 @@
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(103, 42);
+            this.textBoxUsername.Location = new System.Drawing.Point(128, 38);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(125, 27);
             this.textBoxUsername.TabIndex = 3;
@@ -85,38 +86,38 @@
             this.Username.AutoSize = true;
             this.Username.Location = new System.Drawing.Point(12, 45);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(75, 20);
+            this.Username.Size = new System.Drawing.Size(115, 20);
             this.Username.TabIndex = 4;
-            this.Username.Text = "Username";
+            this.Username.Text = "Novo Username";
             // 
             // Password
             // 
             this.Password.AutoSize = true;
             this.Password.Location = new System.Drawing.Point(12, 158);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(70, 20);
+            this.Password.Size = new System.Drawing.Size(110, 20);
             this.Password.TabIndex = 5;
-            this.Password.Text = "Password";
+            this.Password.Text = "Novo Password";
             // 
             // Email
             // 
             this.Email.AutoSize = true;
             this.Email.Location = new System.Drawing.Point(12, 100);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(46, 20);
+            this.Email.Size = new System.Drawing.Size(86, 20);
             this.Email.TabIndex = 6;
-            this.Email.Text = "Email";
+            this.Email.Text = "Novo Email";
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(103, 158);
+            this.textBoxPassword.Location = new System.Drawing.Point(128, 155);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(125, 27);
             this.textBoxPassword.TabIndex = 7;
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(103, 100);
+            this.textBoxEmail.Location = new System.Drawing.Point(128, 97);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(125, 27);
             this.textBoxEmail.TabIndex = 8;
