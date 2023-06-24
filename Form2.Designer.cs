@@ -36,6 +36,7 @@
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonRegisto = new System.Windows.Forms.Button();
             this.buttonLogin = new System.Windows.Forms.Button();
+            this.buttonLista = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Username
@@ -99,7 +100,7 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(343, 292);
+            this.buttonLogin.Location = new System.Drawing.Point(300, 292);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(218, 60);
             this.buttonLogin.TabIndex = 7;
@@ -107,11 +108,22 @@
             this.buttonLogin.UseVisualStyleBackColor = true;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
+            // buttonLista
+            // 
+            this.buttonLista.Location = new System.Drawing.Point(554, 292);
+            this.buttonLista.Name = "buttonLista";
+            this.buttonLista.Size = new System.Drawing.Size(218, 60);
+            this.buttonLista.TabIndex = 8;
+            this.buttonLista.Text = "Listar";
+            this.buttonLista.UseVisualStyleBackColor = true;
+            this.buttonLista.Click += new System.EventHandler(this.buttonLista_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonLista);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.buttonRegisto);
             this.Controls.Add(this.textBoxPassword);
@@ -137,5 +149,6 @@
         private TextBox textBoxPassword;
         private Button buttonRegisto;
         private Button buttonLogin;
+        private Button buttonLista;
     }
 }

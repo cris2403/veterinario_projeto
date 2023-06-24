@@ -34,6 +34,7 @@
             this.textBoxPasword = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.buttonRegisto = new System.Windows.Forms.Button();
+            this.buttonLista = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Username
@@ -70,7 +71,7 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(154, 249);
+            this.buttonLogin.Location = new System.Drawing.Point(293, 249);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(195, 59);
             this.buttonLogin.TabIndex = 5;
@@ -80,7 +81,7 @@
             // 
             // buttonRegisto
             // 
-            this.buttonRegisto.Location = new System.Drawing.Point(398, 249);
+            this.buttonRegisto.Location = new System.Drawing.Point(546, 249);
             this.buttonRegisto.Name = "buttonRegisto";
             this.buttonRegisto.Size = new System.Drawing.Size(217, 59);
             this.buttonRegisto.TabIndex = 6;
@@ -88,11 +89,22 @@
             this.buttonRegisto.UseVisualStyleBackColor = true;
             this.buttonRegisto.Click += new System.EventHandler(this.buttonRegisto_Click);
             // 
+            // buttonLista
+            // 
+            this.buttonLista.Location = new System.Drawing.Point(23, 249);
+            this.buttonLista.Name = "buttonLista";
+            this.buttonLista.Size = new System.Drawing.Size(218, 60);
+            this.buttonLista.TabIndex = 9;
+            this.buttonLista.Text = "Listar";
+            this.buttonLista.UseVisualStyleBackColor = true;
+            this.buttonLista.Click += new System.EventHandler(this.buttonLista_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonLista);
             this.Controls.Add(this.buttonRegisto);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxPasword);
@@ -115,5 +127,6 @@
         private TextBox textBoxPasword;
         private Button buttonLogin;
         private Button buttonRegisto;
+        private Button buttonLista;
     }
 }

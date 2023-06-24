@@ -67,6 +67,13 @@ namespace veterinario_projeto
 
         }
 
+        private void buttonLista_Click(object sender, EventArgs e)
+        {
+            ListarLogin ListarLogin = new ListarLogin();
 
+            ListarLogin.Show();
+
+            this.Hide();
+        }
     }
 }

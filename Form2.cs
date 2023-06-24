@@ -88,5 +88,15 @@ namespace veterinario_projeto
             // Retorna true se o email for válido, false caso contrário
             return match.Success;
         }
+
+        private void buttonLista_Click(object sender, EventArgs e)
+        {
+            ListarLogin ListarLogin = new ListarLogin();
+
+            ListarLogin.Show();
+
+            this.Hide();
+
+        }
     }
 }
