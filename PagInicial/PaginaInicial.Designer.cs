@@ -46,6 +46,7 @@
             this.button_cAnimal.TabIndex = 0;
             this.button_cAnimal.Text = "Cadastro do Animal";
             this.button_cAnimal.UseVisualStyleBackColor = true;
+            this.button_cAnimal.Click += new System.EventHandler(this.button_cAnimal_Click);
             // 
             // btn_fmedica
             // 
@@ -67,6 +68,7 @@
             this.btn_donos.TabIndex = 2;
             this.btn_donos.Text = "Donos";
             this.btn_donos.UseVisualStyleBackColor = true;
+            this.btn_donos.Click += new System.EventHandler(this.btn_donos_Click);
             // 
             // btn_produtos
             // 

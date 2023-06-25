@@ -24,8 +24,11 @@ namespace veterinario_projeto.PagInicial
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             connection.Open();
+            string lista = "SELECT registo.DNome, ranimal.Nome, ranimal.Tipo, ranimal.Raca, ranimal.Idade, ranimal.Peso " +
+                           "FROM registo " +
+                           "INNER JOIN ranimal ON registo.DNOME = ranimal.Dono";
 
-            string lista = "Select * from ranimal";
+
             MySqlCommand cmd = new MySqlCommand(lista, connection);
             MySqlDataReader reader = cmd.ExecuteReader();
             DataTable listarAnimais = new DataTable();

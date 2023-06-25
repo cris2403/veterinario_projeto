@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace veterinario_projeto.PagInicial
 {
@@ -29,31 +30,62 @@ namespace veterinario_projeto.PagInicial
             MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
 
             string Dono = txt_dono.Text;
+            string DNome = txt_dono.Text;
             string Nome = txt_nome.Text;
             string Tipo = txt_tipo.Text;
             string Raca = txt_raca.Text;
             string Idade = txt_idade.Text;
             string Peso = txt_peso.Text;
 
-            string insertQuery = "Insert into ranimal (Dono, Nome, Tipo, Raca, Idade, Peso) Values (@Dono, @Nome, @Tipo, @Raca, @Idade, @Peso)";
+            string insertQuery1 = "Insert into ranimal (Dono,Nome, Tipo, Raca, Idade, Peso) Values (@Dono,@Nome, @Tipo, @Raca, @Idade, @Peso)";
+           // string insertQuery2 = "Insert into registo (DNome) Values (@DNome)";
+
             if (Validate())
             {
                 using (mySqlConnection)
                 {
                     mySqlConnection.Open();
-
-                    using (MySqlCommand command = new MySqlCommand(insertQuery, mySqlConnection))
+                    
                     {
-                        command.Parameters.AddWithValue("@Dono", Dono);
-                        command.Parameters.AddWithValue("@Nome", Nome);
-                        command.Parameters.AddWithValue("@Tipo", Tipo);
-                        command.Parameters.AddWithValue("@Raca", Raca);
-                        command.Parameters.AddWithValue("@Idade", Idade);
-                        command.Parameters.AddWithValue("@Peso", Peso);
-                        command.ExecuteNonQuery();
-                    }
+                        using (MySqlCommand dono = new MySqlCommand("SELECT * FROM registo", mySqlConnection))
+                        {
+                            using (MySqlDataReader reader = dono.ExecuteReader())
+                            {
+                                bool donoRegistrado = false;
 
-                    MessageBox.Show("Registo bem sucedido!");
+                                while (reader.Read())
+                                {
+                                    if (DNome.Equals(reader.GetString("DNome")))
+                                    {
+                                        donoRegistrado = true;
+                                        break;
+                                    }
+                                }
+
+                                // Close the reader before executing the next command
+                                reader.Close();
+
+                                if (donoRegistrado)
+                                {
+                                    using (MySqlCommand command = new MySqlCommand(insertQuery1, mySqlConnection))
+                                    {
+                                        command.Parameters.AddWithValue("@Dono", Dono);
+                                        command.Parameters.AddWithValue("@Nome", Nome);
+                                        command.Parameters.AddWithValue("@Tipo", Tipo);
+                                        command.Parameters.AddWithValue("@Raca", Raca);
+                                        command.Parameters.AddWithValue("@Idade", Idade);
+                                        command.Parameters.AddWithValue("@Peso", Peso);
+                                        command.ExecuteNonQuery();
+                                    }
+                                    MessageBox.Show("Registo bem sucedido!");
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Dono ainda não foi registado!");
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -23,13 +23,13 @@ namespace veterinario_projeto.PagInicial
             string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
 
-            string Id = txt_idDono.Text;
-            string Nome = txt_nomeDono.Text;
+            string Id_RDono = txt_idDono.Text;
+            string DNome = txt_nomeDono.Text;
             DateTime DataNascimento = dateTimePicker1.Value;
             string NIF = txt_nifDono.Text;
             string Contacto = txt_contactoDono.Text;
 
-            string insertQuery = "Insert into registo (Id, Nome, DataNascimento, NIF, Contacto) Values (@Id, @Nome, @DataNascimento, @NIF, @Contacto)";
+            string insertQuery = "Insert into registo (Id_RDono, DNome, DataNascimento, NIF, Contacto) Values (@Id_RDono, @DNome, @DataNascimento, @NIF, @Contacto)";
             if (Validate())
             {
                 using (mySqlConnection)
@@ -38,8 +38,8 @@ namespace veterinario_projeto.PagInicial
 
                     using (MySqlCommand command = new MySqlCommand(insertQuery, mySqlConnection))
                     {
-                        command.Parameters.AddWithValue("@Id", Id);
-                        command.Parameters.AddWithValue("@Nome", Nome);
+                        command.Parameters.AddWithValue("@Id_RDono", Id_RDono);
+                        command.Parameters.AddWithValue("@DNome", DNome);
                         command.Parameters.AddWithValue("@DataNascimento", DataNascimento);
                         command.Parameters.AddWithValue("@NIF", NIF);
                         command.Parameters.AddWithValue("@Contacto", Contacto);
