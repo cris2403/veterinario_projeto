@@ -36,7 +36,7 @@ namespace veterinario_projeto
 
         private void buttonRegisto_Click(object sender, EventArgs e)
         {
-            string mysqlconn = "server=127.0.0.1;user=root;database=login;password=";
+            string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
 
             string username = textBoxUsername.Text;
@@ -96,6 +96,11 @@ namespace veterinario_projeto
             ListarLogin.Show();
 
             this.Hide();
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
 
         }
     }

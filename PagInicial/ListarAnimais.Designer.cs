@@ -226,6 +226,7 @@
             this.Controls.Add(this.dataGridViewAnimais);
             this.Name = "ListarAnimais";
             this.Text = "ListarAnimais";
+            this.Load += new System.EventHandler(this.ListarAnimais_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnimais)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

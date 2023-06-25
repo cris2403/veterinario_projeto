@@ -302,6 +302,7 @@
             this.Controls.Add(this.dataGridViewColaborador);
             this.Name = "ListarColaborador";
             this.Text = "ListarColaborador";
+            this.Load += new System.EventHandler(this.ListarColaborador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewColaborador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

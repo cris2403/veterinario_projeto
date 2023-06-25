@@ -20,7 +20,7 @@ namespace veterinario_projeto.PagInicial
 
         private void btn_salvarDono_Click(object sender, EventArgs e)
         {
-            string mysqlconn = "server=127.0.0.1;user=root;database=dono;password=";
+            string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
 
             string Id = txt_idDono.Text;
@@ -75,6 +75,11 @@ namespace veterinario_projeto.PagInicial
             listarDono.Show();
 
             this.Hide();
+        }
+
+        private void Donos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

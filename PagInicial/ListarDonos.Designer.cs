@@ -186,6 +186,7 @@
             this.Controls.Add(this.dataGridViewDonos);
             this.Name = "ListarDonos";
             this.Text = "ListarDonos";
+            this.Load += new System.EventHandler(this.ListarDonos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDonos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

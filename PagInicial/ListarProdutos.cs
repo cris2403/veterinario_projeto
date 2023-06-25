@@ -8,61 +8,58 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace veterinario_projeto
+namespace veterinario_projeto.PagInicial
 {
-    public partial class ListarLogin : Form
+    public partial class ListarProdutos : Form
     {
-        public ListarLogin()
+        public ListarProdutos()
         {
             InitializeComponent();
         }
 
-        private void ListarLogin_Load(object sender, EventArgs e)
+        private void buttonLista_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void buttonListar_Click(object sender, EventArgs e)
-        {
             string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             connection.Open();
 
-            string lista = "Select * from users";
+            string lista = "Select * from produtos";
             MySqlCommand cmd = new MySqlCommand(lista, connection);
             MySqlDataReader reader = cmd.ExecuteReader();
-            DataTable listarLogin = new DataTable();
-            listarLogin.Load(reader);
-            dataGridViewLogin.DataSource = listarLogin;
+            DataTable ListarProd = new DataTable();
+            ListarProd.Load(reader);
+            dataGridViewProdutos.DataSource = ListarProd;
             connection.Close();
-
         }
 
         private void buttonSalvar_Click(object sender, EventArgs e)
         {
-            string id = textBoxID.Text;
-            string username = textBoxUsername.Text;
-            string email = textBoxEmail.Text;
-            string password = textBoxPassword.Text;
-
             string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection connection = new MySqlConnection(mysqlconn);
+
+            string Cod = textBoxCod.Text;
+            string Descricao = textBoxDesc.Text;
+            string Tipo = comboBoxTipo.Text;
+            string Quantidade = textBoxQuant.Text;
+            string Preco = textBoxPreco.Text;
 
             try
             {
                 connection.Open();
 
-                string query = "UPDATE users SET username = @username, email = @email, password = @password WHERE user_id = @user_id";
+                string query = "UPDATE produtos SET Descricao = @Descricao, Tipo = @Tipo, Quantidade = @Quantidade, Preco = @Preco WHERE Cod = @Cod";
                 MySqlCommand command = new MySqlCommand(query, connection);
 
                 // Substitua os parâmetros pelos valores das TextBox
-                command.Parameters.AddWithValue("@username", textBoxUsername.Text);
-                command.Parameters.AddWithValue("@email", textBoxEmail.Text);
-                command.Parameters.AddWithValue("@password", textBoxPassword.Text);
-                command.Parameters.AddWithValue("@user_id", Convert.ToInt32(textBoxID.Text));
-
+                command.Parameters.AddWithValue("@Descricao", textBoxDesc.Text);
+                command.Parameters.AddWithValue("@Tipo", comboBoxTipo.Text);
+                command.Parameters.AddWithValue("@Quantidade", Convert.ToInt32(textBoxQuant.Text));
+                command.Parameters.AddWithValue("@Preco", Convert.ToInt32(textBoxPreco.Text));
+                command.Parameters.AddWithValue("@Cod", Convert.ToInt32(textBoxCod.Text));
                 command.ExecuteNonQuery();
 
                 MessageBox.Show("Dados atualizados com sucesso!");
@@ -75,7 +72,6 @@ namespace veterinario_projeto
             {
                 connection.Close();
             }
-
         }
 
         private void buttonApagar_Click(object sender, EventArgs e)
@@ -84,29 +80,12 @@ namespace veterinario_projeto
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             connection.Open();
-            string apaga = "Delete from users where user_id='" + textBoxID.Text + "'";
+            string apaga = "Delete from produtos where Cod='" + textBoxCod.Text + "'";
             MySqlCommand cmd = new MySqlCommand(apaga, connection);
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("Apagado com sucesso");
-
-        }
-
-        private void dataGridViewLogin_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string mysqlconn = "server=127.0.0.1;user=root;database=login;password=";
-            MySqlConnection connection = new MySqlConnection(mysqlconn);
-
-            string username = textBoxUsername.Text;
-            string email = textBoxEmail.Text;
-            string password = textBoxPassword.Text;
-
-            textBoxID.Text = dataGridViewLogin.CurrentRow.Cells[0].Value.ToString();
-            textBoxUsername.Text = dataGridViewLogin.CurrentRow.Cells[1].Value.ToString();
-            textBoxEmail.Text = dataGridViewLogin.CurrentRow.Cells[2].Value.ToString();
-            textBoxPassword.Text = dataGridViewLogin.CurrentRow.Cells[3].Value.ToString();
-
         }
     }
 }

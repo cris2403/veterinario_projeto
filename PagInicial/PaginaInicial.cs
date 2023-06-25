@@ -58,10 +58,22 @@ namespace veterinario_projeto
         private void btn_produtos_Click(object sender, EventArgs e)
         {
 
+            Produtos produtos = new Produtos();
+
+            produtos.Show();
+
+            this.Hide();
+
         }
 
         private void btn_fmedica_Click(object sender, EventArgs e)
         {
+
+            FichaMedica fichaMedica = new FichaMedica();
+
+            fichaMedica.Show();
+
+            this.Hide();
 
         }
     }

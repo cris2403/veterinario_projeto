@@ -41,7 +41,7 @@ namespace veterinario_projeto.PagInicial
 
         private void btn_salvarColab_Click(object sender, EventArgs e)
         {
-            string mysqlconn = "server=127.0.0.1;user=root;database=colaboradores;password=";
+            string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
 
             string Id = txt_idColab.Text;
@@ -95,6 +95,11 @@ namespace veterinario_projeto.PagInicial
             listaColaborador.Show();
 
             this.Hide();
+        }
+
+        private void Colaboradores_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

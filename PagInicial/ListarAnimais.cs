@@ -20,7 +20,7 @@ namespace veterinario_projeto.PagInicial
 
         private void buttonListar_Click(object sender, EventArgs e)
         {
-            string mysqlconn = "server=127.0.0.1;user=root;database=canimal;password=";
+            string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             connection.Open();
@@ -45,7 +45,7 @@ namespace veterinario_projeto.PagInicial
             string peso = textBoxPeso.Text;
 
 
-            string mysqlconn = "server=127.0.0.1;user=root;database=canimal;password=";
+            string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             try
@@ -81,7 +81,7 @@ namespace veterinario_projeto.PagInicial
 
         private void buttonApagar_Click(object sender, EventArgs e)
         {
-            string mysqlconn = "server=127.0.0.1;user=root;database=canimal;password=";
+            string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             connection.Open();
@@ -91,6 +91,11 @@ namespace veterinario_projeto.PagInicial
             cmd.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("Apagado com sucesso");
+        }
+
+        private void ListarAnimais_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

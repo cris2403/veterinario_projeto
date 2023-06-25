@@ -25,7 +25,7 @@ namespace veterinario_projeto.PagInicial
 
         private void btn_salvarAnimal_Click(object sender, EventArgs e)
         {
-            string mysqlconn = "server=127.0.0.1;user=root;database=canimal;password=";
+            string mysqlconn = "server=127.0.0.1;user=root;database=projeto;password=";
             MySqlConnection mySqlConnection = new MySqlConnection(mysqlconn);
 
             string Dono = txt_dono.Text;
