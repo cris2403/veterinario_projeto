@@ -57,9 +57,10 @@
             // 
             // buttonApagar
             // 
-            this.buttonApagar.Location = new System.Drawing.Point(831, 254);
+            this.buttonApagar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonApagar.Location = new System.Drawing.Point(829, 222);
             this.buttonApagar.Name = "buttonApagar";
-            this.buttonApagar.Size = new System.Drawing.Size(228, 54);
+            this.buttonApagar.Size = new System.Drawing.Size(228, 72);
             this.buttonApagar.TabIndex = 35;
             this.buttonApagar.Text = "Apagar";
             this.buttonApagar.UseVisualStyleBackColor = true;
@@ -67,9 +68,10 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(831, 145);
+            this.buttonSalvar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonSalvar.Location = new System.Drawing.Point(829, 122);
             this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(228, 54);
+            this.buttonSalvar.Size = new System.Drawing.Size(228, 72);
             this.buttonSalvar.TabIndex = 34;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@
             // 
             // buttonListar
             // 
-            this.buttonListar.Location = new System.Drawing.Point(831, 37);
+            this.buttonListar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonListar.Location = new System.Drawing.Point(829, 29);
             this.buttonListar.Name = "buttonListar";
-            this.buttonListar.Size = new System.Drawing.Size(228, 54);
+            this.buttonListar.Size = new System.Drawing.Size(228, 72);
             this.buttonListar.TabIndex = 33;
             this.buttonListar.Text = "Listar";
             this.buttonListar.UseVisualStyleBackColor = true;
@@ -87,83 +90,97 @@
             // 
             // textBoxContacto
             // 
-            this.textBoxContacto.Location = new System.Drawing.Point(81, 241);
+            this.textBoxContacto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxContacto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxContacto.Location = new System.Drawing.Point(133, 245);
             this.textBoxContacto.Name = "textBoxContacto";
-            this.textBoxContacto.Size = new System.Drawing.Size(233, 27);
+            this.textBoxContacto.Size = new System.Drawing.Size(259, 34);
             this.textBoxContacto.TabIndex = 30;
             // 
             // textBoxNIF
             // 
-            this.textBoxNIF.Location = new System.Drawing.Point(67, 197);
+            this.textBoxNIF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNIF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNIF.Location = new System.Drawing.Point(133, 205);
             this.textBoxNIF.Name = "textBoxNIF";
-            this.textBoxNIF.Size = new System.Drawing.Size(233, 27);
+            this.textBoxNIF.Size = new System.Drawing.Size(259, 34);
             this.textBoxNIF.TabIndex = 29;
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(67, 154);
+            this.textBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNome.Location = new System.Drawing.Point(133, 158);
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(233, 27);
+            this.textBoxNome.Size = new System.Drawing.Size(259, 34);
             this.textBoxNome.TabIndex = 27;
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(52, 8);
+            this.textBoxID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxID.Location = new System.Drawing.Point(133, 12);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(233, 27);
+            this.textBoxID.Size = new System.Drawing.Size(259, 34);
             this.textBoxID.TabIndex = 26;
             // 
             // Função
             // 
             this.Função.AutoSize = true;
-            this.Função.Location = new System.Drawing.Point(6, 105);
+            this.Função.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Função.Location = new System.Drawing.Point(41, 119);
             this.Função.Name = "Função";
-            this.Função.Size = new System.Drawing.Size(56, 20);
+            this.Função.Size = new System.Drawing.Size(83, 23);
             this.Função.TabIndex = 25;
             this.Função.Text = "Função";
             // 
             // Contacto
             // 
             this.Contacto.AutoSize = true;
-            this.Contacto.Location = new System.Drawing.Point(6, 244);
+            this.Contacto.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Contacto.Location = new System.Drawing.Point(24, 256);
             this.Contacto.Name = "Contacto";
-            this.Contacto.Size = new System.Drawing.Size(69, 20);
+            this.Contacto.Size = new System.Drawing.Size(100, 23);
             this.Contacto.TabIndex = 24;
             this.Contacto.Text = "Contacto";
             // 
             // Tipo
             // 
             this.Tipo.AutoSize = true;
-            this.Tipo.Location = new System.Drawing.Point(22, 54);
+            this.Tipo.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Tipo.Location = new System.Drawing.Point(70, 68);
             this.Tipo.Name = "Tipo";
-            this.Tipo.Size = new System.Drawing.Size(39, 20);
+            this.Tipo.Size = new System.Drawing.Size(54, 23);
             this.Tipo.TabIndex = 23;
             this.Tipo.Text = "Tipo";
             // 
             // NIF
             // 
             this.NIF.AutoSize = true;
-            this.NIF.Location = new System.Drawing.Point(22, 204);
+            this.NIF.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.NIF.Location = new System.Drawing.Point(74, 216);
             this.NIF.Name = "NIF";
-            this.NIF.Size = new System.Drawing.Size(31, 20);
+            this.NIF.Size = new System.Drawing.Size(50, 23);
             this.NIF.TabIndex = 22;
             this.NIF.Text = "NIF";
             // 
             // Nome
             // 
             this.Nome.AutoSize = true;
-            this.Nome.Location = new System.Drawing.Point(12, 152);
+            this.Nome.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Nome.Location = new System.Drawing.Point(56, 169);
             this.Nome.Name = "Nome";
-            this.Nome.Size = new System.Drawing.Size(50, 20);
+            this.Nome.Size = new System.Drawing.Size(68, 23);
             this.Nome.TabIndex = 21;
             this.Nome.Text = "Nome";
             // 
             // ID
             // 
             this.ID.AutoSize = true;
-            this.ID.Location = new System.Drawing.Point(22, 8);
+            this.ID.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.ID.Location = new System.Drawing.Point(88, 23);
             this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(24, 20);
+            this.ID.Size = new System.Drawing.Size(36, 23);
             this.ID.TabIndex = 19;
             this.ID.Text = "ID";
             // 
@@ -179,102 +196,114 @@
             // 
             // dateTimePickerNascimento
             // 
-            this.dateTimePickerNascimento.Location = new System.Drawing.Point(403, 37);
+            this.dateTimePickerNascimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePickerNascimento.Location = new System.Drawing.Point(446, 41);
             this.dateTimePickerNascimento.Name = "dateTimePickerNascimento";
-            this.dateTimePickerNascimento.Size = new System.Drawing.Size(250, 27);
+            this.dateTimePickerNascimento.Size = new System.Drawing.Size(259, 34);
             this.dateTimePickerNascimento.TabIndex = 36;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(446, 8);
+            this.label1.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(446, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 20);
+            this.label1.Size = new System.Drawing.Size(216, 23);
             this.label1.TabIndex = 37;
             this.label1.Text = "Data de Nascimento";
             // 
             // textBoxDisp
             // 
-            this.textBoxDisp.Location = new System.Drawing.Point(394, 237);
+            this.textBoxDisp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxDisp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxDisp.Location = new System.Drawing.Point(446, 254);
             this.textBoxDisp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxDisp.Name = "textBoxDisp";
-            this.textBoxDisp.Size = new System.Drawing.Size(259, 27);
+            this.textBoxDisp.Size = new System.Drawing.Size(259, 34);
             this.textBoxDisp.TabIndex = 43;
             // 
             // date_fimColab
             // 
-            this.date_fimColab.Location = new System.Drawing.Point(394, 152);
+            this.date_fimColab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date_fimColab.Location = new System.Drawing.Point(446, 169);
             this.date_fimColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.date_fimColab.Name = "date_fimColab";
-            this.date_fimColab.Size = new System.Drawing.Size(259, 27);
+            this.date_fimColab.Size = new System.Drawing.Size(259, 34);
             this.date_fimColab.TabIndex = 42;
             // 
             // date_inicioColab
             // 
-            this.date_inicioColab.Location = new System.Drawing.Point(394, 97);
+            this.date_inicioColab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date_inicioColab.Location = new System.Drawing.Point(446, 101);
             this.date_inicioColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.date_inicioColab.Name = "date_inicioColab";
-            this.date_inicioColab.Size = new System.Drawing.Size(259, 27);
+            this.date_inicioColab.Size = new System.Drawing.Size(259, 34);
             this.date_inicioColab.TabIndex = 41;
             this.date_inicioColab.ValueChanged += new System.EventHandler(this.date_inicioColab_ValueChanged);
             // 
             // lbl_disponibilidadeColab
             // 
             this.lbl_disponibilidadeColab.AutoSize = true;
-            this.lbl_disponibilidadeColab.Location = new System.Drawing.Point(422, 197);
+            this.lbl_disponibilidadeColab.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_disponibilidadeColab.Location = new System.Drawing.Point(446, 216);
             this.lbl_disponibilidadeColab.Name = "lbl_disponibilidadeColab";
-            this.lbl_disponibilidadeColab.Size = new System.Drawing.Size(169, 20);
+            this.lbl_disponibilidadeColab.Size = new System.Drawing.Size(254, 23);
             this.lbl_disponibilidadeColab.TabIndex = 40;
             this.lbl_disponibilidadeColab.Text = "Disponibilidade Horária";
             // 
             // lbl_datafimColab
             // 
             this.lbl_datafimColab.AutoSize = true;
-            this.lbl_datafimColab.Location = new System.Drawing.Point(417, 128);
+            this.lbl_datafimColab.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_datafimColab.Location = new System.Drawing.Point(446, 139);
             this.lbl_datafimColab.Name = "lbl_datafimColab";
-            this.lbl_datafimColab.Size = new System.Drawing.Size(201, 20);
+            this.lbl_datafimColab.Size = new System.Drawing.Size(298, 23);
             this.lbl_datafimColab.TabIndex = 39;
             this.lbl_datafimColab.Text = "Data do Fim da Colaboração";
             // 
             // lbl_datainicioColab
             // 
             this.lbl_datainicioColab.AutoSize = true;
-            this.lbl_datainicioColab.Location = new System.Drawing.Point(417, 73);
+            this.lbl_datainicioColab.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_datainicioColab.Location = new System.Drawing.Point(446, 78);
             this.lbl_datainicioColab.Name = "lbl_datainicioColab";
-            this.lbl_datainicioColab.Size = new System.Drawing.Size(212, 20);
+            this.lbl_datainicioColab.Size = new System.Drawing.Size(315, 23);
             this.lbl_datainicioColab.TabIndex = 38;
             this.lbl_datainicioColab.Text = "Data de Inicio da Colaboração";
             // 
             // comboBox_funcaoColab
             // 
             this.comboBox_funcaoColab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_funcaoColab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox_funcaoColab.FormattingEnabled = true;
             this.comboBox_funcaoColab.Items.AddRange(new object[] {
             "Médico Veterinário",
             "Assistente"});
-            this.comboBox_funcaoColab.Location = new System.Drawing.Point(81, 102);
+            this.comboBox_funcaoColab.Location = new System.Drawing.Point(133, 106);
             this.comboBox_funcaoColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox_funcaoColab.Name = "comboBox_funcaoColab";
-            this.comboBox_funcaoColab.Size = new System.Drawing.Size(259, 28);
+            this.comboBox_funcaoColab.Size = new System.Drawing.Size(259, 36);
             this.comboBox_funcaoColab.TabIndex = 45;
             // 
             // comboBox_tipoColab
             // 
             this.comboBox_tipoColab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_tipoColab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox_tipoColab.FormattingEnabled = true;
             this.comboBox_tipoColab.Items.AddRange(new object[] {
             "Interno",
             "Externo"});
-            this.comboBox_tipoColab.Location = new System.Drawing.Point(81, 51);
+            this.comboBox_tipoColab.Location = new System.Drawing.Point(133, 55);
             this.comboBox_tipoColab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox_tipoColab.Name = "comboBox_tipoColab";
-            this.comboBox_tipoColab.Size = new System.Drawing.Size(259, 28);
+            this.comboBox_tipoColab.Size = new System.Drawing.Size(259, 36);
             this.comboBox_tipoColab.TabIndex = 44;
             // 
             // ListarColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1164, 626);
             this.Controls.Add(this.comboBox_funcaoColab);
             this.Controls.Add(this.comboBox_tipoColab);

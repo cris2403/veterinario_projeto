@@ -39,10 +39,11 @@
             // 
             // button_cAnimal
             // 
+            this.button_cAnimal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button_cAnimal.Location = new System.Drawing.Point(41, 37);
             this.button_cAnimal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_cAnimal.Name = "button_cAnimal";
-            this.button_cAnimal.Size = new System.Drawing.Size(144, 48);
+            this.button_cAnimal.Size = new System.Drawing.Size(175, 85);
             this.button_cAnimal.TabIndex = 0;
             this.button_cAnimal.Text = "Cadastro do Animal";
             this.button_cAnimal.UseVisualStyleBackColor = true;
@@ -50,10 +51,11 @@
             // 
             // btn_fmedica
             // 
+            this.btn_fmedica.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_fmedica.Location = new System.Drawing.Point(155, 332);
             this.btn_fmedica.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_fmedica.Name = "btn_fmedica";
-            this.btn_fmedica.Size = new System.Drawing.Size(135, 48);
+            this.btn_fmedica.Size = new System.Drawing.Size(166, 85);
             this.btn_fmedica.TabIndex = 1;
             this.btn_fmedica.Text = "Ficha Médica";
             this.btn_fmedica.UseVisualStyleBackColor = true;
@@ -61,10 +63,11 @@
             // 
             // btn_donos
             // 
+            this.btn_donos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_donos.Location = new System.Drawing.Point(41, 136);
             this.btn_donos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_donos.Name = "btn_donos";
-            this.btn_donos.Size = new System.Drawing.Size(144, 48);
+            this.btn_donos.Size = new System.Drawing.Size(175, 85);
             this.btn_donos.TabIndex = 2;
             this.btn_donos.Text = "Donos";
             this.btn_donos.UseVisualStyleBackColor = true;
@@ -72,10 +75,11 @@
             // 
             // btn_produtos
             // 
+            this.btn_produtos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_produtos.Location = new System.Drawing.Point(250, 37);
             this.btn_produtos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_produtos.Name = "btn_produtos";
-            this.btn_produtos.Size = new System.Drawing.Size(144, 48);
+            this.btn_produtos.Size = new System.Drawing.Size(175, 85);
             this.btn_produtos.TabIndex = 3;
             this.btn_produtos.Text = "Produtos";
             this.btn_produtos.UseVisualStyleBackColor = true;
@@ -83,10 +87,11 @@
             // 
             // btn_colaboradores
             // 
+            this.btn_colaboradores.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_colaboradores.Location = new System.Drawing.Point(41, 231);
             this.btn_colaboradores.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_colaboradores.Name = "btn_colaboradores";
-            this.btn_colaboradores.Size = new System.Drawing.Size(144, 48);
+            this.btn_colaboradores.Size = new System.Drawing.Size(175, 85);
             this.btn_colaboradores.TabIndex = 4;
             this.btn_colaboradores.Text = "Colaboradores";
             this.btn_colaboradores.UseVisualStyleBackColor = true;
@@ -94,10 +99,11 @@
             // 
             // btn_consultas
             // 
+            this.btn_consultas.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_consultas.Location = new System.Drawing.Point(250, 136);
             this.btn_consultas.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_consultas.Name = "btn_consultas";
-            this.btn_consultas.Size = new System.Drawing.Size(144, 48);
+            this.btn_consultas.Size = new System.Drawing.Size(175, 85);
             this.btn_consultas.TabIndex = 5;
             this.btn_consultas.Text = "Consultas";
             this.btn_consultas.UseVisualStyleBackColor = true;
@@ -105,10 +111,11 @@
             // 
             // btn_pagamentos
             // 
+            this.btn_pagamentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_pagamentos.Location = new System.Drawing.Point(250, 231);
             this.btn_pagamentos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_pagamentos.Name = "btn_pagamentos";
-            this.btn_pagamentos.Size = new System.Drawing.Size(144, 48);
+            this.btn_pagamentos.Size = new System.Drawing.Size(175, 85);
             this.btn_pagamentos.TabIndex = 6;
             this.btn_pagamentos.Text = "Pagamentos";
             this.btn_pagamentos.UseVisualStyleBackColor = true;
@@ -118,6 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(466, 488);
             this.Controls.Add(this.btn_pagamentos);
             this.Controls.Add(this.btn_consultas);

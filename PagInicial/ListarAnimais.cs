@@ -24,7 +24,7 @@ namespace veterinario_projeto.PagInicial
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             connection.Open();
-            string lista = "SELECT registo.DNome, ranimal.Nome, ranimal.Tipo, ranimal.Raca, ranimal.Idade, ranimal.Peso " +
+            string lista = "SELECT ranimal.Id_RAnimal, registo.DNome,ranimal.Nome, ranimal.Tipo, ranimal.Raca, ranimal.Idade, ranimal.Peso " +
                            "FROM registo " +
                            "INNER JOIN ranimal ON registo.DNOME = ranimal.Dono";
 
@@ -42,7 +42,7 @@ namespace veterinario_projeto.PagInicial
             string Id = textBoxID.Text;
             string dono = textBoxDono.Text;
             string nome = textBoxNome.Text;
-            string tipo = textBoxTipo.Text;
+            string tipo = comboBoxTipo.Text;
             string raca = textBoxRaca.Text;
             string idade = textBoxIdade.Text;
             string peso = textBoxPeso.Text;
@@ -61,11 +61,11 @@ namespace veterinario_projeto.PagInicial
                 // Substitua os parâmetros pelos valores das TextBox
                 command.Parameters.AddWithValue("@Dono", textBoxDono.Text);
                 command.Parameters.AddWithValue("@Nome", textBoxNome.Text);
-                command.Parameters.AddWithValue("@Tipo", textBoxTipo.Text);
+                command.Parameters.AddWithValue("@Tipo", comboBoxTipo.Text);
                 command.Parameters.AddWithValue("@Raca", textBoxPeso.Text);
                 command.Parameters.AddWithValue("@Idade", textBoxIdade.Text);
                 command.Parameters.AddWithValue("@Peso", textBoxPeso.Text);
-                command.Parameters.AddWithValue("@Id", Convert.ToInt32(textBoxID.Text));
+                command.Parameters.AddWithValue("@Id_RAnimal", Convert.ToInt32(textBoxID.Text));
 
                 command.ExecuteNonQuery();
 
@@ -88,7 +88,7 @@ namespace veterinario_projeto.PagInicial
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             connection.Open();
-            string apaga = "Delete from ranimal where id='" + textBoxID.Text + "'";
+            string apaga = "Delete from ranimal where Id_RAnimal='" + textBoxID.Text + "'";
             MySqlCommand cmd = new MySqlCommand(apaga, connection);
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteNonQuery();
@@ -97,6 +97,41 @@ namespace veterinario_projeto.PagInicial
         }
 
         private void ListarAnimais_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Nome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ID_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Raça_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dono_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Idade_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Peso_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tipo_Click(object sender, EventArgs e)
         {
 
         }

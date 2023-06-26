@@ -39,13 +39,13 @@
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.textBoxDono = new System.Windows.Forms.TextBox();
-            this.textBoxTipo = new System.Windows.Forms.TextBox();
             this.textBoxPeso = new System.Windows.Forms.TextBox();
             this.textBoxIdade = new System.Windows.Forms.TextBox();
             this.textBoxRaca = new System.Windows.Forms.TextBox();
             this.buttonListar = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonApagar = new System.Windows.Forms.Button();
+            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnimais)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,118 +62,131 @@
             // ID
             // 
             this.ID.AutoSize = true;
+            this.ID.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.ID.Location = new System.Drawing.Point(38, 24);
             this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(24, 20);
+            this.ID.Size = new System.Drawing.Size(41, 28);
             this.ID.TabIndex = 1;
             this.ID.Text = "ID";
             // 
             // Dono
             // 
             this.Dono.AutoSize = true;
+            this.Dono.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Dono.Location = new System.Drawing.Point(38, 103);
             this.Dono.Name = "Dono";
-            this.Dono.Size = new System.Drawing.Size(46, 20);
+            this.Dono.Size = new System.Drawing.Size(72, 28);
             this.Dono.TabIndex = 2;
             this.Dono.Text = "Dono";
             // 
             // Nome
             // 
             this.Nome.AutoSize = true;
-            this.Nome.Location = new System.Drawing.Point(38, 190);
+            this.Nome.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Nome.Location = new System.Drawing.Point(22, 193);
             this.Nome.Name = "Nome";
-            this.Nome.Size = new System.Drawing.Size(50, 20);
+            this.Nome.Size = new System.Drawing.Size(79, 28);
             this.Nome.TabIndex = 3;
             this.Nome.Text = "Nome";
             // 
             // Tipo
             // 
             this.Tipo.AutoSize = true;
+            this.Tipo.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Tipo.Location = new System.Drawing.Point(38, 270);
             this.Tipo.Name = "Tipo";
-            this.Tipo.Size = new System.Drawing.Size(39, 20);
+            this.Tipo.Size = new System.Drawing.Size(63, 28);
             this.Tipo.TabIndex = 4;
             this.Tipo.Text = "Tipo";
             // 
             // Raça
             // 
             this.Raça.AutoSize = true;
-            this.Raça.Location = new System.Drawing.Point(375, 62);
+            this.Raça.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Raça.Location = new System.Drawing.Point(448, 24);
             this.Raça.Name = "Raça";
-            this.Raça.Size = new System.Drawing.Size(41, 20);
+            this.Raça.Size = new System.Drawing.Size(69, 28);
             this.Raça.TabIndex = 5;
             this.Raça.Text = "Raça";
             // 
             // Peso
             // 
             this.Peso.AutoSize = true;
-            this.Peso.Location = new System.Drawing.Point(375, 229);
+            this.Peso.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Peso.Location = new System.Drawing.Point(448, 196);
             this.Peso.Name = "Peso";
-            this.Peso.Size = new System.Drawing.Size(39, 20);
+            this.Peso.Size = new System.Drawing.Size(66, 28);
             this.Peso.TabIndex = 6;
             this.Peso.Text = "Peso";
             // 
             // Idade
             // 
             this.Idade.AutoSize = true;
-            this.Idade.Location = new System.Drawing.Point(375, 161);
+            this.Idade.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Idade.Location = new System.Drawing.Point(448, 103);
             this.Idade.Name = "Idade";
-            this.Idade.Size = new System.Drawing.Size(47, 20);
+            this.Idade.Size = new System.Drawing.Size(77, 28);
             this.Idade.TabIndex = 7;
             this.Idade.Text = "Idade";
             // 
             // textBoxID
             // 
-            this.textBoxID.Location = new System.Drawing.Point(68, 24);
+            this.textBoxID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxID.Location = new System.Drawing.Point(123, 24);
             this.textBoxID.Name = "textBoxID";
-            this.textBoxID.Size = new System.Drawing.Size(233, 27);
+            this.textBoxID.Size = new System.Drawing.Size(233, 34);
             this.textBoxID.TabIndex = 8;
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(94, 187);
+            this.textBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNome.Location = new System.Drawing.Point(123, 197);
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(233, 27);
+            this.textBoxNome.Size = new System.Drawing.Size(233, 34);
             this.textBoxNome.TabIndex = 9;
             // 
             // textBoxDono
             // 
-            this.textBoxDono.Location = new System.Drawing.Point(90, 100);
+            this.textBoxDono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxDono.Location = new System.Drawing.Point(123, 103);
             this.textBoxDono.Name = "textBoxDono";
-            this.textBoxDono.Size = new System.Drawing.Size(233, 27);
+            this.textBoxDono.Size = new System.Drawing.Size(233, 34);
             this.textBoxDono.TabIndex = 10;
-            // 
-            // textBoxTipo
-            // 
-            this.textBoxTipo.Location = new System.Drawing.Point(94, 270);
-            this.textBoxTipo.Name = "textBoxTipo";
-            this.textBoxTipo.Size = new System.Drawing.Size(233, 27);
-            this.textBoxTipo.TabIndex = 11;
             // 
             // textBoxPeso
             // 
-            this.textBoxPeso.Location = new System.Drawing.Point(477, 226);
+            this.textBoxPeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPeso.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPeso.Location = new System.Drawing.Point(550, 200);
             this.textBoxPeso.Name = "textBoxPeso";
-            this.textBoxPeso.Size = new System.Drawing.Size(233, 27);
+            this.textBoxPeso.Size = new System.Drawing.Size(233, 34);
             this.textBoxPeso.TabIndex = 12;
             // 
             // textBoxIdade
             // 
-            this.textBoxIdade.Location = new System.Drawing.Point(477, 161);
+            this.textBoxIdade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxIdade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxIdade.Location = new System.Drawing.Point(550, 107);
             this.textBoxIdade.Name = "textBoxIdade";
-            this.textBoxIdade.Size = new System.Drawing.Size(233, 27);
+            this.textBoxIdade.Size = new System.Drawing.Size(233, 34);
             this.textBoxIdade.TabIndex = 13;
             // 
             // textBoxRaca
             // 
-            this.textBoxRaca.Location = new System.Drawing.Point(485, 62);
+            this.textBoxRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRaca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxRaca.Location = new System.Drawing.Point(550, 28);
             this.textBoxRaca.Name = "textBoxRaca";
-            this.textBoxRaca.Size = new System.Drawing.Size(233, 27);
+            this.textBoxRaca.Size = new System.Drawing.Size(233, 34);
             this.textBoxRaca.TabIndex = 14;
             // 
             // buttonListar
             // 
-            this.buttonListar.Location = new System.Drawing.Point(847, 53);
+            this.buttonListar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonListar.Location = new System.Drawing.Point(904, 49);
             this.buttonListar.Name = "buttonListar";
             this.buttonListar.Size = new System.Drawing.Size(228, 54);
             this.buttonListar.TabIndex = 15;
@@ -183,7 +196,8 @@
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(847, 161);
+            this.buttonSalvar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonSalvar.Location = new System.Drawing.Point(904, 157);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(228, 54);
             this.buttonSalvar.TabIndex = 16;
@@ -193,7 +207,8 @@
             // 
             // buttonApagar
             // 
-            this.buttonApagar.Location = new System.Drawing.Point(847, 270);
+            this.buttonApagar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonApagar.Location = new System.Drawing.Point(904, 266);
             this.buttonApagar.Name = "buttonApagar";
             this.buttonApagar.Size = new System.Drawing.Size(228, 54);
             this.buttonApagar.TabIndex = 17;
@@ -201,18 +216,33 @@
             this.buttonApagar.UseVisualStyleBackColor = true;
             this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
             // 
+            // comboBoxTipo
+            // 
+            this.comboBoxTipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxTipo.FormattingEnabled = true;
+            this.comboBoxTipo.Items.AddRange(new object[] {
+            "Cão",
+            "Gato",
+            "Pássaro",
+            "Hamster"});
+            this.comboBoxTipo.Location = new System.Drawing.Point(123, 270);
+            this.comboBoxTipo.Name = "comboBoxTipo";
+            this.comboBoxTipo.Size = new System.Drawing.Size(233, 36);
+            this.comboBoxTipo.TabIndex = 21;
+            // 
             // ListarAnimais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 647);
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(1210, 647);
+            this.Controls.Add(this.comboBoxTipo);
             this.Controls.Add(this.buttonApagar);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.buttonListar);
             this.Controls.Add(this.textBoxRaca);
             this.Controls.Add(this.textBoxIdade);
             this.Controls.Add(this.textBoxPeso);
-            this.Controls.Add(this.textBoxTipo);
             this.Controls.Add(this.textBoxDono);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.textBoxID);
@@ -246,12 +276,12 @@
         private TextBox textBoxID;
         private TextBox textBoxNome;
         private TextBox textBoxDono;
-        private TextBox textBoxTipo;
         private TextBox textBoxPeso;
         private TextBox textBoxIdade;
         private TextBox textBoxRaca;
         private Button buttonListar;
         private Button buttonSalvar;
         private Button buttonApagar;
+        private ComboBox comboBoxTipo;
     }
 }

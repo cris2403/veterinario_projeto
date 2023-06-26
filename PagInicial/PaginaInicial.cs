@@ -52,7 +52,11 @@ namespace veterinario_projeto
 
         private void btn_consultas_Click(object sender, EventArgs e)
         {
+            Consultas consultas = new Consultas();
 
+            consultas.Show();
+
+            this.Hide();
         }
 
         private void btn_produtos_Click(object sender, EventArgs e)

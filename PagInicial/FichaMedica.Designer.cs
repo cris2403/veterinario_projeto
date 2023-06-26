@@ -46,65 +46,70 @@
             // Id
             // 
             this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(179, 147);
+            this.Id.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Id.Location = new System.Drawing.Point(172, 65);
             this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(98, 20);
+            this.Id.Size = new System.Drawing.Size(164, 28);
             this.Id.TabIndex = 0;
             this.Id.Text = "Id do Registo";
             // 
             // AtoMedico
             // 
             this.AtoMedico.AutoSize = true;
-            this.AtoMedico.Location = new System.Drawing.Point(179, 187);
+            this.AtoMedico.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.AtoMedico.Location = new System.Drawing.Point(194, 112);
             this.AtoMedico.Name = "AtoMedico";
-            this.AtoMedico.Size = new System.Drawing.Size(87, 20);
+            this.AtoMedico.Size = new System.Drawing.Size(142, 28);
             this.AtoMedico.TabIndex = 1;
             this.AtoMedico.Text = "Ato Médico";
             // 
             // Descrição
             // 
             this.Descrição.AutoSize = true;
-            this.Descrição.Location = new System.Drawing.Point(179, 235);
+            this.Descrição.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Descrição.Location = new System.Drawing.Point(41, 151);
             this.Descrição.Name = "Descrição";
-            this.Descrição.Size = new System.Drawing.Size(178, 20);
+            this.Descrição.Size = new System.Drawing.Size(295, 28);
             this.Descrição.TabIndex = 2;
             this.Descrição.Text = "Descrição do Ato Médico";
             // 
             // Custo
             // 
             this.Custo.AutoSize = true;
-            this.Custo.Location = new System.Drawing.Point(177, 268);
+            this.Custo.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Custo.Location = new System.Drawing.Point(74, 192);
             this.Custo.Name = "Custo";
-            this.Custo.Size = new System.Drawing.Size(155, 20);
+            this.Custo.Size = new System.Drawing.Size(262, 28);
             this.Custo.TabIndex = 4;
             this.Custo.Text = "Custo por Ato Médico";
             // 
             // textBoxDescMed
             // 
-            this.textBoxDescMed.Location = new System.Drawing.Point(363, 228);
+            this.textBoxDescMed.Location = new System.Drawing.Point(360, 152);
             this.textBoxDescMed.Name = "textBoxDescMed";
-            this.textBoxDescMed.Size = new System.Drawing.Size(207, 27);
+            this.textBoxDescMed.Size = new System.Drawing.Size(391, 27);
             this.textBoxDescMed.TabIndex = 7;
             // 
             // textBoxPreco
             // 
-            this.textBoxPreco.Location = new System.Drawing.Point(338, 261);
+            this.textBoxPreco.Location = new System.Drawing.Point(360, 193);
             this.textBoxPreco.Name = "textBoxPreco";
-            this.textBoxPreco.Size = new System.Drawing.Size(244, 27);
+            this.textBoxPreco.Size = new System.Drawing.Size(391, 27);
             this.textBoxPreco.TabIndex = 8;
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(325, 144);
+            this.textBoxId.Location = new System.Drawing.Point(360, 65);
             this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(215, 27);
+            this.textBoxId.Size = new System.Drawing.Size(391, 27);
             this.textBoxId.TabIndex = 9;
             // 
             // buttonListar
             // 
-            this.buttonListar.Location = new System.Drawing.Point(12, 377);
+            this.buttonListar.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonListar.Location = new System.Drawing.Point(12, 355);
             this.buttonListar.Name = "buttonListar";
-            this.buttonListar.Size = new System.Drawing.Size(209, 48);
+            this.buttonListar.Size = new System.Drawing.Size(219, 70);
             this.buttonListar.TabIndex = 11;
             this.buttonListar.Text = "Listar";
             this.buttonListar.UseVisualStyleBackColor = true;
@@ -112,9 +117,10 @@
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Location = new System.Drawing.Point(269, 377);
+            this.buttonInserir.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonInserir.Location = new System.Drawing.Point(269, 355);
             this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(209, 48);
+            this.buttonInserir.Size = new System.Drawing.Size(219, 70);
             this.buttonInserir.TabIndex = 12;
             this.buttonInserir.Text = "Inserir";
             this.buttonInserir.UseVisualStyleBackColor = true;
@@ -122,9 +128,10 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(542, 377);
+            this.buttonCancelar.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonCancelar.Location = new System.Drawing.Point(542, 355);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(209, 48);
+            this.buttonCancelar.Size = new System.Drawing.Size(219, 70);
             this.buttonCancelar.TabIndex = 13;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
@@ -132,17 +139,19 @@
             // DataRegisto
             // 
             this.DataRegisto.AutoSize = true;
-            this.DataRegisto.Location = new System.Drawing.Point(93, 308);
+            this.DataRegisto.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.DataRegisto.Location = new System.Drawing.Point(-1, 261);
             this.DataRegisto.Name = "DataRegisto";
-            this.DataRegisto.Size = new System.Drawing.Size(197, 20);
+            this.DataRegisto.Size = new System.Drawing.Size(337, 28);
             this.DataRegisto.TabIndex = 15;
             this.DataRegisto.Text = "Data de Inserção do Registo";
             // 
             // dateTimePickerRegisto
             // 
-            this.dateTimePickerRegisto.Location = new System.Drawing.Point(296, 303);
+            this.dateTimePickerRegisto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePickerRegisto.Location = new System.Drawing.Point(360, 256);
             this.dateTimePickerRegisto.Name = "dateTimePickerRegisto";
-            this.dateTimePickerRegisto.Size = new System.Drawing.Size(250, 27);
+            this.dateTimePickerRegisto.Size = new System.Drawing.Size(391, 34);
             this.dateTimePickerRegisto.TabIndex = 16;
             this.dateTimePickerRegisto.Value = new System.DateTime(2023, 6, 25, 0, 10, 15, 0);
             // 
@@ -154,15 +163,16 @@
             "Pequena Cirurgia",
             "Vacinação",
             "Mudança de Penso"});
-            this.comboBoxAto.Location = new System.Drawing.Point(325, 184);
+            this.comboBoxAto.Location = new System.Drawing.Point(360, 112);
             this.comboBoxAto.Name = "comboBoxAto";
-            this.comboBoxAto.Size = new System.Drawing.Size(215, 28);
+            this.comboBoxAto.Size = new System.Drawing.Size(391, 28);
             this.comboBoxAto.TabIndex = 32;
             // 
             // FichaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.comboBoxAto);
             this.Controls.Add(this.dateTimePickerRegisto);

@@ -40,38 +40,43 @@
             // Username
             // 
             this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(43, 32);
+            this.Username.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Username.Location = new System.Drawing.Point(128, 88);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(75, 20);
+            this.Username.Size = new System.Drawing.Size(131, 28);
             this.Username.TabIndex = 0;
             this.Username.Text = "Username";
             // 
             // Password
             // 
             this.Password.AutoSize = true;
-            this.Password.Location = new System.Drawing.Point(43, 115);
+            this.Password.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Password.Location = new System.Drawing.Point(136, 169);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(70, 20);
+            this.Password.Size = new System.Drawing.Size(123, 28);
             this.Password.TabIndex = 1;
             this.Password.Text = "Password";
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Location = new System.Drawing.Point(154, 32);
+            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxUsername.Location = new System.Drawing.Point(307, 89);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(298, 27);
+            this.textBoxUsername.Size = new System.Drawing.Size(449, 27);
             this.textBoxUsername.TabIndex = 2;
             // 
             // textBoxPasword
             // 
-            this.textBoxPasword.Location = new System.Drawing.Point(154, 112);
+            this.textBoxPasword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPasword.Location = new System.Drawing.Point(307, 169);
             this.textBoxPasword.Name = "textBoxPasword";
-            this.textBoxPasword.Size = new System.Drawing.Size(298, 27);
+            this.textBoxPasword.Size = new System.Drawing.Size(449, 27);
             this.textBoxPasword.TabIndex = 3;
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(293, 249);
+            this.buttonLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonLogin.Location = new System.Drawing.Point(297, 304);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(195, 59);
             this.buttonLogin.TabIndex = 5;
@@ -81,7 +86,8 @@
             // 
             // buttonRegisto
             // 
-            this.buttonRegisto.Location = new System.Drawing.Point(546, 249);
+            this.buttonRegisto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonRegisto.Location = new System.Drawing.Point(550, 304);
             this.buttonRegisto.Name = "buttonRegisto";
             this.buttonRegisto.Size = new System.Drawing.Size(217, 59);
             this.buttonRegisto.TabIndex = 6;
@@ -91,7 +97,8 @@
             // 
             // buttonLista
             // 
-            this.buttonLista.Location = new System.Drawing.Point(23, 249);
+            this.buttonLista.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonLista.Location = new System.Drawing.Point(27, 304);
             this.buttonLista.Name = "buttonLista";
             this.buttonLista.Size = new System.Drawing.Size(218, 60);
             this.buttonLista.TabIndex = 9;
@@ -103,6 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonLista);
             this.Controls.Add(this.buttonRegisto);

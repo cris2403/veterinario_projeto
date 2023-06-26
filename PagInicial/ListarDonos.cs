@@ -29,9 +29,9 @@ namespace veterinario_projeto.PagInicial
             string lista = "Select * from registo";
             MySqlCommand cmd = new MySqlCommand(lista, connection);
             MySqlDataReader reader = cmd.ExecuteReader();
-            DataTable listarDono = new DataTable();
-            listarDono.Load(reader);
-            dataGridViewDonos.DataSource = listarDono;
+            DataTable ListaDonos = new DataTable();
+            ListaDonos.Load(reader);
+            dataGridViewDonos.DataSource = ListaDonos;
             connection.Close();
         }
 
@@ -50,7 +50,7 @@ namespace veterinario_projeto.PagInicial
             {
                 connection.Open();
 
-                string query = "UPDATE registo SET nome = @Nome, DataNascimento = @DataNascimento, NIF = @NIF, Contacto = @Contacto WHERE Id = @Id";
+                string query = "UPDATE registo SET nome = @Nome, DataNascimento = @DataNascimento, NIF = @NIF, Contacto = @Contacto WHERE Id_RDono = @Id_RDono";
                 MySqlCommand command = new MySqlCommand(query, connection);
 
                 // Substitua os parâmetros pelos valores das TextBox
@@ -58,7 +58,7 @@ namespace veterinario_projeto.PagInicial
                 command.Parameters.AddWithValue("@dataNascimento", DataNascimento );
                 command.Parameters.AddWithValue("@NIF", Convert.ToInt32(textBoxNIF.Text));
                 command.Parameters.AddWithValue("@Contacto", Convert.ToInt32(textBoxContacto.Text));
-                command.Parameters.AddWithValue("@Id", Convert.ToInt32(textBoxID.Text));
+                command.Parameters.AddWithValue("@Id_RDono", Convert.ToInt32(textBoxID.Text));
 
                 command.ExecuteNonQuery();
 
@@ -81,7 +81,7 @@ namespace veterinario_projeto.PagInicial
             MySqlConnection connection = new MySqlConnection(mysqlconn);
 
             connection.Open();
-            string apaga = "Delete from registo where Id='" + textBoxID.Text + "'";
+            string apaga = "Delete from registo where Id_RDono='" + textBoxID.Text + "'";
             MySqlCommand cmd = new MySqlCommand(apaga, connection);
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteNonQuery();

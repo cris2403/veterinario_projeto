@@ -50,108 +50,126 @@
             // Cod
             // 
             this.Cod.AutoSize = true;
+            this.Cod.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.Cod.Location = new System.Drawing.Point(12, 43);
             this.Cod.Name = "Cod";
-            this.Cod.Size = new System.Drawing.Size(136, 20);
+            this.Cod.Size = new System.Drawing.Size(195, 23);
             this.Cod.TabIndex = 0;
             this.Cod.Text = "Código de Produto";
             // 
             // TipoProd
             // 
             this.TipoProd.AutoSize = true;
-            this.TipoProd.Location = new System.Drawing.Point(29, 112);
+            this.TipoProd.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.TipoProd.Location = new System.Drawing.Point(9, 112);
             this.TipoProd.Name = "TipoProd";
-            this.TipoProd.Size = new System.Drawing.Size(119, 20);
+            this.TipoProd.Size = new System.Drawing.Size(176, 23);
             this.TipoProd.TabIndex = 1;
             this.TipoProd.Text = "Tipo De Produto";
             // 
             // DescProd
             // 
             this.DescProd.AutoSize = true;
-            this.DescProd.Location = new System.Drawing.Point(299, 112);
+            this.DescProd.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.DescProd.Location = new System.Drawing.Point(312, 112);
             this.DescProd.Name = "DescProd";
-            this.DescProd.Size = new System.Drawing.Size(153, 20);
+            this.DescProd.Size = new System.Drawing.Size(225, 23);
             this.DescProd.TabIndex = 2;
             this.DescProd.Text = "Descrição do Produto";
             // 
             // Quant
             // 
             this.Quant.AutoSize = true;
-            this.Quant.Location = new System.Drawing.Point(12, 193);
+            this.Quant.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Quant.Location = new System.Drawing.Point(9, 193);
             this.Quant.Name = "Quant";
-            this.Quant.Size = new System.Drawing.Size(180, 20);
+            this.Quant.Size = new System.Drawing.Size(269, 23);
             this.Quant.TabIndex = 3;
             this.Quant.Text = "Quantidade em Armazém";
             // 
             // Preco
             // 
             this.Preco.AutoSize = true;
-            this.Preco.Location = new System.Drawing.Point(315, 193);
+            this.Preco.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Preco.Location = new System.Drawing.Point(312, 192);
             this.Preco.Name = "Preco";
-            this.Preco.Size = new System.Drawing.Size(113, 20);
+            this.Preco.Size = new System.Drawing.Size(175, 23);
             this.Preco.TabIndex = 4;
             this.Preco.Text = "Preço (Unitário)";
             // 
             // textBoxCod
             // 
-            this.textBoxCod.Location = new System.Drawing.Point(198, 43);
+            this.textBoxCod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxCod.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxCod.Location = new System.Drawing.Point(213, 39);
             this.textBoxCod.Name = "textBoxCod";
-            this.textBoxCod.Size = new System.Drawing.Size(125, 27);
+            this.textBoxCod.Size = new System.Drawing.Size(230, 34);
             this.textBoxCod.TabIndex = 5;
             // 
             // textBoxPreco
             // 
-            this.textBoxPreco.Location = new System.Drawing.Point(315, 226);
+            this.textBoxPreco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPreco.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPreco.Location = new System.Drawing.Point(312, 218);
             this.textBoxPreco.Name = "textBoxPreco";
-            this.textBoxPreco.Size = new System.Drawing.Size(125, 27);
+            this.textBoxPreco.Size = new System.Drawing.Size(212, 34);
             this.textBoxPreco.TabIndex = 6;
             // 
             // textBoxQuant
             // 
-            this.textBoxQuant.Location = new System.Drawing.Point(23, 226);
+            this.textBoxQuant.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxQuant.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxQuant.Location = new System.Drawing.Point(9, 218);
             this.textBoxQuant.Name = "textBoxQuant";
-            this.textBoxQuant.Size = new System.Drawing.Size(125, 27);
+            this.textBoxQuant.Size = new System.Drawing.Size(212, 34);
             this.textBoxQuant.TabIndex = 7;
             // 
             // textBoxDesc
             // 
-            this.textBoxDesc.Location = new System.Drawing.Point(315, 146);
+            this.textBoxDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxDesc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxDesc.Location = new System.Drawing.Point(312, 146);
             this.textBoxDesc.Name = "textBoxDesc";
-            this.textBoxDesc.Size = new System.Drawing.Size(125, 27);
+            this.textBoxDesc.Size = new System.Drawing.Size(212, 34);
             this.textBoxDesc.TabIndex = 8;
             // 
             // comboBoxTipo
             // 
+            this.comboBoxTipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxTipo.FormattingEnabled = true;
             this.comboBoxTipo.Items.AddRange(new object[] {
             "Fármacos\t",
             "Alimentares",
             "Suplementares"});
-            this.comboBoxTipo.Location = new System.Drawing.Point(12, 146);
+            this.comboBoxTipo.Location = new System.Drawing.Point(9, 146);
             this.comboBoxTipo.Name = "comboBoxTipo";
-            this.comboBoxTipo.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxTipo.Size = new System.Drawing.Size(212, 36);
             this.comboBoxTipo.TabIndex = 9;
+            this.comboBoxTipo.SelectedIndexChanged += new System.EventHandler(this.comboBoxTipo_SelectedIndexChanged);
             // 
             // CodPesquisa
             // 
             this.CodPesquisa.AutoSize = true;
+            this.CodPesquisa.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.CodPesquisa.Location = new System.Drawing.Point(100, 5);
             this.CodPesquisa.Name = "CodPesquisa";
-            this.CodPesquisa.Size = new System.Drawing.Size(208, 20);
+            this.CodPesquisa.Size = new System.Drawing.Size(312, 23);
             this.CodPesquisa.TabIndex = 10;
             this.CodPesquisa.Text = "Código Para Pesquisa/Seleção";
             // 
             // NovoDados
             // 
             this.NovoDados.AutoSize = true;
-            this.NovoDados.Location = new System.Drawing.Point(142, 86);
+            this.NovoDados.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.NovoDados.Location = new System.Drawing.Point(185, 80);
             this.NovoDados.Name = "NovoDados";
-            this.NovoDados.Size = new System.Drawing.Size(98, 20);
+            this.NovoDados.Size = new System.Drawing.Size(140, 23);
             this.NovoDados.TabIndex = 11;
             this.NovoDados.Text = "Novos Dados";
             // 
             // buttonLista
             // 
+            this.buttonLista.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonLista.Location = new System.Drawing.Point(559, 27);
             this.buttonLista.Name = "buttonLista";
             this.buttonLista.Size = new System.Drawing.Size(183, 52);
@@ -162,6 +180,7 @@
             // 
             // buttonSalvar
             // 
+            this.buttonSalvar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonSalvar.Location = new System.Drawing.Point(559, 112);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(183, 52);
@@ -172,6 +191,7 @@
             // 
             // buttonApagar
             // 
+            this.buttonApagar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonApagar.Location = new System.Drawing.Point(559, 193);
             this.buttonApagar.Name = "buttonApagar";
             this.buttonApagar.Size = new System.Drawing.Size(183, 52);
@@ -194,6 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridViewProdutos);
             this.Controls.Add(this.buttonApagar);

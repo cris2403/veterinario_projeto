@@ -87,5 +87,10 @@ namespace veterinario_projeto.PagInicial
             connection.Close();
             MessageBox.Show("Apagado com sucesso");
         }
+
+        private void comboBoxTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

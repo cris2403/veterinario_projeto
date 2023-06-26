@@ -25,7 +25,7 @@ namespace veterinario_projeto.PagInicial
 
             string Id_RDono = txt_idDono.Text;
             string DNome = txt_nomeDono.Text;
-            DateTime DataNascimento = dateTimePicker1.Value;
+            DateTime DataNascimento = dateTimePickerDataNascimento.Value;
             string NIF = txt_nifDono.Text;
             string Contacto = txt_contactoDono.Text;
 

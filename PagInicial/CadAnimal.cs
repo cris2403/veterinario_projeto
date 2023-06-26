@@ -32,7 +32,7 @@ namespace veterinario_projeto.PagInicial
             string Dono = txt_dono.Text;
             string DNome = txt_dono.Text;
             string Nome = txt_nome.Text;
-            string Tipo = txt_tipo.Text;
+            string Tipo = comboBoxTipo.Text;
             string Raca = txt_raca.Text;
             string Idade = txt_idade.Text;
             string Peso = txt_peso.Text;
@@ -94,7 +94,7 @@ namespace veterinario_projeto.PagInicial
         {
             txt_dono.Text = string.Empty;
             txt_nome.Text = string.Empty;
-            txt_tipo.Text = string.Empty;
+            comboBoxTipo.Text = string.Empty;
             txt_raca.Text = string.Empty;
             txt_idade.Text = string.Empty;
             txt_peso.Text = string.Empty;

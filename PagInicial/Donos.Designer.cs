@@ -33,7 +33,7 @@
             this.lbl_nascimentoDono = new System.Windows.Forms.Label();
             this.lbl_nifDono = new System.Windows.Forms.Label();
             this.lbl_contactoDono = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.txt_idDono = new System.Windows.Forms.TextBox();
             this.txt_nomeDono = new System.Windows.Forms.TextBox();
             this.txt_nifDono = new System.Windows.Forms.TextBox();
@@ -47,90 +47,105 @@
             // lbl_idDono
             // 
             this.lbl_idDono.AutoSize = true;
+            this.lbl_idDono.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbl_idDono.Location = new System.Drawing.Point(14, 53);
             this.lbl_idDono.Name = "lbl_idDono";
-            this.lbl_idDono.Size = new System.Drawing.Size(97, 20);
+            this.lbl_idDono.Size = new System.Drawing.Size(164, 28);
             this.lbl_idDono.TabIndex = 0;
             this.lbl_idDono.Text = "Id de Registo";
             // 
             // lbl_nomeDono
             // 
             this.lbl_nomeDono.AutoSize = true;
+            this.lbl_nomeDono.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbl_nomeDono.Location = new System.Drawing.Point(14, 104);
             this.lbl_nomeDono.Name = "lbl_nomeDono";
-            this.lbl_nomeDono.Size = new System.Drawing.Size(50, 20);
+            this.lbl_nomeDono.Size = new System.Drawing.Size(79, 28);
             this.lbl_nomeDono.TabIndex = 1;
             this.lbl_nomeDono.Text = "Nome";
             // 
             // lbl_nascimentoDono
             // 
             this.lbl_nascimentoDono.AutoSize = true;
+            this.lbl_nascimentoDono.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbl_nascimentoDono.Location = new System.Drawing.Point(14, 159);
             this.lbl_nascimentoDono.Name = "lbl_nascimentoDono";
-            this.lbl_nascimentoDono.Size = new System.Drawing.Size(145, 20);
+            this.lbl_nascimentoDono.Size = new System.Drawing.Size(247, 28);
             this.lbl_nascimentoDono.TabIndex = 2;
             this.lbl_nascimentoDono.Text = "Data de Nascimento";
             // 
             // lbl_nifDono
             // 
             this.lbl_nifDono.AutoSize = true;
+            this.lbl_nifDono.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbl_nifDono.Location = new System.Drawing.Point(14, 213);
             this.lbl_nifDono.Name = "lbl_nifDono";
-            this.lbl_nifDono.Size = new System.Drawing.Size(31, 20);
+            this.lbl_nifDono.Size = new System.Drawing.Size(58, 28);
             this.lbl_nifDono.TabIndex = 3;
             this.lbl_nifDono.Text = "NIF";
             // 
             // lbl_contactoDono
             // 
             this.lbl_contactoDono.AutoSize = true;
+            this.lbl_contactoDono.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lbl_contactoDono.Location = new System.Drawing.Point(14, 275);
             this.lbl_contactoDono.Name = "lbl_contactoDono";
-            this.lbl_contactoDono.Size = new System.Drawing.Size(69, 20);
+            this.lbl_contactoDono.Size = new System.Drawing.Size(116, 28);
             this.lbl_contactoDono.TabIndex = 4;
             this.lbl_contactoDono.Text = "Contacto";
             // 
-            // dateTimePicker1
+            // dateTimePickerDataNascimento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(151, 151);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(228, 27);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dateTimePickerDataNascimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePickerDataNascimento.Location = new System.Drawing.Point(279, 153);
+            this.dateTimePickerDataNascimento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePickerDataNascimento.Name = "dateTimePickerDataNascimento";
+            this.dateTimePickerDataNascimento.Size = new System.Drawing.Size(245, 34);
+            this.dateTimePickerDataNascimento.TabIndex = 5;
             // 
             // txt_idDono
             // 
-            this.txt_idDono.Location = new System.Drawing.Point(151, 49);
+            this.txt_idDono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_idDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_idDono.Location = new System.Drawing.Point(279, 47);
             this.txt_idDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_idDono.Name = "txt_idDono";
-            this.txt_idDono.Size = new System.Drawing.Size(228, 27);
+            this.txt_idDono.Size = new System.Drawing.Size(245, 34);
             this.txt_idDono.TabIndex = 6;
             // 
             // txt_nomeDono
             // 
-            this.txt_nomeDono.Location = new System.Drawing.Point(151, 100);
+            this.txt_nomeDono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_nomeDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_nomeDono.Location = new System.Drawing.Point(279, 98);
             this.txt_nomeDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_nomeDono.Name = "txt_nomeDono";
-            this.txt_nomeDono.Size = new System.Drawing.Size(228, 27);
+            this.txt_nomeDono.Size = new System.Drawing.Size(245, 34);
             this.txt_nomeDono.TabIndex = 7;
             // 
             // txt_nifDono
             // 
-            this.txt_nifDono.Location = new System.Drawing.Point(151, 209);
+            this.txt_nifDono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_nifDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_nifDono.Location = new System.Drawing.Point(279, 207);
             this.txt_nifDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_nifDono.Name = "txt_nifDono";
-            this.txt_nifDono.Size = new System.Drawing.Size(228, 27);
+            this.txt_nifDono.Size = new System.Drawing.Size(245, 34);
             this.txt_nifDono.TabIndex = 8;
             // 
             // txt_contactoDono
             // 
-            this.txt_contactoDono.Location = new System.Drawing.Point(151, 271);
+            this.txt_contactoDono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_contactoDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_contactoDono.Location = new System.Drawing.Point(279, 269);
             this.txt_contactoDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_contactoDono.Name = "txt_contactoDono";
-            this.txt_contactoDono.Size = new System.Drawing.Size(228, 27);
+            this.txt_contactoDono.Size = new System.Drawing.Size(245, 34);
             this.txt_contactoDono.TabIndex = 9;
             // 
             // btn_salvarDono
             // 
+            this.btn_salvarDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_salvarDono.Location = new System.Drawing.Point(29, 385);
             this.btn_salvarDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_salvarDono.Name = "btn_salvarDono";
@@ -142,6 +157,7 @@
             // 
             // btn_limparDono
             // 
+            this.btn_limparDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_limparDono.Location = new System.Drawing.Point(194, 385);
             this.btn_limparDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_limparDono.Name = "btn_limparDono";
@@ -153,6 +169,7 @@
             // 
             // btn_cancelarDono
             // 
+            this.btn_cancelarDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_cancelarDono.Location = new System.Drawing.Point(361, 385);
             this.btn_cancelarDono.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cancelarDono.Name = "btn_cancelarDono";
@@ -164,6 +181,7 @@
             // 
             // buttonListar
             // 
+            this.buttonListar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonListar.Location = new System.Drawing.Point(214, 320);
             this.buttonListar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonListar.Name = "buttonListar";
@@ -177,6 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(536, 463);
             this.Controls.Add(this.buttonListar);
             this.Controls.Add(this.btn_cancelarDono);
@@ -186,7 +205,7 @@
             this.Controls.Add(this.txt_nifDono);
             this.Controls.Add(this.txt_nomeDono);
             this.Controls.Add(this.txt_idDono);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePickerDataNascimento);
             this.Controls.Add(this.lbl_contactoDono);
             this.Controls.Add(this.lbl_nifDono);
             this.Controls.Add(this.lbl_nascimentoDono);
@@ -208,7 +227,7 @@
         private Label lbl_nascimentoDono;
         private Label lbl_nifDono;
         private Label lbl_contactoDono;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateTimePickerDataNascimento;
         private TextBox txt_idDono;
         private TextBox txt_nomeDono;
         private TextBox txt_nifDono;
