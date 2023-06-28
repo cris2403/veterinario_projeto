@@ -34,25 +34,33 @@ namespace veterinario_projeto
                     mySqlConnection.Open();
                     MySqlCommand mySqlCommand = new MySqlCommand("select * from users", mySqlConnection);
                     MySqlDataReader reader = mySqlCommand.ExecuteReader();
+
+                    bool loginValido = false;
+
                     while (reader.Read())
                     {
                         if (username.Equals(reader.GetString("username")) && password.Equals(reader.GetString("password")))
                         {
-                            MessageBox.Show("Login efetuado com sucesso");
-
-                            PaginaInicial paginaInicial = new PaginaInicial();
-
-                            paginaInicial.Show();
-
-                            this.Hide();
-
-                    }
-                        else
-                        {
-                            MessageBox.Show("Login invalido");
+                            loginValido = true;
+                            break;
                         }
                     }
+
                     mySqlConnection.Close();
+
+                    if (loginValido)
+                    {
+                        MessageBox.Show("Login efetuado com sucesso");
+                        PaginaInicial paginaInicial = new PaginaInicial();
+                        paginaInicial.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+
+                    MessageBox.Show("Login Inválido");
+                }
+                mySqlConnection.Close();
                 }
 
         }

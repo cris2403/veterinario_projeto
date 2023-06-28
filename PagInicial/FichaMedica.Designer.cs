@@ -29,77 +29,87 @@
         private void InitializeComponent()
         {
             this.Id = new System.Windows.Forms.Label();
-            this.AtoMedico = new System.Windows.Forms.Label();
-            this.Descrição = new System.Windows.Forms.Label();
-            this.Custo = new System.Windows.Forms.Label();
-            this.textBoxDescMed = new System.Windows.Forms.TextBox();
-            this.textBoxPreco = new System.Windows.Forms.TextBox();
+            this.TipoConsulta = new System.Windows.Forms.Label();
+            this.NomeAnimal = new System.Windows.Forms.Label();
+            this.Peso = new System.Windows.Forms.Label();
+            this.textBoxAnimal = new System.Windows.Forms.TextBox();
+            this.textBoxPeso = new System.Windows.Forms.TextBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.buttonListar = new System.Windows.Forms.Button();
             this.buttonInserir = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
-            this.DataRegisto = new System.Windows.Forms.Label();
-            this.dateTimePickerRegisto = new System.Windows.Forms.DateTimePicker();
-            this.comboBoxAto = new System.Windows.Forms.ComboBox();
+            this.DataPVisita = new System.Windows.Forms.Label();
+            this.dateTimePickerPVisita = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerConsulta = new System.Windows.Forms.DateTimePicker();
+            this.DataAtoMédico = new System.Windows.Forms.Label();
+            this.NomeColaborador = new System.Windows.Forms.Label();
+            this.Diagnóstico = new System.Windows.Forms.Label();
+            this.textBoxDiagnostico = new System.Windows.Forms.TextBox();
+            this.textBoxExtra = new System.Windows.Forms.TextBox();
+            this.Observações = new System.Windows.Forms.Label();
+            this.textBoxPrescricaoMedica = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxColaborador = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Id
             // 
             this.Id.AutoSize = true;
             this.Id.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Id.Location = new System.Drawing.Point(172, 65);
+            this.Id.Location = new System.Drawing.Point(130, 9);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(164, 28);
             this.Id.TabIndex = 0;
             this.Id.Text = "Id do Registo";
             // 
-            // AtoMedico
+            // TipoConsulta
             // 
-            this.AtoMedico.AutoSize = true;
-            this.AtoMedico.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.AtoMedico.Location = new System.Drawing.Point(194, 112);
-            this.AtoMedico.Name = "AtoMedico";
-            this.AtoMedico.Size = new System.Drawing.Size(142, 28);
-            this.AtoMedico.TabIndex = 1;
-            this.AtoMedico.Text = "Ato Médico";
+            this.TipoConsulta.AutoSize = true;
+            this.TipoConsulta.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.TipoConsulta.Location = new System.Drawing.Point(106, 152);
+            this.TipoConsulta.Name = "TipoConsulta";
+            this.TipoConsulta.Size = new System.Drawing.Size(209, 28);
+            this.TipoConsulta.TabIndex = 1;
+            this.TipoConsulta.Text = "Tipo de Consulta";
             // 
-            // Descrição
+            // NomeAnimal
             // 
-            this.Descrição.AutoSize = true;
-            this.Descrição.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Descrição.Location = new System.Drawing.Point(41, 151);
-            this.Descrição.Name = "Descrição";
-            this.Descrição.Size = new System.Drawing.Size(295, 28);
-            this.Descrição.TabIndex = 2;
-            this.Descrição.Text = "Descrição do Ato Médico";
+            this.NomeAnimal.AutoSize = true;
+            this.NomeAnimal.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.NomeAnimal.Location = new System.Drawing.Point(111, 62);
+            this.NomeAnimal.Name = "NomeAnimal";
+            this.NomeAnimal.Size = new System.Drawing.Size(204, 28);
+            this.NomeAnimal.TabIndex = 2;
+            this.NomeAnimal.Text = "Nome do Animal";
             // 
-            // Custo
+            // Peso
             // 
-            this.Custo.AutoSize = true;
-            this.Custo.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Custo.Location = new System.Drawing.Point(74, 192);
-            this.Custo.Name = "Custo";
-            this.Custo.Size = new System.Drawing.Size(262, 28);
-            this.Custo.TabIndex = 4;
-            this.Custo.Text = "Custo por Ato Médico";
+            this.Peso.AutoSize = true;
+            this.Peso.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Peso.Location = new System.Drawing.Point(82, 293);
+            this.Peso.Name = "Peso";
+            this.Peso.Size = new System.Drawing.Size(66, 28);
+            this.Peso.TabIndex = 4;
+            this.Peso.Text = "Peso";
             // 
-            // textBoxDescMed
+            // textBoxAnimal
             // 
-            this.textBoxDescMed.Location = new System.Drawing.Point(360, 152);
-            this.textBoxDescMed.Name = "textBoxDescMed";
-            this.textBoxDescMed.Size = new System.Drawing.Size(391, 27);
-            this.textBoxDescMed.TabIndex = 7;
+            this.textBoxAnimal.Location = new System.Drawing.Point(360, 62);
+            this.textBoxAnimal.Name = "textBoxAnimal";
+            this.textBoxAnimal.Size = new System.Drawing.Size(391, 27);
+            this.textBoxAnimal.TabIndex = 7;
             // 
-            // textBoxPreco
+            // textBoxPeso
             // 
-            this.textBoxPreco.Location = new System.Drawing.Point(360, 193);
-            this.textBoxPreco.Name = "textBoxPreco";
-            this.textBoxPreco.Size = new System.Drawing.Size(391, 27);
-            this.textBoxPreco.TabIndex = 8;
+            this.textBoxPeso.Location = new System.Drawing.Point(360, 297);
+            this.textBoxPeso.Name = "textBoxPeso";
+            this.textBoxPeso.Size = new System.Drawing.Size(391, 27);
+            this.textBoxPeso.TabIndex = 8;
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(360, 65);
+            this.textBoxId.Location = new System.Drawing.Point(360, 13);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(391, 27);
             this.textBoxId.TabIndex = 9;
@@ -107,7 +117,7 @@
             // buttonListar
             // 
             this.buttonListar.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonListar.Location = new System.Drawing.Point(12, 355);
+            this.buttonListar.Location = new System.Drawing.Point(249, 515);
             this.buttonListar.Name = "buttonListar";
             this.buttonListar.Size = new System.Drawing.Size(219, 70);
             this.buttonListar.TabIndex = 11;
@@ -118,7 +128,7 @@
             // buttonInserir
             // 
             this.buttonInserir.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonInserir.Location = new System.Drawing.Point(269, 355);
+            this.buttonInserir.Location = new System.Drawing.Point(506, 515);
             this.buttonInserir.Name = "buttonInserir";
             this.buttonInserir.Size = new System.Drawing.Size(219, 70);
             this.buttonInserir.TabIndex = 12;
@@ -129,63 +139,160 @@
             // buttonCancelar
             // 
             this.buttonCancelar.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonCancelar.Location = new System.Drawing.Point(542, 355);
+            this.buttonCancelar.Location = new System.Drawing.Point(779, 515);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(219, 70);
             this.buttonCancelar.TabIndex = 13;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             // 
-            // DataRegisto
+            // DataPVisita
             // 
-            this.DataRegisto.AutoSize = true;
-            this.DataRegisto.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.DataRegisto.Location = new System.Drawing.Point(-1, 261);
-            this.DataRegisto.Name = "DataRegisto";
-            this.DataRegisto.Size = new System.Drawing.Size(337, 28);
-            this.DataRegisto.TabIndex = 15;
-            this.DataRegisto.Text = "Data de Inserção do Registo";
+            this.DataPVisita.AutoSize = true;
+            this.DataPVisita.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.DataPVisita.Location = new System.Drawing.Point(81, 433);
+            this.DataPVisita.Name = "DataPVisita";
+            this.DataPVisita.Size = new System.Drawing.Size(185, 28);
+            this.DataPVisita.TabIndex = 15;
+            this.DataPVisita.Text = "Próxima Visita";
             // 
-            // dateTimePickerRegisto
+            // dateTimePickerPVisita
             // 
-            this.dateTimePickerRegisto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePickerRegisto.Location = new System.Drawing.Point(360, 256);
-            this.dateTimePickerRegisto.Name = "dateTimePickerRegisto";
-            this.dateTimePickerRegisto.Size = new System.Drawing.Size(391, 34);
-            this.dateTimePickerRegisto.TabIndex = 16;
-            this.dateTimePickerRegisto.Value = new System.DateTime(2023, 6, 25, 0, 10, 15, 0);
+            this.dateTimePickerPVisita.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePickerPVisita.Location = new System.Drawing.Point(359, 427);
+            this.dateTimePickerPVisita.Name = "dateTimePickerPVisita";
+            this.dateTimePickerPVisita.Size = new System.Drawing.Size(391, 34);
+            this.dateTimePickerPVisita.TabIndex = 16;
+            this.dateTimePickerPVisita.Value = new System.DateTime(2023, 6, 25, 0, 10, 15, 0);
             // 
-            // comboBoxAto
+            // comboBoxTipo
             // 
-            this.comboBoxAto.FormattingEnabled = true;
-            this.comboBoxAto.Items.AddRange(new object[] {
+            this.comboBoxTipo.FormattingEnabled = true;
+            this.comboBoxTipo.Items.AddRange(new object[] {
             "Consulta",
             "Pequena Cirurgia",
             "Vacinação",
             "Mudança de Penso"});
-            this.comboBoxAto.Location = new System.Drawing.Point(360, 112);
-            this.comboBoxAto.Name = "comboBoxAto";
-            this.comboBoxAto.Size = new System.Drawing.Size(391, 28);
-            this.comboBoxAto.TabIndex = 32;
+            this.comboBoxTipo.Location = new System.Drawing.Point(360, 156);
+            this.comboBoxTipo.Name = "comboBoxTipo";
+            this.comboBoxTipo.Size = new System.Drawing.Size(391, 28);
+            this.comboBoxTipo.TabIndex = 32;
+            // 
+            // dateTimePickerConsulta
+            // 
+            this.dateTimePickerConsulta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePickerConsulta.Location = new System.Drawing.Point(360, 104);
+            this.dateTimePickerConsulta.Name = "dateTimePickerConsulta";
+            this.dateTimePickerConsulta.Size = new System.Drawing.Size(391, 34);
+            this.dateTimePickerConsulta.TabIndex = 34;
+            this.dateTimePickerConsulta.Value = new System.DateTime(2023, 6, 25, 0, 10, 15, 0);
+            // 
+            // DataAtoMédico
+            // 
+            this.DataAtoMédico.AutoSize = true;
+            this.DataAtoMédico.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.DataAtoMédico.Location = new System.Drawing.Point(82, 110);
+            this.DataAtoMédico.Name = "DataAtoMédico";
+            this.DataAtoMédico.Size = new System.Drawing.Size(245, 28);
+            this.DataAtoMédico.TabIndex = 33;
+            this.DataAtoMédico.Text = "Data Do Ato Médico";
+            // 
+            // NomeColaborador
+            // 
+            this.NomeColaborador.AutoSize = true;
+            this.NomeColaborador.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.NomeColaborador.Location = new System.Drawing.Point(81, 202);
+            this.NomeColaborador.Name = "NomeColaborador";
+            this.NomeColaborador.Size = new System.Drawing.Size(263, 28);
+            this.NomeColaborador.TabIndex = 35;
+            this.NomeColaborador.Text = "Nome do Colaborador";
+            // 
+            // Diagnóstico
+            // 
+            this.Diagnóstico.AutoSize = true;
+            this.Diagnóstico.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Diagnóstico.Location = new System.Drawing.Point(82, 245);
+            this.Diagnóstico.Name = "Diagnóstico";
+            this.Diagnóstico.Size = new System.Drawing.Size(148, 28);
+            this.Diagnóstico.TabIndex = 37;
+            this.Diagnóstico.Text = "Diagnóstico";
+            // 
+            // textBoxDiagnostico
+            // 
+            this.textBoxDiagnostico.Location = new System.Drawing.Point(360, 249);
+            this.textBoxDiagnostico.Name = "textBoxDiagnostico";
+            this.textBoxDiagnostico.Size = new System.Drawing.Size(391, 27);
+            this.textBoxDiagnostico.TabIndex = 38;
+            // 
+            // textBoxExtra
+            // 
+            this.textBoxExtra.Location = new System.Drawing.Point(360, 347);
+            this.textBoxExtra.Name = "textBoxExtra";
+            this.textBoxExtra.Size = new System.Drawing.Size(391, 27);
+            this.textBoxExtra.TabIndex = 40;
+            // 
+            // Observações
+            // 
+            this.Observações.AutoSize = true;
+            this.Observações.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Observações.Location = new System.Drawing.Point(72, 343);
+            this.Observações.Name = "Observações";
+            this.Observações.Size = new System.Drawing.Size(282, 28);
+            this.Observações.TabIndex = 39;
+            this.Observações.Text = "Informações Adicionais";
+            // 
+            // textBoxPrescricaoMedica
+            // 
+            this.textBoxPrescricaoMedica.Location = new System.Drawing.Point(359, 384);
+            this.textBoxPrescricaoMedica.Name = "textBoxPrescricaoMedica";
+            this.textBoxPrescricaoMedica.Size = new System.Drawing.Size(391, 27);
+            this.textBoxPrescricaoMedica.TabIndex = 42;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(81, 390);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 28);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Prescrição Médica";
+            // 
+            // textBoxColaborador
+            // 
+            this.textBoxColaborador.Location = new System.Drawing.Point(360, 202);
+            this.textBoxColaborador.Name = "textBoxColaborador";
+            this.textBoxColaborador.Size = new System.Drawing.Size(391, 27);
+            this.textBoxColaborador.TabIndex = 36;
             // 
             // FichaMedica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBoxAto);
-            this.Controls.Add(this.dateTimePickerRegisto);
-            this.Controls.Add(this.DataRegisto);
+            this.ClientSize = new System.Drawing.Size(1267, 606);
+            this.Controls.Add(this.textBoxPrescricaoMedica);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxExtra);
+            this.Controls.Add(this.Observações);
+            this.Controls.Add(this.textBoxDiagnostico);
+            this.Controls.Add(this.Diagnóstico);
+            this.Controls.Add(this.textBoxColaborador);
+            this.Controls.Add(this.NomeColaborador);
+            this.Controls.Add(this.dateTimePickerConsulta);
+            this.Controls.Add(this.DataAtoMédico);
+            this.Controls.Add(this.comboBoxTipo);
+            this.Controls.Add(this.dateTimePickerPVisita);
+            this.Controls.Add(this.DataPVisita);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonInserir);
             this.Controls.Add(this.buttonListar);
             this.Controls.Add(this.textBoxId);
-            this.Controls.Add(this.textBoxPreco);
-            this.Controls.Add(this.textBoxDescMed);
-            this.Controls.Add(this.Custo);
-            this.Controls.Add(this.Descrição);
-            this.Controls.Add(this.AtoMedico);
+            this.Controls.Add(this.textBoxPeso);
+            this.Controls.Add(this.textBoxAnimal);
+            this.Controls.Add(this.Peso);
+            this.Controls.Add(this.NomeAnimal);
+            this.Controls.Add(this.TipoConsulta);
             this.Controls.Add(this.Id);
             this.Name = "FichaMedica";
             this.Text = "FichaMedica";
@@ -198,17 +305,27 @@
         #endregion
 
         private Label Id;
-        private Label AtoMedico;
-        private Label Descrição;
-        private Label Custo;
-        private TextBox textBoxDescMed;
-        private TextBox textBoxPreco;
+        private Label TipoConsulta;
+        private Label NomeAnimal;
+        private Label Peso;
+        private TextBox textBoxAnimal;
+        private TextBox textBoxPeso;
         private TextBox textBoxId;
         private Button buttonListar;
         private Button buttonInserir;
         private Button buttonCancelar;
-        private Label DataRegisto;
-        private DateTimePicker dateTimePickerRegisto;
-        private ComboBox comboBoxAto;
+        private Label DataPVisita;
+        private DateTimePicker dateTimePickerPVisita;
+        private ComboBox comboBoxTipo;
+        private DateTimePicker dateTimePickerConsulta;
+        private Label DataAtoMédico;
+        private Label NomeColaborador;
+        private Label Diagnóstico;
+        private TextBox textBoxDiagnostico;
+        private TextBox textBoxExtra;
+        private Label Observações;
+        private TextBox textBoxPrescricaoMedica;
+        private Label label1;
+        private TextBox textBoxColaborador;
     }
 }

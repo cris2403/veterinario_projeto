@@ -62,93 +62,69 @@ namespace veterinario_projeto.PagInicial
 
                         if (donoRegistado)
                         {
-                            using (MySqlCommand command = new MySqlCommand(insertconsulta, mySqlConnection))
-                            {
-                                command.Parameters.AddWithValue("@TipoConsulta", TipoConsulta);
-                                command.Parameters.AddWithValue("@Colaborador", Colaborador);
-                                command.Parameters.AddWithValue("@DataConsulta", DataConsulta);
-                                command.Parameters.AddWithValue("@HoraConsulta", HoraConsulta);
-                                command.Parameters.AddWithValue("@IdRegisto", IdRegisto);
-                                command.Parameters.AddWithValue("@Dono", Dono);
-                                command.Parameters.AddWithValue("@Animal", Animal);
-                                command.Parameters.AddWithValue("@Contacto", Contacto);
+                        using (MySqlCommand animalCmd = new MySqlCommand("SELECT * FROM ranimal WHERE Nome = @Nome", mySqlConnection))
+                        {
+                            animalCmd.Parameters.AddWithValue("@Nome", Nome);
 
-                                command.ExecuteNonQuery();
+                            bool animalRegistado = false;
+
+                            using (MySqlDataReader registoAnimal = animalCmd.ExecuteReader())
+                            {
+                                animalRegistado = registoAnimal.Read();
+                            }
+
+                            if (animalRegistado)
+                            {
+                                using (MySqlCommand colabCmd = new MySqlCommand("SELECT * FROM registocolab WHERE Colaborador = @Colaborador", mySqlConnection))
+                                {
+                                    colabCmd.Parameters.AddWithValue("@Colaborador", Colaborador);
+
+                                    bool colabRegistado = false;
+
+                                    using (MySqlDataReader registarColab = colabCmd.ExecuteReader())
+                                    {
+                                        colabRegistado = registarColab.Read();
+                                    }
+
+                                    if (colabRegistado)
+                                    {
+                                        using (MySqlCommand command = new MySqlCommand(insertconsulta, mySqlConnection))
+                                        {
+                                            command.Parameters.AddWithValue("@TipoConsulta", TipoConsulta);
+                                            command.Parameters.AddWithValue("@Colaborador", Colaborador);
+                                            command.Parameters.AddWithValue("@DataConsulta", DataConsulta);
+                                            command.Parameters.AddWithValue("@HoraConsulta", HoraConsulta);
+                                            command.Parameters.AddWithValue("@IdRegisto", IdRegisto);
+                                            command.Parameters.AddWithValue("@Dono", Dono);
+                                            command.Parameters.AddWithValue("@Animal", Animal);
+                                            command.Parameters.AddWithValue("@Contacto", Contacto);
+
+                                            command.ExecuteNonQuery();
+                                        }
+
+                                        MessageBox.Show("Registo bem sucedido!");
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Não se encontra registado niguém com essa função na base de Dados! Por favor, Registe um colaborador.");
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Dados do Animal ainda não se encontram registados!");
                             }
                         }
+                    }
                         else
                         {
                             MessageBox.Show("Dados do Dono ainda não se encontram registados!");
                         }
                     }
 
-                    using (MySqlCommand animalCmd = new MySqlCommand("SELECT * FROM ranimal WHERE Nome = @Nome", mySqlConnection))
-                    {
-                        animalCmd.Parameters.AddWithValue("@Nome", Nome);
+                    
 
-                        bool animalRegistado = false;
-
-                        using (MySqlDataReader registoAnimal = animalCmd.ExecuteReader())
-                        {
-                            animalRegistado = registoAnimal.Read();
-                        }
-
-                        if (animalRegistado)
-                        {
-                            using (MySqlCommand command = new MySqlCommand(insertconsulta, mySqlConnection))
-                            {
-                                command.Parameters.AddWithValue("@TipoConsulta", TipoConsulta);
-                                command.Parameters.AddWithValue("@Colaborador", Colaborador);
-                                command.Parameters.AddWithValue("@DataConsulta", DataConsulta);
-                                command.Parameters.AddWithValue("@HoraConsulta", HoraConsulta);
-                                command.Parameters.AddWithValue("@IdRegisto", IdRegisto);
-                                command.Parameters.AddWithValue("@Dono", Dono);
-                                command.Parameters.AddWithValue("@Animal", Animal);
-                                command.Parameters.AddWithValue("@Contacto", Contacto);
-
-                                command.ExecuteNonQuery();
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Dados do Animal ainda não se encontram registados!");
-                        }
-                    }
-
-                using (MySqlCommand colabCmd = new MySqlCommand("SELECT * FROM registocolab WHERE Colaborador = @Colaborador", mySqlConnection))
-                {
-                    colabCmd.Parameters.AddWithValue("@Colaborador", Colaborador);
-
-                    bool colabRegistado = false;
-
-                    using (MySqlDataReader registarColab = colabCmd.ExecuteReader())
-                    {
-                        colabRegistado = registarColab.Read();
-                    }
-
-                    if (colabRegistado)
-                    {
-                        using (MySqlCommand command = new MySqlCommand(insertconsulta, mySqlConnection))
-                        {
-                            command.Parameters.AddWithValue("@TipoConsulta", TipoConsulta);
-                            command.Parameters.AddWithValue("@Colaborador", Colaborador); 
-                            command.Parameters.AddWithValue("@DataConsulta", DataConsulta);
-                            command.Parameters.AddWithValue("@HoraConsulta", HoraConsulta);
-                            command.Parameters.AddWithValue("@IdRegisto", IdRegisto);
-                            command.Parameters.AddWithValue("@Dono", Dono);
-                            command.Parameters.AddWithValue("@Animal", Animal);
-                            command.Parameters.AddWithValue("@Contacto", Contacto);
-
-                            command.ExecuteNonQuery();
-                        }
-
-                        MessageBox.Show("Registo bem sucedido!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Não se encontra registado niguém com essa função na base de Dados! Por favor, Registe um colaborador.");
-                    }
-                }
+               
                 mySqlConnection.Close();
             }
         }
