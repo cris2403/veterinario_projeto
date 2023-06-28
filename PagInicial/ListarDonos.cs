@@ -55,7 +55,7 @@ namespace veterinario_projeto.PagInicial
 
                 // Substitua os parâmetros pelos valores das TextBox
                 command.Parameters.AddWithValue("@Nome", textBoxNome.Text);
-                command.Parameters.AddWithValue("@dataNascimento", DataNascimento );
+                command.Parameters.AddWithValue("@dataNascimento", DataNascimento);
                 command.Parameters.AddWithValue("@NIF", Convert.ToInt32(textBoxNIF.Text));
                 command.Parameters.AddWithValue("@Contacto", Convert.ToInt32(textBoxContacto.Text));
                 command.Parameters.AddWithValue("@Id_RDono", Convert.ToInt32(textBoxID.Text));
@@ -90,6 +90,11 @@ namespace veterinario_projeto.PagInicial
         }
 
         private void ListarDonos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewDonos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

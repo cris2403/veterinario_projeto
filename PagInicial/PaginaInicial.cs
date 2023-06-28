@@ -47,7 +47,11 @@ namespace veterinario_projeto
 
         private void btn_pagamentos_Click(object sender, EventArgs e)
         {
+            Pagamentos p = new Pagamentos();
 
+            p.Show();
+
+            this.Hide();
         }
 
         private void btn_consultas_Click(object sender, EventArgs e)

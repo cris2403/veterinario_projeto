@@ -96,5 +96,10 @@ namespace veterinario_projeto.PagInicial
         {
 
         }
+
+        private void dataGridViewFichaMedica_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
