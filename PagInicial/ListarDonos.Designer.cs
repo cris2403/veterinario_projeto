@@ -42,13 +42,16 @@
             dataGridViewDonos = new DataGridView();
             dateTimePickerNascimento = new DateTimePicker();
             DataNascimento = new Label();
+            NovosDados = new Label();
+            Pesquisa = new Label();
+            buttonCancelar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewDonos).BeginInit();
             SuspendLayout();
             // 
             // buttonApagar
             // 
             buttonApagar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonApagar.Location = new Point(758, 182);
+            buttonApagar.Location = new Point(757, 174);
             buttonApagar.Margin = new Padding(3, 2, 3, 2);
             buttonApagar.Name = "buttonApagar";
             buttonApagar.Size = new Size(200, 60);
@@ -60,7 +63,7 @@
             // buttonSalvar
             // 
             buttonSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonSalvar.Location = new Point(758, 100);
+            buttonSalvar.Location = new Point(757, 92);
             buttonSalvar.Margin = new Padding(3, 2, 3, 2);
             buttonSalvar.Name = "buttonSalvar";
             buttonSalvar.Size = new Size(200, 60);
@@ -72,7 +75,7 @@
             // buttonListar
             // 
             buttonListar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonListar.Location = new Point(758, 19);
+            buttonListar.Location = new Point(757, 11);
             buttonListar.Margin = new Padding(3, 2, 3, 2);
             buttonListar.Name = "buttonListar";
             buttonListar.Size = new Size(200, 60);
@@ -85,7 +88,7 @@
             // 
             textBoxNIF.BorderStyle = BorderStyle.FixedSingle;
             textBoxNIF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxNIF.Location = new Point(279, 85);
+            textBoxNIF.Location = new Point(279, 169);
             textBoxNIF.Margin = new Padding(3, 2, 3, 2);
             textBoxNIF.Name = "textBoxNIF";
             textBoxNIF.Size = new Size(365, 29);
@@ -95,7 +98,7 @@
             // 
             textBoxContacto.BorderStyle = BorderStyle.FixedSingle;
             textBoxContacto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxContacto.Location = new Point(279, 185);
+            textBoxContacto.Location = new Point(279, 269);
             textBoxContacto.Margin = new Padding(3, 2, 3, 2);
             textBoxContacto.Name = "textBoxContacto";
             textBoxContacto.Size = new Size(365, 29);
@@ -105,7 +108,7 @@
             // 
             textBoxNome.BorderStyle = BorderStyle.FixedSingle;
             textBoxNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxNome.Location = new Point(279, 136);
+            textBoxNome.Location = new Point(279, 220);
             textBoxNome.Margin = new Padding(3, 2, 3, 2);
             textBoxNome.Name = "textBoxNome";
             textBoxNome.Size = new Size(365, 29);
@@ -115,7 +118,7 @@
             // 
             textBoxID.BorderStyle = BorderStyle.FixedSingle;
             textBoxID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxID.Location = new Point(279, 14);
+            textBoxID.Location = new Point(279, 50);
             textBoxID.Margin = new Padding(3, 2, 3, 2);
             textBoxID.Name = "textBoxID";
             textBoxID.Size = new Size(365, 29);
@@ -125,7 +128,7 @@
             // 
             NIF.AutoSize = true;
             NIF.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            NIF.Location = new Point(196, 89);
+            NIF.Location = new Point(196, 173);
             NIF.Name = "NIF";
             NIF.Size = new Size(49, 23);
             NIF.TabIndex = 25;
@@ -135,7 +138,7 @@
             // 
             Contacto.AutoSize = true;
             Contacto.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Contacto.Location = new Point(145, 190);
+            Contacto.Location = new Point(145, 274);
             Contacto.Name = "Contacto";
             Contacto.Size = new Size(97, 23);
             Contacto.TabIndex = 24;
@@ -145,7 +148,7 @@
             // 
             Nome.AutoSize = true;
             Nome.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Nome.Location = new Point(178, 141);
+            Nome.Location = new Point(178, 225);
             Nome.Name = "Nome";
             Nome.Size = new Size(66, 23);
             Nome.TabIndex = 21;
@@ -155,7 +158,7 @@
             // 
             IDRegisto.AutoSize = true;
             IDRegisto.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            IDRegisto.Location = new Point(99, 19);
+            IDRegisto.Location = new Point(96, 53);
             IDRegisto.Name = "IDRegisto";
             IDRegisto.Size = new Size(143, 23);
             IDRegisto.TabIndex = 19;
@@ -164,19 +167,19 @@
             // dataGridViewDonos
             // 
             dataGridViewDonos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewDonos.Location = new Point(17, 272);
+            dataGridViewDonos.Location = new Point(17, 309);
             dataGridViewDonos.Margin = new Padding(3, 2, 3, 2);
             dataGridViewDonos.Name = "dataGridViewDonos";
             dataGridViewDonos.RowHeadersWidth = 51;
             dataGridViewDonos.RowTemplate.Height = 29;
-            dataGridViewDonos.Size = new Size(1009, 205);
+            dataGridViewDonos.Size = new Size(1009, 168);
             dataGridViewDonos.TabIndex = 18;
             dataGridViewDonos.CellContentClick += dataGridViewDonos_CellContentClick;
             // 
             // dateTimePickerNascimento
             // 
             dateTimePickerNascimento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dateTimePickerNascimento.Location = new Point(279, 47);
+            dateTimePickerNascimento.Location = new Point(279, 131);
             dateTimePickerNascimento.Margin = new Padding(3, 2, 3, 2);
             dateTimePickerNascimento.Name = "dateTimePickerNascimento";
             dateTimePickerNascimento.Size = new Size(365, 29);
@@ -186,11 +189,43 @@
             // 
             DataNascimento.AutoSize = true;
             DataNascimento.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            DataNascimento.Location = new Point(31, 53);
+            DataNascimento.Location = new Point(31, 137);
             DataNascimento.Name = "DataNascimento";
             DataNascimento.Size = new Size(208, 23);
             DataNascimento.TabIndex = 37;
             DataNascimento.Text = "Data de Nascimento";
+            // 
+            // NovosDados
+            // 
+            NovosDados.AutoSize = true;
+            NovosDados.Font = new Font("Centaur", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            NovosDados.Location = new Point(214, 88);
+            NovosDados.Name = "NovosDados";
+            NovosDados.Size = new Size(133, 25);
+            NovosDados.TabIndex = 59;
+            NovosDados.Text = "Novos Dados";
+            // 
+            // Pesquisa
+            // 
+            Pesquisa.AutoSize = true;
+            Pesquisa.Font = new Font("Centaur", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            Pesquisa.Location = new Point(193, 16);
+            Pesquisa.Name = "Pesquisa";
+            Pesquisa.Size = new Size(234, 25);
+            Pesquisa.TabIndex = 58;
+            Pesquisa.Text = "Id para Pesquisa/Seleção";
+            // 
+            // buttonCancelar
+            // 
+            buttonCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCancelar.Location = new Point(757, 245);
+            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(200, 60);
+            buttonCancelar.TabIndex = 60;
+            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // ListarDonos
             // 
@@ -198,6 +233,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(1042, 496);
+            Controls.Add(buttonCancelar);
+            Controls.Add(NovosDados);
+            Controls.Add(Pesquisa);
             Controls.Add(DataNascimento);
             Controls.Add(dateTimePickerNascimento);
             Controls.Add(buttonApagar);
@@ -237,5 +275,8 @@
         private DataGridView dataGridViewDonos;
         private DateTimePicker dateTimePickerNascimento;
         private Label DataNascimento;
+        private Label NovosDados;
+        private Label Pesquisa;
+        private Button buttonCancelar;
     }
 }

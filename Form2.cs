@@ -89,16 +89,6 @@ namespace veterinario_projeto
             return match.Success;
         }
 
-        private void buttonLista_Click(object sender, EventArgs e)
-        {
-            ListarLogin ListarLogin = new ListarLogin();
-
-            ListarLogin.Show();
-
-            this.Hide();
-
-        }
-
         private void Form2_Load(object sender, EventArgs e)
         {
 

@@ -108,5 +108,14 @@ namespace veterinario_projeto
             textBoxPassword.Text = dataGridViewLogin.CurrentRow.Cells[3].Value.ToString();
 
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            Form1 Login = new Form1();
+
+            Login.Show();
+
+            this.Hide();
+        }
     }
 }

@@ -28,193 +28,235 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonSalvar = new System.Windows.Forms.Button();
-            this.buttonListar = new System.Windows.Forms.Button();
-            this.buttonApagar = new System.Windows.Forms.Button();
-            this.dateTimePickerConsulta = new System.Windows.Forms.DateTimePicker();
-            this.textBoxHoraConsulta = new System.Windows.Forms.TextBox();
-            this.textBoxId = new System.Windows.Forms.TextBox();
-            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
-            this.HoraConsulta = new System.Windows.Forms.Label();
-            this.DataConsulta = new System.Windows.Forms.Label();
-            this.TipoConsulta = new System.Windows.Forms.Label();
-            this.Id = new System.Windows.Forms.Label();
-            this.dataGridViewConsultas = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxColab = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsultas)).BeginInit();
-            this.SuspendLayout();
+            buttonSalvar = new Button();
+            buttonListar = new Button();
+            buttonApagar = new Button();
+            dateTimePickerConsulta = new DateTimePicker();
+            textBoxHoraConsulta = new TextBox();
+            textBoxId = new TextBox();
+            comboBoxTipo = new ComboBox();
+            HoraConsulta = new Label();
+            DataConsulta = new Label();
+            TipoConsulta = new Label();
+            Id = new Label();
+            dataGridViewConsultas = new DataGridView();
+            label5 = new Label();
+            comboBoxColab = new ComboBox();
+            buttonCancelar = new Button();
+            NovosDados = new Label();
+            Pesquisa = new Label();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewConsultas).BeginInit();
+            SuspendLayout();
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonSalvar.Location = new System.Drawing.Point(917, 139);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(211, 75);
-            this.buttonSalvar.TabIndex = 37;
-            this.buttonSalvar.Text = "Salvar";
-            this.buttonSalvar.UseVisualStyleBackColor = true;
-            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
+            buttonSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonSalvar.Location = new Point(802, 79);
+            buttonSalvar.Margin = new Padding(3, 2, 3, 2);
+            buttonSalvar.Name = "buttonSalvar";
+            buttonSalvar.Size = new Size(185, 56);
+            buttonSalvar.TabIndex = 37;
+            buttonSalvar.Text = "Salvar";
+            buttonSalvar.UseVisualStyleBackColor = true;
+            buttonSalvar.Click += buttonSalvar_Click;
             // 
             // buttonListar
             // 
-            this.buttonListar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonListar.Location = new System.Drawing.Point(917, 25);
-            this.buttonListar.Name = "buttonListar";
-            this.buttonListar.Size = new System.Drawing.Size(211, 75);
-            this.buttonListar.TabIndex = 36;
-            this.buttonListar.Text = "Listar";
-            this.buttonListar.UseVisualStyleBackColor = true;
-            this.buttonListar.Click += new System.EventHandler(this.buttonListar_Click);
+            buttonListar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonListar.Location = new Point(802, 6);
+            buttonListar.Margin = new Padding(3, 2, 3, 2);
+            buttonListar.Name = "buttonListar";
+            buttonListar.Size = new Size(185, 56);
+            buttonListar.TabIndex = 36;
+            buttonListar.Text = "Listar";
+            buttonListar.UseVisualStyleBackColor = true;
+            buttonListar.Click += buttonListar_Click;
             // 
             // buttonApagar
             // 
-            this.buttonApagar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonApagar.Location = new System.Drawing.Point(917, 252);
-            this.buttonApagar.Name = "buttonApagar";
-            this.buttonApagar.Size = new System.Drawing.Size(211, 75);
-            this.buttonApagar.TabIndex = 35;
-            this.buttonApagar.Text = "Apagar";
-            this.buttonApagar.UseVisualStyleBackColor = true;
-            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
+            buttonApagar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonApagar.Location = new Point(802, 155);
+            buttonApagar.Margin = new Padding(3, 2, 3, 2);
+            buttonApagar.Name = "buttonApagar";
+            buttonApagar.Size = new Size(185, 56);
+            buttonApagar.TabIndex = 35;
+            buttonApagar.Text = "Apagar";
+            buttonApagar.UseVisualStyleBackColor = true;
+            buttonApagar.Click += buttonApagar_Click;
             // 
             // dateTimePickerConsulta
             // 
-            this.dateTimePickerConsulta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePickerConsulta.Location = new System.Drawing.Point(409, 232);
-            this.dateTimePickerConsulta.Name = "dateTimePickerConsulta";
-            this.dateTimePickerConsulta.Size = new System.Drawing.Size(415, 34);
-            this.dateTimePickerConsulta.TabIndex = 34;
+            dateTimePickerConsulta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimePickerConsulta.Location = new Point(348, 206);
+            dateTimePickerConsulta.Margin = new Padding(3, 2, 3, 2);
+            dateTimePickerConsulta.Name = "dateTimePickerConsulta";
+            dateTimePickerConsulta.Size = new Size(364, 29);
+            dateTimePickerConsulta.TabIndex = 34;
             // 
             // textBoxHoraConsulta
             // 
-            this.textBoxHoraConsulta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxHoraConsulta.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxHoraConsulta.Location = new System.Drawing.Point(409, 275);
-            this.textBoxHoraConsulta.Name = "textBoxHoraConsulta";
-            this.textBoxHoraConsulta.Size = new System.Drawing.Size(415, 34);
-            this.textBoxHoraConsulta.TabIndex = 30;
+            textBoxHoraConsulta.BorderStyle = BorderStyle.FixedSingle;
+            textBoxHoraConsulta.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxHoraConsulta.Location = new Point(348, 238);
+            textBoxHoraConsulta.Margin = new Padding(3, 2, 3, 2);
+            textBoxHoraConsulta.Name = "textBoxHoraConsulta";
+            textBoxHoraConsulta.Size = new Size(363, 29);
+            textBoxHoraConsulta.TabIndex = 30;
             // 
             // textBoxId
             // 
-            this.textBoxId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxId.Location = new System.Drawing.Point(409, 10);
-            this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(415, 34);
-            this.textBoxId.TabIndex = 29;
+            textBoxId.BorderStyle = BorderStyle.FixedSingle;
+            textBoxId.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxId.Location = new Point(348, 53);
+            textBoxId.Margin = new Padding(3, 2, 3, 2);
+            textBoxId.Name = "textBoxId";
+            textBoxId.Size = new Size(363, 29);
+            textBoxId.TabIndex = 29;
             // 
             // comboBoxTipo
             // 
-            this.comboBoxTipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxTipo.FormattingEnabled = true;
-            this.comboBoxTipo.Items.AddRange(new object[] {
-            "Consulta",
-            "Pequena Cirurgia",
-            "Vacinação",
-            "Mudança de Penso"});
-            this.comboBoxTipo.Location = new System.Drawing.Point(409, 132);
-            this.comboBoxTipo.Name = "comboBoxTipo";
-            this.comboBoxTipo.Size = new System.Drawing.Size(415, 36);
-            this.comboBoxTipo.TabIndex = 27;
+            comboBoxTipo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxTipo.FormattingEnabled = true;
+            comboBoxTipo.Items.AddRange(new object[] { "Consulta", "Pequena Cirurgia", "Vacinação", "Mudança de Penso" });
+            comboBoxTipo.Location = new Point(348, 131);
+            comboBoxTipo.Margin = new Padding(3, 2, 3, 2);
+            comboBoxTipo.Name = "comboBoxTipo";
+            comboBoxTipo.Size = new Size(364, 29);
+            comboBoxTipo.TabIndex = 27;
             // 
             // HoraConsulta
             // 
-            this.HoraConsulta.AutoSize = true;
-            this.HoraConsulta.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.HoraConsulta.Location = new System.Drawing.Point(186, 281);
-            this.HoraConsulta.Name = "HoraConsulta";
-            this.HoraConsulta.Size = new System.Drawing.Size(217, 28);
-            this.HoraConsulta.TabIndex = 26;
-            this.HoraConsulta.Text = "Hora da Consulta";
+            HoraConsulta.AutoSize = true;
+            HoraConsulta.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            HoraConsulta.Location = new Point(153, 243);
+            HoraConsulta.Name = "HoraConsulta";
+            HoraConsulta.Size = new Size(184, 23);
+            HoraConsulta.TabIndex = 26;
+            HoraConsulta.Text = "Hora da Consulta";
             // 
             // DataConsulta
             // 
-            this.DataConsulta.AutoSize = true;
-            this.DataConsulta.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.DataConsulta.Location = new System.Drawing.Point(187, 238);
-            this.DataConsulta.Name = "DataConsulta";
-            this.DataConsulta.Size = new System.Drawing.Size(216, 28);
-            this.DataConsulta.TabIndex = 25;
-            this.DataConsulta.Text = "Data da Consulta";
+            DataConsulta.AutoSize = true;
+            DataConsulta.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            DataConsulta.Location = new Point(154, 210);
+            DataConsulta.Name = "DataConsulta";
+            DataConsulta.Size = new Size(183, 23);
+            DataConsulta.TabIndex = 25;
+            DataConsulta.Text = "Data da Consulta";
             // 
             // TipoConsulta
             // 
-            this.TipoConsulta.AutoSize = true;
-            this.TipoConsulta.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.TipoConsulta.Location = new System.Drawing.Point(194, 140);
-            this.TipoConsulta.Name = "TipoConsulta";
-            this.TipoConsulta.Size = new System.Drawing.Size(209, 28);
-            this.TipoConsulta.TabIndex = 22;
-            this.TipoConsulta.Text = "Tipo de Consulta";
+            TipoConsulta.AutoSize = true;
+            TipoConsulta.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            TipoConsulta.Location = new Point(160, 137);
+            TipoConsulta.Name = "TipoConsulta";
+            TipoConsulta.Size = new Size(178, 23);
+            TipoConsulta.TabIndex = 22;
+            TipoConsulta.Text = "Tipo de Consulta";
             // 
             // Id
             // 
-            this.Id.AutoSize = true;
-            this.Id.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Id.Location = new System.Drawing.Point(239, 16);
-            this.Id.Name = "Id";
-            this.Id.Size = new System.Drawing.Size(43, 28);
-            this.Id.TabIndex = 19;
-            this.Id.Text = "Id ";
+            Id.AutoSize = true;
+            Id.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            Id.Location = new Point(198, 53);
+            Id.Name = "Id";
+            Id.Size = new Size(37, 23);
+            Id.TabIndex = 19;
+            Id.Text = "Id ";
             // 
             // dataGridViewConsultas
             // 
-            this.dataGridViewConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewConsultas.Location = new System.Drawing.Point(29, 373);
-            this.dataGridViewConsultas.Name = "dataGridViewConsultas";
-            this.dataGridViewConsultas.RowHeadersWidth = 51;
-            this.dataGridViewConsultas.RowTemplate.Height = 29;
-            this.dataGridViewConsultas.Size = new System.Drawing.Size(1127, 221);
-            this.dataGridViewConsultas.TabIndex = 38;
+            dataGridViewConsultas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewConsultas.Location = new Point(25, 292);
+            dataGridViewConsultas.Margin = new Padding(3, 2, 3, 2);
+            dataGridViewConsultas.Name = "dataGridViewConsultas";
+            dataGridViewConsultas.RowHeadersWidth = 51;
+            dataGridViewConsultas.RowTemplate.Height = 29;
+            dataGridViewConsultas.Size = new Size(986, 166);
+            dataGridViewConsultas.TabIndex = 38;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(11, 186);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(392, 28);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Colaborador para o Atendimento";
+            label5.AutoSize = true;
+            label5.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label5.Location = new Point(0, 172);
+            label5.Name = "label5";
+            label5.Size = new Size(332, 23);
+            label5.TabIndex = 23;
+            label5.Text = "Colaborador para o Atendimento";
             // 
             // comboBoxColab
             // 
-            this.comboBoxColab.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxColab.FormattingEnabled = true;
-            this.comboBoxColab.Items.AddRange(new object[] {
-            "Médico Veterinário",
-            "Assistente"});
-            this.comboBoxColab.Location = new System.Drawing.Point(409, 178);
-            this.comboBoxColab.Name = "comboBoxColab";
-            this.comboBoxColab.Size = new System.Drawing.Size(415, 36);
-            this.comboBoxColab.TabIndex = 28;
+            comboBoxColab.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxColab.FormattingEnabled = true;
+            comboBoxColab.Items.AddRange(new object[] { "Médico Veterinário", "Assistente" });
+            comboBoxColab.Location = new Point(348, 166);
+            comboBoxColab.Margin = new Padding(3, 2, 3, 2);
+            comboBoxColab.Name = "comboBoxColab";
+            comboBoxColab.Size = new Size(364, 29);
+            comboBoxColab.TabIndex = 28;
+            // 
+            // buttonCancelar
+            // 
+            buttonCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCancelar.Location = new Point(802, 222);
+            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(185, 56);
+            buttonCancelar.TabIndex = 39;
+            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
+            // NovosDados
+            // 
+            NovosDados.AutoSize = true;
+            NovosDados.Font = new Font("Centaur", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            NovosDados.Location = new Point(279, 95);
+            NovosDados.Name = "NovosDados";
+            NovosDados.Size = new Size(133, 25);
+            NovosDados.TabIndex = 59;
+            NovosDados.Text = "Novos Dados";
+            // 
+            // Pesquisa
+            // 
+            Pesquisa.AutoSize = true;
+            Pesquisa.Font = new Font("Centaur", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            Pesquisa.Location = new Point(253, 12);
+            Pesquisa.Name = "Pesquisa";
+            Pesquisa.Size = new Size(234, 25);
+            Pesquisa.TabIndex = 58;
+            Pesquisa.Text = "Id para Pesquisa/Seleção";
             // 
             // ListarConsultas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1186, 616);
-            this.Controls.Add(this.dataGridViewConsultas);
-            this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.buttonListar);
-            this.Controls.Add(this.buttonApagar);
-            this.Controls.Add(this.dateTimePickerConsulta);
-            this.Controls.Add(this.textBoxHoraConsulta);
-            this.Controls.Add(this.textBoxId);
-            this.Controls.Add(this.comboBoxColab);
-            this.Controls.Add(this.comboBoxTipo);
-            this.Controls.Add(this.HoraConsulta);
-            this.Controls.Add(this.DataConsulta);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.TipoConsulta);
-            this.Controls.Add(this.Id);
-            this.Name = "ListarConsultas";
-            this.Text = "ListarConsultas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewConsultas)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Azure;
+            ClientSize = new Size(1038, 462);
+            Controls.Add(NovosDados);
+            Controls.Add(Pesquisa);
+            Controls.Add(buttonCancelar);
+            Controls.Add(dataGridViewConsultas);
+            Controls.Add(buttonSalvar);
+            Controls.Add(buttonListar);
+            Controls.Add(buttonApagar);
+            Controls.Add(dateTimePickerConsulta);
+            Controls.Add(textBoxHoraConsulta);
+            Controls.Add(textBoxId);
+            Controls.Add(comboBoxColab);
+            Controls.Add(comboBoxTipo);
+            Controls.Add(HoraConsulta);
+            Controls.Add(DataConsulta);
+            Controls.Add(label5);
+            Controls.Add(TipoConsulta);
+            Controls.Add(Id);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "ListarConsultas";
+            Text = "ListarConsultas";
+            ((System.ComponentModel.ISupportInitialize)dataGridViewConsultas).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -233,5 +275,8 @@
         private DataGridView dataGridViewConsultas;
         private Label label5;
         private ComboBox comboBoxColab;
+        private Button buttonCancelar;
+        private Label NovosDados;
+        private Label Pesquisa;
     }
 }

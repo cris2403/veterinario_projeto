@@ -86,5 +86,14 @@ namespace veterinario_projeto.PagInicial
                 connection.Close();
             }
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            PaginaInicial paginaInicial = new PaginaInicial();
+
+            paginaInicial.Show();
+
+            this.Hide();
+        }
     }
 }

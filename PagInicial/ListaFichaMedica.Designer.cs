@@ -48,6 +48,7 @@
             textBoxPrescricao = new TextBox();
             Pesquisa = new Label();
             NovosDados = new Label();
+            buttonCancelar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewFichaMedica).BeginInit();
             SuspendLayout();
             // 
@@ -74,7 +75,7 @@
             // buttonApagar
             // 
             buttonApagar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonApagar.Location = new Point(766, 176);
+            buttonApagar.Location = new Point(766, 173);
             buttonApagar.Margin = new Padding(3, 2, 3, 2);
             buttonApagar.Name = "buttonApagar";
             buttonApagar.Size = new Size(200, 60);
@@ -260,12 +261,25 @@
             NovosDados.TabIndex = 57;
             NovosDados.Text = "Novos Dados";
             // 
+            // buttonCancelar
+            // 
+            buttonCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonCancelar.Location = new Point(766, 250);
+            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
+            buttonCancelar.Name = "buttonCancelar";
+            buttonCancelar.Size = new Size(200, 60);
+            buttonCancelar.TabIndex = 58;
+            buttonCancelar.Text = "Cancelar";
+            buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
+            // 
             // ListaFichaMedica
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Azure;
             ClientSize = new Size(1058, 481);
+            Controls.Add(buttonCancelar);
             Controls.Add(NovosDados);
             Controls.Add(Pesquisa);
             Controls.Add(textBoxPrescricao);
@@ -316,5 +330,6 @@
         private TextBox textBoxPrescricao;
         private Label Pesquisa;
         private Label NovosDados;
+        private Button buttonCancelar;
     }
 }

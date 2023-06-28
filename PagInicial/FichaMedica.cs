@@ -71,21 +71,21 @@ namespace veterinario_projeto.PagInicial
                             if (animalRegistado)
                             {
                                 using (MySqlCommand command = new MySqlCommand(insertconsulta, mySqlConnection))
-                                    {
-                                        command.Parameters.AddWithValue("@TipoConsulta", TipoConsulta);
-                                        command.Parameters.AddWithValue("@NomeColaborador", NomeColaborador);
-                                        command.Parameters.AddWithValue("@DataAM", DataAM.ToString("yyyy-MM-dd"));
-                                        command.Parameters.AddWithValue("@DataPVisita", DataPVisita);
-                                        command.Parameters.AddWithValue("@Id_RDono", Id_RDono);
-                                        command.Parameters.AddWithValue("@Diagnostico", Diagnostico);
-                                        command.Parameters.AddWithValue("@NomeAnimal", NomeAnimal);
-                                        command.Parameters.AddWithValue("@Peso", Peso);
-                                        command.Parameters.AddWithValue("@Observacoes", Observacoes);
-                                        command.Parameters.AddWithValue("@PrescricaoMedica", PrescricaoMedica);
+                                {
+                                    command.Parameters.AddWithValue("@TipoConsulta", TipoConsulta);
+                                    command.Parameters.AddWithValue("@NomeColaborador", NomeColaborador);
+                                    command.Parameters.AddWithValue("@DataAM", DataAM.ToString("yyyy-MM-dd"));
+                                    command.Parameters.AddWithValue("@DataPVisita", DataPVisita);
+                                    command.Parameters.AddWithValue("@Id_RDono", Id_RDono);
+                                    command.Parameters.AddWithValue("@Diagnostico", Diagnostico);
+                                    command.Parameters.AddWithValue("@NomeAnimal", NomeAnimal);
+                                    command.Parameters.AddWithValue("@Peso", Peso);
+                                    command.Parameters.AddWithValue("@Observacoes", Observacoes);
+                                    command.Parameters.AddWithValue("@PrescricaoMedica", PrescricaoMedica);
 
-                                        command.ExecuteNonQuery();
-                                    
-                                    }
+                                    command.ExecuteNonQuery();
+
+                                }
                             }
                             else
                             {
@@ -119,6 +119,15 @@ namespace veterinario_projeto.PagInicial
         private void FichaMedica_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            PaginaInicial paginaInicial = new PaginaInicial();
+
+            paginaInicial.Show();
+
+            this.Hide();
         }
     }
 }
