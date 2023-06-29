@@ -28,260 +28,282 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_inserirPagamentos = new Button();
-            btn_ListarPagamentos = new Button();
-            btn_cancelarPagamentos = new Button();
-            data_ProdPreco = new DataGridView();
-            txt_AtoMedicoCusto = new TextBox();
-            lbl_AtoMedicoCusto = new Label();
-            txt_QuantProduto = new Label();
-            data_AtoMedicoCusto = new DataGridView();
-            lbl_descricaoAtoMedico = new Label();
-            txt_descricaoAtoMedico = new TextBox();
-            lbl_AtoMedico = new Label();
-            lbl_tipoProduto = new Label();
-            lbl_DescricaoProduto = new Label();
-            txt_descricaoProduto = new TextBox();
-            txt_PrecoProduto = new TextBox();
-            lbl_PrecoProduto = new Label();
-            txt_QtdProduto = new TextBox();
-            txt_atomedico = new ComboBox();
-            txt_tipoProduto = new ComboBox();
-            btn_pendentes = new Button();
-            ((System.ComponentModel.ISupportInitialize)data_ProdPreco).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)data_AtoMedicoCusto).BeginInit();
-            SuspendLayout();
+            this.btn_inserirPagamentos = new System.Windows.Forms.Button();
+            this.btn_ListarPagamentos = new System.Windows.Forms.Button();
+            this.btn_cancelarPagamentos = new System.Windows.Forms.Button();
+            this.data_ProdPreco = new System.Windows.Forms.DataGridView();
+            this.txt_AtoMedicoCusto = new System.Windows.Forms.TextBox();
+            this.lbl_AtoMedicoCusto = new System.Windows.Forms.Label();
+            this.txt_QuantProduto = new System.Windows.Forms.Label();
+            this.data_AtoMedicoCusto = new System.Windows.Forms.DataGridView();
+            this.lbl_descricaoAtoMedico = new System.Windows.Forms.Label();
+            this.txt_descricaoAtoMedico = new System.Windows.Forms.TextBox();
+            this.lbl_AtoMedico = new System.Windows.Forms.Label();
+            this.lbl_tipoProduto = new System.Windows.Forms.Label();
+            this.lbl_DescricaoProduto = new System.Windows.Forms.Label();
+            this.txt_descricaoProduto = new System.Windows.Forms.TextBox();
+            this.txt_PrecoProduto = new System.Windows.Forms.TextBox();
+            this.lbl_PrecoProduto = new System.Windows.Forms.Label();
+            this.txt_QtdProduto = new System.Windows.Forms.TextBox();
+            this.txt_atomedico = new System.Windows.Forms.ComboBox();
+            this.txt_tipoProduto = new System.Windows.Forms.ComboBox();
+            this.btn_pendentes = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.data_ProdPreco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_AtoMedicoCusto)).BeginInit();
+            this.SuspendLayout();
             // 
             // btn_inserirPagamentos
             // 
-            btn_inserirPagamentos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_inserirPagamentos.Location = new Point(12, 471);
-            btn_inserirPagamentos.Name = "btn_inserirPagamentos";
-            btn_inserirPagamentos.Size = new Size(283, 44);
-            btn_inserirPagamentos.TabIndex = 1;
-            btn_inserirPagamentos.Text = "Adicionar";
-            btn_inserirPagamentos.UseVisualStyleBackColor = true;
-            btn_inserirPagamentos.Click += btn_inserirPagamentos_Click;
+            this.btn_inserirPagamentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_inserirPagamentos.Location = new System.Drawing.Point(14, 628);
+            this.btn_inserirPagamentos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_inserirPagamentos.Name = "btn_inserirPagamentos";
+            this.btn_inserirPagamentos.Size = new System.Drawing.Size(323, 59);
+            this.btn_inserirPagamentos.TabIndex = 1;
+            this.btn_inserirPagamentos.Text = "Adicionar";
+            this.btn_inserirPagamentos.UseVisualStyleBackColor = true;
+            this.btn_inserirPagamentos.Click += new System.EventHandler(this.btn_inserirPagamentos_Click);
             // 
             // btn_ListarPagamentos
             // 
-            btn_ListarPagamentos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_ListarPagamentos.Location = new Point(301, 471);
-            btn_ListarPagamentos.Name = "btn_ListarPagamentos";
-            btn_ListarPagamentos.Size = new Size(283, 44);
-            btn_ListarPagamentos.TabIndex = 25;
-            btn_ListarPagamentos.Text = "Listar";
-            btn_ListarPagamentos.UseVisualStyleBackColor = true;
-            btn_ListarPagamentos.Click += btn_ListarPagamentos_Click;
+            this.btn_ListarPagamentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_ListarPagamentos.Location = new System.Drawing.Point(344, 628);
+            this.btn_ListarPagamentos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_ListarPagamentos.Name = "btn_ListarPagamentos";
+            this.btn_ListarPagamentos.Size = new System.Drawing.Size(323, 59);
+            this.btn_ListarPagamentos.TabIndex = 25;
+            this.btn_ListarPagamentos.Text = "Listar";
+            this.btn_ListarPagamentos.UseVisualStyleBackColor = true;
+            this.btn_ListarPagamentos.Click += new System.EventHandler(this.btn_ListarPagamentos_Click);
             // 
             // btn_cancelarPagamentos
             // 
-            btn_cancelarPagamentos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_cancelarPagamentos.Location = new Point(953, 471);
-            btn_cancelarPagamentos.Name = "btn_cancelarPagamentos";
-            btn_cancelarPagamentos.Size = new Size(283, 44);
-            btn_cancelarPagamentos.TabIndex = 26;
-            btn_cancelarPagamentos.Text = "Cancelar";
-            btn_cancelarPagamentos.UseVisualStyleBackColor = true;
-            btn_cancelarPagamentos.Click += btn_cancelarPagamentos_Click;
+            this.btn_cancelarPagamentos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_cancelarPagamentos.Location = new System.Drawing.Point(1089, 628);
+            this.btn_cancelarPagamentos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cancelarPagamentos.Name = "btn_cancelarPagamentos";
+            this.btn_cancelarPagamentos.Size = new System.Drawing.Size(323, 59);
+            this.btn_cancelarPagamentos.TabIndex = 26;
+            this.btn_cancelarPagamentos.Text = "Cancelar";
+            this.btn_cancelarPagamentos.UseVisualStyleBackColor = true;
+            this.btn_cancelarPagamentos.Click += new System.EventHandler(this.btn_cancelarPagamentos_Click);
             // 
             // data_ProdPreco
             // 
-            data_ProdPreco.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            data_ProdPreco.Location = new Point(722, 308);
-            data_ProdPreco.Name = "data_ProdPreco";
-            data_ProdPreco.Size = new Size(514, 139);
-            data_ProdPreco.TabIndex = 28;
-            data_ProdPreco.CellClick += data_ProdPreco_CellClick;
+            this.data_ProdPreco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_ProdPreco.Location = new System.Drawing.Point(825, 411);
+            this.data_ProdPreco.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.data_ProdPreco.Name = "data_ProdPreco";
+            this.data_ProdPreco.RowHeadersWidth = 51;
+            this.data_ProdPreco.Size = new System.Drawing.Size(587, 185);
+            this.data_ProdPreco.TabIndex = 28;
             // 
             // txt_AtoMedicoCusto
             // 
-            txt_AtoMedicoCusto.BorderStyle = BorderStyle.FixedSingle;
-            txt_AtoMedicoCusto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_AtoMedicoCusto.Location = new Point(12, 194);
-            txt_AtoMedicoCusto.Name = "txt_AtoMedicoCusto";
-            txt_AtoMedicoCusto.Size = new Size(531, 29);
-            txt_AtoMedicoCusto.TabIndex = 29;
+            this.txt_AtoMedicoCusto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_AtoMedicoCusto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_AtoMedicoCusto.Location = new System.Drawing.Point(14, 259);
+            this.txt_AtoMedicoCusto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_AtoMedicoCusto.Name = "txt_AtoMedicoCusto";
+            this.txt_AtoMedicoCusto.Size = new System.Drawing.Size(607, 34);
+            this.txt_AtoMedicoCusto.TabIndex = 29;
             // 
             // lbl_AtoMedicoCusto
             // 
-            lbl_AtoMedicoCusto.AutoSize = true;
-            lbl_AtoMedicoCusto.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lbl_AtoMedicoCusto.Location = new Point(12, 167);
-            lbl_AtoMedicoCusto.Name = "lbl_AtoMedicoCusto";
-            lbl_AtoMedicoCusto.Size = new Size(211, 23);
-            lbl_AtoMedicoCusto.TabIndex = 31;
-            lbl_AtoMedicoCusto.Text = "Custo do Ato Médico";
+            this.lbl_AtoMedicoCusto.AutoSize = true;
+            this.lbl_AtoMedicoCusto.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_AtoMedicoCusto.Location = new System.Drawing.Point(14, 223);
+            this.lbl_AtoMedicoCusto.Name = "lbl_AtoMedicoCusto";
+            this.lbl_AtoMedicoCusto.Size = new System.Drawing.Size(260, 28);
+            this.lbl_AtoMedicoCusto.TabIndex = 31;
+            this.lbl_AtoMedicoCusto.Text = "Custo do Ato Médico";
             // 
             // txt_QuantProduto
             // 
-            txt_QuantProduto.AutoSize = true;
-            txt_QuantProduto.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            txt_QuantProduto.Location = new Point(722, 167);
-            txt_QuantProduto.Name = "txt_QuantProduto";
-            txt_QuantProduto.Size = new Size(239, 23);
-            txt_QuantProduto.TabIndex = 32;
-            txt_QuantProduto.Text = "Quantidade do Produto";
+            this.txt_QuantProduto.AutoSize = true;
+            this.txt_QuantProduto.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.txt_QuantProduto.Location = new System.Drawing.Point(825, 223);
+            this.txt_QuantProduto.Name = "txt_QuantProduto";
+            this.txt_QuantProduto.Size = new System.Drawing.Size(294, 28);
+            this.txt_QuantProduto.TabIndex = 32;
+            this.txt_QuantProduto.Text = "Quantidade do Produto";
             // 
             // data_AtoMedicoCusto
             // 
-            data_AtoMedicoCusto.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            data_AtoMedicoCusto.Location = new Point(12, 308);
-            data_AtoMedicoCusto.Name = "data_AtoMedicoCusto";
-            data_AtoMedicoCusto.RowTemplate.Height = 25;
-            data_AtoMedicoCusto.Size = new Size(531, 139);
-            data_AtoMedicoCusto.TabIndex = 27;
-            data_AtoMedicoCusto.CellClick += data_AtoMedicoCusto_CellClick;
+            this.data_AtoMedicoCusto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_AtoMedicoCusto.Location = new System.Drawing.Point(14, 411);
+            this.data_AtoMedicoCusto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.data_AtoMedicoCusto.Name = "data_AtoMedicoCusto";
+            this.data_AtoMedicoCusto.RowHeadersWidth = 51;
+            this.data_AtoMedicoCusto.RowTemplate.Height = 25;
+            this.data_AtoMedicoCusto.Size = new System.Drawing.Size(607, 185);
+            this.data_AtoMedicoCusto.TabIndex = 27;
             // 
             // lbl_descricaoAtoMedico
             // 
-            lbl_descricaoAtoMedico.AutoSize = true;
-            lbl_descricaoAtoMedico.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lbl_descricaoAtoMedico.Location = new Point(12, 95);
-            lbl_descricaoAtoMedico.Name = "lbl_descricaoAtoMedico";
-            lbl_descricaoAtoMedico.Size = new Size(248, 23);
-            lbl_descricaoAtoMedico.TabIndex = 33;
-            lbl_descricaoAtoMedico.Text = "Descrição do Ato Médico";
+            this.lbl_descricaoAtoMedico.AutoSize = true;
+            this.lbl_descricaoAtoMedico.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_descricaoAtoMedico.Location = new System.Drawing.Point(14, 127);
+            this.lbl_descricaoAtoMedico.Name = "lbl_descricaoAtoMedico";
+            this.lbl_descricaoAtoMedico.Size = new System.Drawing.Size(308, 28);
+            this.lbl_descricaoAtoMedico.TabIndex = 33;
+            this.lbl_descricaoAtoMedico.Text = "Descrição do Ato Médico";
             // 
             // txt_descricaoAtoMedico
             // 
-            txt_descricaoAtoMedico.BorderStyle = BorderStyle.FixedSingle;
-            txt_descricaoAtoMedico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_descricaoAtoMedico.Location = new Point(12, 122);
-            txt_descricaoAtoMedico.Name = "txt_descricaoAtoMedico";
-            txt_descricaoAtoMedico.Size = new Size(531, 29);
-            txt_descricaoAtoMedico.TabIndex = 34;
+            this.txt_descricaoAtoMedico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_descricaoAtoMedico.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_descricaoAtoMedico.Location = new System.Drawing.Point(14, 163);
+            this.txt_descricaoAtoMedico.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_descricaoAtoMedico.Name = "txt_descricaoAtoMedico";
+            this.txt_descricaoAtoMedico.Size = new System.Drawing.Size(607, 34);
+            this.txt_descricaoAtoMedico.TabIndex = 34;
             // 
             // lbl_AtoMedico
             // 
-            lbl_AtoMedico.AutoSize = true;
-            lbl_AtoMedico.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lbl_AtoMedico.Location = new Point(12, 20);
-            lbl_AtoMedico.Name = "lbl_AtoMedico";
-            lbl_AtoMedico.Size = new Size(119, 23);
-            lbl_AtoMedico.TabIndex = 35;
-            lbl_AtoMedico.Text = "Ato Médico";
+            this.lbl_AtoMedico.AutoSize = true;
+            this.lbl_AtoMedico.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_AtoMedico.Location = new System.Drawing.Point(14, 27);
+            this.lbl_AtoMedico.Name = "lbl_AtoMedico";
+            this.lbl_AtoMedico.Size = new System.Drawing.Size(147, 28);
+            this.lbl_AtoMedico.TabIndex = 35;
+            this.lbl_AtoMedico.Text = "Ato Médico";
             // 
             // lbl_tipoProduto
             // 
-            lbl_tipoProduto.AutoSize = true;
-            lbl_tipoProduto.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lbl_tipoProduto.Location = new Point(722, 20);
-            lbl_tipoProduto.Name = "lbl_tipoProduto";
-            lbl_tipoProduto.Size = new Size(167, 23);
-            lbl_tipoProduto.TabIndex = 37;
-            lbl_tipoProduto.Text = "Tipo de Produto";
+            this.lbl_tipoProduto.AutoSize = true;
+            this.lbl_tipoProduto.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_tipoProduto.Location = new System.Drawing.Point(825, 27);
+            this.lbl_tipoProduto.Name = "lbl_tipoProduto";
+            this.lbl_tipoProduto.Size = new System.Drawing.Size(206, 28);
+            this.lbl_tipoProduto.TabIndex = 37;
+            this.lbl_tipoProduto.Text = "Tipo de Produto";
             // 
             // lbl_DescricaoProduto
             // 
-            lbl_DescricaoProduto.AutoSize = true;
-            lbl_DescricaoProduto.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lbl_DescricaoProduto.Location = new Point(722, 95);
-            lbl_DescricaoProduto.Name = "lbl_DescricaoProduto";
-            lbl_DescricaoProduto.Size = new Size(217, 23);
-            lbl_DescricaoProduto.TabIndex = 38;
-            lbl_DescricaoProduto.Text = "Descrição do Produto";
+            this.lbl_DescricaoProduto.AutoSize = true;
+            this.lbl_DescricaoProduto.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_DescricaoProduto.Location = new System.Drawing.Point(825, 127);
+            this.lbl_DescricaoProduto.Name = "lbl_DescricaoProduto";
+            this.lbl_DescricaoProduto.Size = new System.Drawing.Size(269, 28);
+            this.lbl_DescricaoProduto.TabIndex = 38;
+            this.lbl_DescricaoProduto.Text = "Descrição do Produto";
             // 
             // txt_descricaoProduto
             // 
-            txt_descricaoProduto.BorderStyle = BorderStyle.FixedSingle;
-            txt_descricaoProduto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_descricaoProduto.Location = new Point(722, 122);
-            txt_descricaoProduto.Name = "txt_descricaoProduto";
-            txt_descricaoProduto.Size = new Size(514, 29);
-            txt_descricaoProduto.TabIndex = 39;
+            this.txt_descricaoProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_descricaoProduto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_descricaoProduto.Location = new System.Drawing.Point(825, 163);
+            this.txt_descricaoProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_descricaoProduto.Name = "txt_descricaoProduto";
+            this.txt_descricaoProduto.Size = new System.Drawing.Size(587, 34);
+            this.txt_descricaoProduto.TabIndex = 39;
             // 
             // txt_PrecoProduto
             // 
-            txt_PrecoProduto.BorderStyle = BorderStyle.FixedSingle;
-            txt_PrecoProduto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_PrecoProduto.Location = new Point(722, 267);
-            txt_PrecoProduto.Name = "txt_PrecoProduto";
-            txt_PrecoProduto.Size = new Size(514, 29);
-            txt_PrecoProduto.TabIndex = 41;
+            this.txt_PrecoProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_PrecoProduto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_PrecoProduto.Location = new System.Drawing.Point(825, 356);
+            this.txt_PrecoProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_PrecoProduto.Name = "txt_PrecoProduto";
+            this.txt_PrecoProduto.Size = new System.Drawing.Size(587, 34);
+            this.txt_PrecoProduto.TabIndex = 41;
             // 
             // lbl_PrecoProduto
             // 
-            lbl_PrecoProduto.AutoSize = true;
-            lbl_PrecoProduto.Font = new Font("Century", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lbl_PrecoProduto.Location = new Point(722, 235);
-            lbl_PrecoProduto.Name = "lbl_PrecoProduto";
-            lbl_PrecoProduto.Size = new Size(177, 23);
-            lbl_PrecoProduto.TabIndex = 42;
-            lbl_PrecoProduto.Text = "Preço do Produto";
+            this.lbl_PrecoProduto.AutoSize = true;
+            this.lbl_PrecoProduto.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lbl_PrecoProduto.Location = new System.Drawing.Point(825, 313);
+            this.lbl_PrecoProduto.Name = "lbl_PrecoProduto";
+            this.lbl_PrecoProduto.Size = new System.Drawing.Size(219, 28);
+            this.lbl_PrecoProduto.TabIndex = 42;
+            this.lbl_PrecoProduto.Text = "Preço do Produto";
             // 
             // txt_QtdProduto
             // 
-            txt_QtdProduto.BorderStyle = BorderStyle.FixedSingle;
-            txt_QtdProduto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_QtdProduto.Location = new Point(722, 194);
-            txt_QtdProduto.Name = "txt_QtdProduto";
-            txt_QtdProduto.Size = new Size(514, 29);
-            txt_QtdProduto.TabIndex = 43;
+            this.txt_QtdProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_QtdProduto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_QtdProduto.Location = new System.Drawing.Point(825, 259);
+            this.txt_QtdProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_QtdProduto.Name = "txt_QtdProduto";
+            this.txt_QtdProduto.Size = new System.Drawing.Size(587, 34);
+            this.txt_QtdProduto.TabIndex = 43;
             // 
             // txt_atomedico
             // 
-            txt_atomedico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_atomedico.FormattingEnabled = true;
-            txt_atomedico.Items.AddRange(new object[] { "Consulta", "Pequena cirurgia", "Vacinação", "Mudança de penso" });
-            txt_atomedico.Location = new Point(12, 52);
-            txt_atomedico.Name = "txt_atomedico";
-            txt_atomedico.Size = new Size(531, 29);
-            txt_atomedico.TabIndex = 44;
+            this.txt_atomedico.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_atomedico.FormattingEnabled = true;
+            this.txt_atomedico.Items.AddRange(new object[] {
+            "Consulta",
+            "Pequena cirurgia",
+            "Vacinação",
+            "Mudança de penso"});
+            this.txt_atomedico.Location = new System.Drawing.Point(14, 69);
+            this.txt_atomedico.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_atomedico.Name = "txt_atomedico";
+            this.txt_atomedico.Size = new System.Drawing.Size(606, 36);
+            this.txt_atomedico.TabIndex = 44;
             // 
             // txt_tipoProduto
             // 
-            txt_tipoProduto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_tipoProduto.FormattingEnabled = true;
-            txt_tipoProduto.Items.AddRange(new object[] { "Fármacos", "Alimentares", "Suplementares" });
-            txt_tipoProduto.Location = new Point(722, 52);
-            txt_tipoProduto.Name = "txt_tipoProduto";
-            txt_tipoProduto.Size = new Size(514, 29);
-            txt_tipoProduto.TabIndex = 45;
+            this.txt_tipoProduto.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_tipoProduto.FormattingEnabled = true;
+            this.txt_tipoProduto.Items.AddRange(new object[] {
+            "Fármacos",
+            "Alimentares",
+            "Suplementares"});
+            this.txt_tipoProduto.Location = new System.Drawing.Point(825, 69);
+            this.txt_tipoProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_tipoProduto.Name = "txt_tipoProduto";
+            this.txt_tipoProduto.Size = new System.Drawing.Size(587, 36);
+            this.txt_tipoProduto.TabIndex = 45;
             // 
             // btn_pendentes
             // 
-            btn_pendentes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_pendentes.Location = new Point(590, 471);
-            btn_pendentes.Name = "btn_pendentes";
-            btn_pendentes.Size = new Size(349, 44);
-            btn_pendentes.TabIndex = 46;
-            btn_pendentes.Text = "Pagamentos Pendentes";
-            btn_pendentes.UseVisualStyleBackColor = true;
-            btn_pendentes.Click += btn_pendentes_Click;
+            this.btn_pendentes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_pendentes.Location = new System.Drawing.Point(674, 628);
+            this.btn_pendentes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_pendentes.Name = "btn_pendentes";
+            this.btn_pendentes.Size = new System.Drawing.Size(399, 59);
+            this.btn_pendentes.TabIndex = 46;
+            this.btn_pendentes.Text = "Pagamentos Pendentes";
+            this.btn_pendentes.UseVisualStyleBackColor = true;
+            this.btn_pendentes.Click += new System.EventHandler(this.btn_pendentes_Click);
             // 
             // Pagamentos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Azure;
-            ClientSize = new Size(1248, 527);
-            Controls.Add(btn_pendentes);
-            Controls.Add(txt_tipoProduto);
-            Controls.Add(txt_atomedico);
-            Controls.Add(txt_QtdProduto);
-            Controls.Add(lbl_PrecoProduto);
-            Controls.Add(txt_PrecoProduto);
-            Controls.Add(txt_descricaoProduto);
-            Controls.Add(lbl_DescricaoProduto);
-            Controls.Add(lbl_tipoProduto);
-            Controls.Add(lbl_AtoMedico);
-            Controls.Add(txt_descricaoAtoMedico);
-            Controls.Add(lbl_descricaoAtoMedico);
-            Controls.Add(txt_QuantProduto);
-            Controls.Add(lbl_AtoMedicoCusto);
-            Controls.Add(txt_AtoMedicoCusto);
-            Controls.Add(data_ProdPreco);
-            Controls.Add(data_AtoMedicoCusto);
-            Controls.Add(btn_cancelarPagamentos);
-            Controls.Add(btn_ListarPagamentos);
-            Controls.Add(btn_inserirPagamentos);
-            Name = "Pagamentos";
-            Text = "Pagamentos";
-            ((System.ComponentModel.ISupportInitialize)data_ProdPreco).EndInit();
-            ((System.ComponentModel.ISupportInitialize)data_AtoMedicoCusto).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(1426, 703);
+            this.Controls.Add(this.btn_pendentes);
+            this.Controls.Add(this.txt_tipoProduto);
+            this.Controls.Add(this.txt_atomedico);
+            this.Controls.Add(this.txt_QtdProduto);
+            this.Controls.Add(this.lbl_PrecoProduto);
+            this.Controls.Add(this.txt_PrecoProduto);
+            this.Controls.Add(this.txt_descricaoProduto);
+            this.Controls.Add(this.lbl_DescricaoProduto);
+            this.Controls.Add(this.lbl_tipoProduto);
+            this.Controls.Add(this.lbl_AtoMedico);
+            this.Controls.Add(this.txt_descricaoAtoMedico);
+            this.Controls.Add(this.lbl_descricaoAtoMedico);
+            this.Controls.Add(this.txt_QuantProduto);
+            this.Controls.Add(this.lbl_AtoMedicoCusto);
+            this.Controls.Add(this.txt_AtoMedicoCusto);
+            this.Controls.Add(this.data_ProdPreco);
+            this.Controls.Add(this.data_AtoMedicoCusto);
+            this.Controls.Add(this.btn_cancelarPagamentos);
+            this.Controls.Add(this.btn_ListarPagamentos);
+            this.Controls.Add(this.btn_inserirPagamentos);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Pagamentos";
+            this.Text = "Pagamentos";
+            ((System.ComponentModel.ISupportInitialize)(this.data_ProdPreco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_AtoMedicoCusto)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

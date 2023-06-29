@@ -28,188 +28,177 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ID = new Label();
-            NovoUser = new Label();
-            NovoEmail = new Label();
-            NovaPass = new Label();
-            dataGridViewLogin = new DataGridView();
-            buttonListar = new Button();
-            buttonSalvar = new Button();
-            buttonApagar = new Button();
-            textBoxEmail = new TextBox();
-            textBoxPassword = new TextBox();
-            textBoxUsername = new TextBox();
-            textBoxID = new TextBox();
-            buttonCancelar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewLogin).BeginInit();
-            SuspendLayout();
+            this.ID = new System.Windows.Forms.Label();
+            this.NovoUser = new System.Windows.Forms.Label();
+            this.NovoEmail = new System.Windows.Forms.Label();
+            this.NovaPass = new System.Windows.Forms.Label();
+            this.dataGridViewLogin = new System.Windows.Forms.DataGridView();
+            this.buttonListar = new System.Windows.Forms.Button();
+            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.buttonApagar = new System.Windows.Forms.Button();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxID = new System.Windows.Forms.TextBox();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLogin)).BeginInit();
+            this.SuspendLayout();
             // 
             // ID
             // 
-            ID.AutoSize = true;
-            ID.Font = new Font("Century", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            ID.Location = new Point(18, 79);
-            ID.Name = "ID";
-            ID.Size = new Size(30, 20);
-            ID.TabIndex = 0;
-            ID.Text = "ID";
+            this.ID.AutoSize = true;
+            this.ID.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.ID.Location = new System.Drawing.Point(21, 105);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(36, 23);
+            this.ID.TabIndex = 0;
+            this.ID.Text = "ID";
             // 
             // NovoUser
             // 
-            NovoUser.AutoSize = true;
-            NovoUser.Font = new Font("Century", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            NovoUser.Location = new Point(331, 73);
-            NovoUser.Name = "NovoUser";
-            NovoUser.Size = new Size(140, 20);
-            NovoUser.TabIndex = 1;
-            NovoUser.Text = "Novo Username";
+            this.NovoUser.AutoSize = true;
+            this.NovoUser.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.NovoUser.Location = new System.Drawing.Point(378, 97);
+            this.NovoUser.Name = "NovoUser";
+            this.NovoUser.Size = new System.Drawing.Size(171, 23);
+            this.NovoUser.TabIndex = 1;
+            this.NovoUser.Text = "Novo Username";
             // 
             // NovoEmail
             // 
-            NovoEmail.AutoSize = true;
-            NovoEmail.Font = new Font("Century", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            NovoEmail.Location = new Point(337, 124);
-            NovoEmail.Name = "NovoEmail";
-            NovoEmail.Size = new Size(106, 20);
-            NovoEmail.TabIndex = 2;
-            NovoEmail.Text = "Novo Email";
+            this.NovoEmail.AutoSize = true;
+            this.NovoEmail.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.NovoEmail.Location = new System.Drawing.Point(385, 165);
+            this.NovoEmail.Name = "NovoEmail";
+            this.NovoEmail.Size = new System.Drawing.Size(128, 23);
+            this.NovoEmail.TabIndex = 2;
+            this.NovoEmail.Text = "Novo Email";
             // 
             // NovaPass
             // 
-            NovaPass.AutoSize = true;
-            NovaPass.Font = new Font("Century", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            NovaPass.Location = new Point(337, 163);
-            NovaPass.Name = "NovaPass";
-            NovaPass.Size = new Size(134, 20);
-            NovaPass.TabIndex = 3;
-            NovaPass.Text = "Nova Password";
+            this.NovaPass.AutoSize = true;
+            this.NovaPass.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.NovaPass.Location = new System.Drawing.Point(385, 217);
+            this.NovaPass.Name = "NovaPass";
+            this.NovaPass.Size = new System.Drawing.Size(165, 23);
+            this.NovaPass.TabIndex = 3;
+            this.NovaPass.Text = "Nova Password";
             // 
             // dataGridViewLogin
             // 
-            dataGridViewLogin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewLogin.Location = new Point(13, 269);
-            dataGridViewLogin.Margin = new Padding(3, 2, 3, 2);
-            dataGridViewLogin.Name = "dataGridViewLogin";
-            dataGridViewLogin.RowHeadersWidth = 51;
-            dataGridViewLogin.RowTemplate.Height = 29;
-            dataGridViewLogin.Size = new Size(731, 135);
-            dataGridViewLogin.TabIndex = 4;
-            dataGridViewLogin.CellClick += dataGridViewLogin_CellClick;
+            this.dataGridViewLogin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewLogin.Location = new System.Drawing.Point(15, 359);
+            this.dataGridViewLogin.Name = "dataGridViewLogin";
+            this.dataGridViewLogin.RowHeadersWidth = 51;
+            this.dataGridViewLogin.RowTemplate.Height = 29;
+            this.dataGridViewLogin.Size = new System.Drawing.Size(835, 180);
+            this.dataGridViewLogin.TabIndex = 4;
             // 
             // buttonListar
             // 
-            buttonListar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonListar.Location = new Point(21, 214);
-            buttonListar.Margin = new Padding(3, 2, 3, 2);
-            buttonListar.Name = "buttonListar";
-            buttonListar.Size = new Size(150, 38);
-            buttonListar.TabIndex = 5;
-            buttonListar.Text = "Listar";
-            buttonListar.UseVisualStyleBackColor = true;
-            buttonListar.Click += buttonListar_Click;
+            this.buttonListar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonListar.Location = new System.Drawing.Point(24, 285);
+            this.buttonListar.Name = "buttonListar";
+            this.buttonListar.Size = new System.Drawing.Size(171, 51);
+            this.buttonListar.TabIndex = 5;
+            this.buttonListar.Text = "Listar";
+            this.buttonListar.UseVisualStyleBackColor = true;
+            this.buttonListar.Click += new System.EventHandler(this.buttonListar_Click);
             // 
             // buttonSalvar
             // 
-            buttonSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonSalvar.Location = new Point(209, 214);
-            buttonSalvar.Margin = new Padding(3, 2, 3, 2);
-            buttonSalvar.Name = "buttonSalvar";
-            buttonSalvar.Size = new Size(150, 38);
-            buttonSalvar.TabIndex = 6;
-            buttonSalvar.Text = "Salvar";
-            buttonSalvar.UseVisualStyleBackColor = true;
-            buttonSalvar.Click += buttonSalvar_Click;
+            this.buttonSalvar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonSalvar.Location = new System.Drawing.Point(239, 285);
+            this.buttonSalvar.Name = "buttonSalvar";
+            this.buttonSalvar.Size = new System.Drawing.Size(171, 51);
+            this.buttonSalvar.TabIndex = 6;
+            this.buttonSalvar.Text = "Salvar";
+            this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // buttonApagar
             // 
-            buttonApagar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonApagar.Location = new Point(410, 214);
-            buttonApagar.Margin = new Padding(3, 2, 3, 2);
-            buttonApagar.Name = "buttonApagar";
-            buttonApagar.Size = new Size(150, 38);
-            buttonApagar.TabIndex = 7;
-            buttonApagar.Text = "Apagar";
-            buttonApagar.UseVisualStyleBackColor = true;
-            buttonApagar.Click += buttonApagar_Click;
+            this.buttonApagar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonApagar.Location = new System.Drawing.Point(469, 285);
+            this.buttonApagar.Name = "buttonApagar";
+            this.buttonApagar.Size = new System.Drawing.Size(171, 51);
+            this.buttonApagar.TabIndex = 7;
+            this.buttonApagar.Text = "Apagar";
+            this.buttonApagar.UseVisualStyleBackColor = true;
+            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
             // 
             // textBoxEmail
             // 
-            textBoxEmail.BorderStyle = BorderStyle.FixedSingle;
-            textBoxEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxEmail.Location = new Point(487, 115);
-            textBoxEmail.Margin = new Padding(3, 2, 3, 2);
-            textBoxEmail.Name = "textBoxEmail";
-            textBoxEmail.Size = new Size(199, 29);
-            textBoxEmail.TabIndex = 8;
+            this.textBoxEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxEmail.Location = new System.Drawing.Point(557, 153);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(227, 34);
+            this.textBoxEmail.TabIndex = 8;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.BorderStyle = BorderStyle.FixedSingle;
-            textBoxPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPassword.Location = new Point(487, 158);
-            textBoxPassword.Margin = new Padding(3, 2, 3, 2);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(199, 29);
-            textBoxPassword.TabIndex = 9;
+            this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPassword.Location = new System.Drawing.Point(557, 211);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(227, 34);
+            this.textBoxPassword.TabIndex = 9;
             // 
             // textBoxUsername
             // 
-            textBoxUsername.BorderStyle = BorderStyle.FixedSingle;
-            textBoxUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxUsername.Location = new Point(487, 70);
-            textBoxUsername.Margin = new Padding(3, 2, 3, 2);
-            textBoxUsername.Name = "textBoxUsername";
-            textBoxUsername.Size = new Size(199, 29);
-            textBoxUsername.TabIndex = 10;
+            this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxUsername.Location = new System.Drawing.Point(557, 93);
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(227, 34);
+            this.textBoxUsername.TabIndex = 10;
             // 
             // textBoxID
             // 
-            textBoxID.BorderStyle = BorderStyle.FixedSingle;
-            textBoxID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxID.Location = new Point(54, 75);
-            textBoxID.Margin = new Padding(3, 2, 3, 2);
-            textBoxID.Name = "textBoxID";
-            textBoxID.Size = new Size(158, 29);
-            textBoxID.TabIndex = 11;
+            this.textBoxID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxID.Location = new System.Drawing.Point(62, 100);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(180, 34);
+            this.textBoxID.TabIndex = 11;
             // 
             // buttonCancelar
             // 
-            buttonCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonCancelar.Location = new Point(594, 214);
-            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
-            buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(150, 38);
-            buttonCancelar.TabIndex = 12;
-            buttonCancelar.Text = "Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = true;
-            buttonCancelar.Click += buttonCancelar_Click;
+            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonCancelar.Location = new System.Drawing.Point(679, 285);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(171, 51);
+            this.buttonCancelar.TabIndex = 12;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // ListarLogin
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Azure;
-            ClientSize = new Size(756, 415);
-            Controls.Add(buttonCancelar);
-            Controls.Add(textBoxID);
-            Controls.Add(textBoxUsername);
-            Controls.Add(textBoxPassword);
-            Controls.Add(textBoxEmail);
-            Controls.Add(buttonApagar);
-            Controls.Add(buttonSalvar);
-            Controls.Add(buttonListar);
-            Controls.Add(dataGridViewLogin);
-            Controls.Add(NovaPass);
-            Controls.Add(NovoEmail);
-            Controls.Add(NovoUser);
-            Controls.Add(ID);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "ListarLogin";
-            Text = "ListarLogin";
-            Load += ListarLogin_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridViewLogin).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(864, 553);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.textBoxID);
+            this.Controls.Add(this.textBoxUsername);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.buttonApagar);
+            this.Controls.Add(this.buttonSalvar);
+            this.Controls.Add(this.buttonListar);
+            this.Controls.Add(this.dataGridViewLogin);
+            this.Controls.Add(this.NovaPass);
+            this.Controls.Add(this.NovoEmail);
+            this.Controls.Add(this.NovoUser);
+            this.Controls.Add(this.ID);
+            this.Name = "ListarLogin";
+            this.Text = "ListarLogin";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLogin)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -35,6 +35,7 @@
             this.btn_colaboradores = new System.Windows.Forms.Button();
             this.btn_consultas = new System.Windows.Forms.Button();
             this.btn_pagamentos = new System.Windows.Forms.Button();
+            this.buttonAtoMedico = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button_cAnimal
@@ -52,10 +53,10 @@
             // btn_fmedica
             // 
             this.btn_fmedica.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_fmedica.Location = new System.Drawing.Point(155, 332);
+            this.btn_fmedica.Location = new System.Drawing.Point(250, 334);
             this.btn_fmedica.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_fmedica.Name = "btn_fmedica";
-            this.btn_fmedica.Size = new System.Drawing.Size(166, 85);
+            this.btn_fmedica.Size = new System.Drawing.Size(175, 85);
             this.btn_fmedica.TabIndex = 1;
             this.btn_fmedica.Text = "Ficha Médica";
             this.btn_fmedica.UseVisualStyleBackColor = true;
@@ -121,12 +122,25 @@
             this.btn_pagamentos.UseVisualStyleBackColor = true;
             this.btn_pagamentos.Click += new System.EventHandler(this.btn_pagamentos_Click);
             // 
+            // buttonAtoMedico
+            // 
+            this.buttonAtoMedico.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonAtoMedico.Location = new System.Drawing.Point(41, 334);
+            this.buttonAtoMedico.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.buttonAtoMedico.Name = "buttonAtoMedico";
+            this.buttonAtoMedico.Size = new System.Drawing.Size(175, 85);
+            this.buttonAtoMedico.TabIndex = 7;
+            this.buttonAtoMedico.Text = "Ato Médico";
+            this.buttonAtoMedico.UseVisualStyleBackColor = true;
+            this.buttonAtoMedico.Click += new System.EventHandler(this.buttonAtoMedico_Click);
+            // 
             // PaginaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(466, 488);
+            this.Controls.Add(this.buttonAtoMedico);
             this.Controls.Add(this.btn_pagamentos);
             this.Controls.Add(this.btn_consultas);
             this.Controls.Add(this.btn_colaboradores);
@@ -150,5 +164,6 @@
         private Button btn_colaboradores;
         private Button btn_consultas;
         private Button btn_pagamentos;
+        private Button buttonAtoMedico;
     }
 }

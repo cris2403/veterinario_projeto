@@ -28,284 +28,275 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridViewAnimais = new DataGridView();
-            ID = new Label();
-            Dono = new Label();
-            Nome = new Label();
-            Tipo = new Label();
-            Raça = new Label();
-            Peso = new Label();
-            Idade = new Label();
-            textBoxID = new TextBox();
-            textBoxNome = new TextBox();
-            textBoxDono = new TextBox();
-            textBoxPeso = new TextBox();
-            textBoxIdade = new TextBox();
-            textBoxRaca = new TextBox();
-            buttonListar = new Button();
-            buttonSalvar = new Button();
-            buttonApagar = new Button();
-            comboBoxTipo = new ComboBox();
-            NovosDados = new Label();
-            Pesquisa = new Label();
-            buttonCancelar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewAnimais).BeginInit();
-            SuspendLayout();
+            this.dataGridViewAnimais = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.Label();
+            this.Dono = new System.Windows.Forms.Label();
+            this.Nome = new System.Windows.Forms.Label();
+            this.Tipo = new System.Windows.Forms.Label();
+            this.Raça = new System.Windows.Forms.Label();
+            this.Peso = new System.Windows.Forms.Label();
+            this.Idade = new System.Windows.Forms.Label();
+            this.textBoxID = new System.Windows.Forms.TextBox();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
+            this.textBoxDono = new System.Windows.Forms.TextBox();
+            this.textBoxPeso = new System.Windows.Forms.TextBox();
+            this.textBoxIdade = new System.Windows.Forms.TextBox();
+            this.textBoxRaca = new System.Windows.Forms.TextBox();
+            this.buttonListar = new System.Windows.Forms.Button();
+            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.buttonApagar = new System.Windows.Forms.Button();
+            this.comboBoxTipo = new System.Windows.Forms.ComboBox();
+            this.NovosDados = new System.Windows.Forms.Label();
+            this.Pesquisa = new System.Windows.Forms.Label();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnimais)).BeginInit();
+            this.SuspendLayout();
             // 
             // dataGridViewAnimais
             // 
-            dataGridViewAnimais.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewAnimais.Location = new Point(19, 272);
-            dataGridViewAnimais.Margin = new Padding(3, 2, 3, 2);
-            dataGridViewAnimais.Name = "dataGridViewAnimais";
-            dataGridViewAnimais.RowHeadersWidth = 51;
-            dataGridViewAnimais.RowTemplate.Height = 29;
-            dataGridViewAnimais.Size = new Size(1009, 205);
-            dataGridViewAnimais.TabIndex = 0;
+            this.dataGridViewAnimais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAnimais.Location = new System.Drawing.Point(22, 363);
+            this.dataGridViewAnimais.Name = "dataGridViewAnimais";
+            this.dataGridViewAnimais.RowHeadersWidth = 51;
+            this.dataGridViewAnimais.RowTemplate.Height = 29;
+            this.dataGridViewAnimais.Size = new System.Drawing.Size(1153, 273);
+            this.dataGridViewAnimais.TabIndex = 0;
             // 
             // ID
             // 
-            ID.AutoSize = true;
-            ID.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            ID.Location = new Point(26, 54);
-            ID.Name = "ID";
-            ID.Size = new Size(35, 23);
-            ID.TabIndex = 1;
-            ID.Text = "ID";
+            this.ID.AutoSize = true;
+            this.ID.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.ID.Location = new System.Drawing.Point(30, 72);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(41, 28);
+            this.ID.TabIndex = 1;
+            this.ID.Text = "ID";
             // 
             // Dono
             // 
-            Dono.AutoSize = true;
-            Dono.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Dono.Location = new Point(26, 144);
-            Dono.Name = "Dono";
-            Dono.Size = new Size(61, 23);
-            Dono.TabIndex = 2;
-            Dono.Text = "Dono";
+            this.Dono.AutoSize = true;
+            this.Dono.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Dono.Location = new System.Drawing.Point(30, 192);
+            this.Dono.Name = "Dono";
+            this.Dono.Size = new System.Drawing.Size(72, 28);
+            this.Dono.TabIndex = 2;
+            this.Dono.Text = "Dono";
             // 
             // Nome
             // 
-            Nome.AutoSize = true;
-            Nome.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Nome.Location = new Point(19, 197);
-            Nome.Name = "Nome";
-            Nome.Size = new Size(66, 23);
-            Nome.TabIndex = 3;
-            Nome.Text = "Nome";
+            this.Nome.AutoSize = true;
+            this.Nome.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Nome.Location = new System.Drawing.Point(22, 263);
+            this.Nome.Name = "Nome";
+            this.Nome.Size = new System.Drawing.Size(79, 28);
+            this.Nome.TabIndex = 3;
+            this.Nome.Text = "Nome";
             // 
             // Tipo
             // 
-            Tipo.AutoSize = true;
-            Tipo.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Tipo.Location = new Point(395, 37);
-            Tipo.Name = "Tipo";
-            Tipo.Size = new Size(54, 23);
-            Tipo.TabIndex = 4;
-            Tipo.Text = "Tipo";
+            this.Tipo.AutoSize = true;
+            this.Tipo.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Tipo.Location = new System.Drawing.Point(451, 49);
+            this.Tipo.Name = "Tipo";
+            this.Tipo.Size = new System.Drawing.Size(63, 28);
+            this.Tipo.TabIndex = 4;
+            this.Tipo.Text = "Tipo";
             // 
             // Raça
             // 
-            Raça.AutoSize = true;
-            Raça.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Raça.Location = new Point(381, 87);
-            Raça.Name = "Raça";
-            Raça.Size = new Size(58, 23);
-            Raça.TabIndex = 5;
-            Raça.Text = "Raça";
+            this.Raça.AutoSize = true;
+            this.Raça.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Raça.Location = new System.Drawing.Point(435, 116);
+            this.Raça.Name = "Raça";
+            this.Raça.Size = new System.Drawing.Size(69, 28);
+            this.Raça.TabIndex = 5;
+            this.Raça.Text = "Raça";
             // 
             // Peso
             // 
-            Peso.AutoSize = true;
-            Peso.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Peso.Location = new Point(381, 202);
-            Peso.Name = "Peso";
-            Peso.Size = new Size(56, 23);
-            Peso.TabIndex = 6;
-            Peso.Text = "Peso";
+            this.Peso.AutoSize = true;
+            this.Peso.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Peso.Location = new System.Drawing.Point(435, 269);
+            this.Peso.Name = "Peso";
+            this.Peso.Size = new System.Drawing.Size(66, 28);
+            this.Peso.TabIndex = 6;
+            this.Peso.Text = "Peso";
             // 
             // Idade
             // 
-            Idade.AutoSize = true;
-            Idade.Font = new Font("Century", 13.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            Idade.Location = new Point(381, 132);
-            Idade.Name = "Idade";
-            Idade.Size = new Size(66, 23);
-            Idade.TabIndex = 7;
-            Idade.Text = "Idade";
+            this.Idade.AutoSize = true;
+            this.Idade.Font = new System.Drawing.Font("Century", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.Idade.Location = new System.Drawing.Point(435, 176);
+            this.Idade.Name = "Idade";
+            this.Idade.Size = new System.Drawing.Size(77, 28);
+            this.Idade.TabIndex = 7;
+            this.Idade.Text = "Idade";
             // 
             // textBoxID
             // 
-            textBoxID.BorderStyle = BorderStyle.FixedSingle;
-            textBoxID.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxID.Location = new Point(120, 45);
-            textBoxID.Margin = new Padding(3, 2, 3, 2);
-            textBoxID.Name = "textBoxID";
-            textBoxID.Size = new Size(204, 29);
-            textBoxID.TabIndex = 8;
+            this.textBoxID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxID.Location = new System.Drawing.Point(137, 60);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(233, 34);
+            this.textBoxID.TabIndex = 8;
             // 
             // textBoxNome
             // 
-            textBoxNome.BorderStyle = BorderStyle.FixedSingle;
-            textBoxNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxNome.Location = new Point(108, 196);
-            textBoxNome.Margin = new Padding(3, 2, 3, 2);
-            textBoxNome.Name = "textBoxNome";
-            textBoxNome.Size = new Size(204, 29);
-            textBoxNome.TabIndex = 9;
+            this.textBoxNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNome.Location = new System.Drawing.Point(123, 261);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(233, 34);
+            this.textBoxNome.TabIndex = 9;
             // 
             // textBoxDono
             // 
-            textBoxDono.BorderStyle = BorderStyle.FixedSingle;
-            textBoxDono.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxDono.Location = new Point(108, 135);
-            textBoxDono.Margin = new Padding(3, 2, 3, 2);
-            textBoxDono.Name = "textBoxDono";
-            textBoxDono.Size = new Size(204, 29);
-            textBoxDono.TabIndex = 10;
+            this.textBoxDono.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxDono.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxDono.Location = new System.Drawing.Point(123, 180);
+            this.textBoxDono.Name = "textBoxDono";
+            this.textBoxDono.Size = new System.Drawing.Size(233, 34);
+            this.textBoxDono.TabIndex = 10;
             // 
             // textBoxPeso
             // 
-            textBoxPeso.BorderStyle = BorderStyle.FixedSingle;
-            textBoxPeso.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxPeso.Location = new Point(470, 205);
-            textBoxPeso.Margin = new Padding(3, 2, 3, 2);
-            textBoxPeso.Name = "textBoxPeso";
-            textBoxPeso.Size = new Size(204, 29);
-            textBoxPeso.TabIndex = 12;
+            this.textBoxPeso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxPeso.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPeso.Location = new System.Drawing.Point(537, 273);
+            this.textBoxPeso.Name = "textBoxPeso";
+            this.textBoxPeso.Size = new System.Drawing.Size(233, 34);
+            this.textBoxPeso.TabIndex = 12;
             // 
             // textBoxIdade
             // 
-            textBoxIdade.BorderStyle = BorderStyle.FixedSingle;
-            textBoxIdade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxIdade.Location = new Point(470, 135);
-            textBoxIdade.Margin = new Padding(3, 2, 3, 2);
-            textBoxIdade.Name = "textBoxIdade";
-            textBoxIdade.Size = new Size(204, 29);
-            textBoxIdade.TabIndex = 13;
+            this.textBoxIdade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxIdade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxIdade.Location = new System.Drawing.Point(537, 180);
+            this.textBoxIdade.Name = "textBoxIdade";
+            this.textBoxIdade.Size = new System.Drawing.Size(233, 34);
+            this.textBoxIdade.TabIndex = 13;
             // 
             // textBoxRaca
             // 
-            textBoxRaca.BorderStyle = BorderStyle.FixedSingle;
-            textBoxRaca.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxRaca.Location = new Point(470, 87);
-            textBoxRaca.Margin = new Padding(3, 2, 3, 2);
-            textBoxRaca.Name = "textBoxRaca";
-            textBoxRaca.Size = new Size(204, 29);
-            textBoxRaca.TabIndex = 14;
+            this.textBoxRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxRaca.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxRaca.Location = new System.Drawing.Point(537, 116);
+            this.textBoxRaca.Name = "textBoxRaca";
+            this.textBoxRaca.Size = new System.Drawing.Size(233, 34);
+            this.textBoxRaca.TabIndex = 14;
             // 
             // buttonListar
             // 
-            buttonListar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonListar.Location = new Point(790, 26);
-            buttonListar.Margin = new Padding(3, 2, 3, 2);
-            buttonListar.Name = "buttonListar";
-            buttonListar.Size = new Size(200, 40);
-            buttonListar.TabIndex = 15;
-            buttonListar.Text = "Listar";
-            buttonListar.UseVisualStyleBackColor = true;
-            buttonListar.Click += buttonListar_Click;
+            this.buttonListar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonListar.Location = new System.Drawing.Point(903, 35);
+            this.buttonListar.Name = "buttonListar";
+            this.buttonListar.Size = new System.Drawing.Size(229, 53);
+            this.buttonListar.TabIndex = 15;
+            this.buttonListar.Text = "Listar";
+            this.buttonListar.UseVisualStyleBackColor = true;
+            this.buttonListar.Click += new System.EventHandler(this.buttonListar_Click);
             // 
             // buttonSalvar
             // 
-            buttonSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonSalvar.Location = new Point(790, 91);
-            buttonSalvar.Margin = new Padding(3, 2, 3, 2);
-            buttonSalvar.Name = "buttonSalvar";
-            buttonSalvar.Size = new Size(200, 40);
-            buttonSalvar.TabIndex = 16;
-            buttonSalvar.Text = "Salvar";
-            buttonSalvar.UseVisualStyleBackColor = true;
-            buttonSalvar.Click += buttonSalvar_Click;
+            this.buttonSalvar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonSalvar.Location = new System.Drawing.Point(903, 121);
+            this.buttonSalvar.Name = "buttonSalvar";
+            this.buttonSalvar.Size = new System.Drawing.Size(229, 53);
+            this.buttonSalvar.TabIndex = 16;
+            this.buttonSalvar.Text = "Salvar";
+            this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // buttonApagar
             // 
-            buttonApagar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonApagar.Location = new Point(790, 156);
-            buttonApagar.Margin = new Padding(3, 2, 3, 2);
-            buttonApagar.Name = "buttonApagar";
-            buttonApagar.Size = new Size(200, 40);
-            buttonApagar.TabIndex = 17;
-            buttonApagar.Text = "Apagar";
-            buttonApagar.UseVisualStyleBackColor = true;
-            buttonApagar.Click += buttonApagar_Click;
+            this.buttonApagar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonApagar.Location = new System.Drawing.Point(903, 208);
+            this.buttonApagar.Name = "buttonApagar";
+            this.buttonApagar.Size = new System.Drawing.Size(229, 53);
+            this.buttonApagar.TabIndex = 17;
+            this.buttonApagar.Text = "Apagar";
+            this.buttonApagar.UseVisualStyleBackColor = true;
+            this.buttonApagar.Click += new System.EventHandler(this.buttonApagar_Click);
             // 
             // comboBoxTipo
             // 
-            comboBoxTipo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBoxTipo.FormattingEnabled = true;
-            comboBoxTipo.Items.AddRange(new object[] { "Cão", "Gato", "Pássaro", "Hamster" });
-            comboBoxTipo.Location = new Point(470, 37);
-            comboBoxTipo.Margin = new Padding(3, 2, 3, 2);
-            comboBoxTipo.Name = "comboBoxTipo";
-            comboBoxTipo.Size = new Size(204, 29);
-            comboBoxTipo.TabIndex = 21;
+            this.comboBoxTipo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxTipo.FormattingEnabled = true;
+            this.comboBoxTipo.Items.AddRange(new object[] {
+            "Cão",
+            "Gato",
+            "Pássaro",
+            "Hamster"});
+            this.comboBoxTipo.Location = new System.Drawing.Point(537, 49);
+            this.comboBoxTipo.Name = "comboBoxTipo";
+            this.comboBoxTipo.Size = new System.Drawing.Size(233, 36);
+            this.comboBoxTipo.TabIndex = 21;
             // 
             // NovosDados
             // 
-            NovosDados.AutoSize = true;
-            NovosDados.Font = new Font("Centaur", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            NovosDados.Location = new Point(89, 91);
-            NovosDados.Name = "NovosDados";
-            NovosDados.Size = new Size(133, 25);
-            NovosDados.TabIndex = 59;
-            NovosDados.Text = "Novos Dados";
+            this.NovosDados.AutoSize = true;
+            this.NovosDados.Font = new System.Drawing.Font("Centaur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.NovosDados.Location = new System.Drawing.Point(102, 121);
+            this.NovosDados.Name = "NovosDados";
+            this.NovosDados.Size = new System.Drawing.Size(166, 32);
+            this.NovosDados.TabIndex = 59;
+            this.NovosDados.Text = "Novos Dados";
             // 
             // Pesquisa
             // 
-            Pesquisa.AutoSize = true;
-            Pesquisa.Font = new Font("Centaur", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            Pesquisa.Location = new Point(54, 9);
-            Pesquisa.Name = "Pesquisa";
-            Pesquisa.Size = new Size(234, 25);
-            Pesquisa.TabIndex = 58;
-            Pesquisa.Text = "Id para Pesquisa/Seleção";
+            this.Pesquisa.AutoSize = true;
+            this.Pesquisa.Font = new System.Drawing.Font("Centaur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Pesquisa.Location = new System.Drawing.Point(62, 12);
+            this.Pesquisa.Name = "Pesquisa";
+            this.Pesquisa.Size = new System.Drawing.Size(295, 32);
+            this.Pesquisa.TabIndex = 58;
+            this.Pesquisa.Text = "Id para Pesquisa/Seleção";
             // 
             // buttonCancelar
             // 
-            buttonCancelar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            buttonCancelar.Location = new Point(790, 215);
-            buttonCancelar.Margin = new Padding(3, 2, 3, 2);
-            buttonCancelar.Name = "buttonCancelar";
-            buttonCancelar.Size = new Size(200, 40);
-            buttonCancelar.TabIndex = 60;
-            buttonCancelar.Text = "Cancelar";
-            buttonCancelar.UseVisualStyleBackColor = true;
-            buttonCancelar.Click += buttonCancelar_Click;
+            this.buttonCancelar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonCancelar.Location = new System.Drawing.Point(903, 287);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(229, 53);
+            this.buttonCancelar.TabIndex = 60;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // ListarAnimais
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Azure;
-            ClientSize = new Size(1059, 485);
-            Controls.Add(buttonCancelar);
-            Controls.Add(NovosDados);
-            Controls.Add(Pesquisa);
-            Controls.Add(comboBoxTipo);
-            Controls.Add(buttonApagar);
-            Controls.Add(buttonSalvar);
-            Controls.Add(buttonListar);
-            Controls.Add(textBoxRaca);
-            Controls.Add(textBoxIdade);
-            Controls.Add(textBoxPeso);
-            Controls.Add(textBoxDono);
-            Controls.Add(textBoxNome);
-            Controls.Add(textBoxID);
-            Controls.Add(Idade);
-            Controls.Add(Peso);
-            Controls.Add(Raça);
-            Controls.Add(Tipo);
-            Controls.Add(Nome);
-            Controls.Add(Dono);
-            Controls.Add(ID);
-            Controls.Add(dataGridViewAnimais);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "ListarAnimais";
-            Text = "ListarAnimais";
-            Load += ListarAnimais_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridViewAnimais).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Azure;
+            this.ClientSize = new System.Drawing.Size(1210, 647);
+            this.Controls.Add(this.buttonCancelar);
+            this.Controls.Add(this.NovosDados);
+            this.Controls.Add(this.Pesquisa);
+            this.Controls.Add(this.comboBoxTipo);
+            this.Controls.Add(this.buttonApagar);
+            this.Controls.Add(this.buttonSalvar);
+            this.Controls.Add(this.buttonListar);
+            this.Controls.Add(this.textBoxRaca);
+            this.Controls.Add(this.textBoxIdade);
+            this.Controls.Add(this.textBoxPeso);
+            this.Controls.Add(this.textBoxDono);
+            this.Controls.Add(this.textBoxNome);
+            this.Controls.Add(this.textBoxID);
+            this.Controls.Add(this.Idade);
+            this.Controls.Add(this.Peso);
+            this.Controls.Add(this.Raça);
+            this.Controls.Add(this.Tipo);
+            this.Controls.Add(this.Nome);
+            this.Controls.Add(this.Dono);
+            this.Controls.Add(this.ID);
+            this.Controls.Add(this.dataGridViewAnimais);
+            this.Name = "ListarAnimais";
+            this.Text = "ListarAnimais";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAnimais)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -84,5 +84,14 @@ namespace veterinario_projeto
             this.Hide();
 
         }
+
+        private void buttonAtoMedico_Click(object sender, EventArgs e)
+        {
+            AtoMedico atomedico = new AtoMedico();
+
+            atomedico.Show();
+
+            this.Hide();
+        }
     }
 }

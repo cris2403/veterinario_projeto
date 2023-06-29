@@ -96,11 +96,6 @@ namespace veterinario_projeto.PagInicial
             MessageBox.Show("Apagado com sucesso");
         }
 
-        private void ListarAnimais_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Nome_Click(object sender, EventArgs e)
         {
 
