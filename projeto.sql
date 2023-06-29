@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Jun-2023 às 19:34
+-- Tempo de geração: 29-Jun-2023 às 21:22
 -- Versão do servidor: 10.4.28-MariaDB
 -- versão do PHP: 8.2.4
 
@@ -41,7 +41,7 @@ CREATE TABLE `atomedico` (
 
 INSERT INTO `atomedico` (`Id`, `Ato`, `Descricao`, `Custo`, `DataRegisto`) VALUES
 (12654, 'cfdx', 'cd', 12, '2023-06-10'),
-(123, 'Vacinação', 'uhygtfdx', 1, '2023-06-25');
+(13456, 'Consulta', 'hugtf', 12, '2023-06-29');
 
 -- --------------------------------------------------------
 
@@ -179,7 +179,8 @@ INSERT INTO `registo` (`Id_RDono`, `DNome`, `DataNascimento`, `NIF`, `Contacto`)
 (7, 'ronaldo', '2023-06-25', 987654321, 987654321),
 (69, 'rui', '2017-06-13', 987654321, 987654321),
 (6, 'cris', '2023-06-26', 2147483647, 987654321),
-(99, 'gh', '2023-06-08', 98765432, 33456789);
+(99, 'gh', '2023-06-08', 98765432, 33456789),
+(69, 'ya', '2023-06-29', 123456789, 987654321);
 
 -- --------------------------------------------------------
 
@@ -227,7 +228,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `username`, `email`, `password`) VALUES
 (1, 'Admin1', 'admin@gmail.com', '123'),
 (2, 'eu', 'eu@gmail.com', '1'),
-(3, 'raul', 'reidosciganos@gmail.com', 'ciganadred');
+(3, 'raul', 'reidosciganos@gmail.com', 'ciganadred'),
+(4, 'ya', 'ya@ya.com', 'ya');
 
 --
 -- Índices para tabelas despejadas
@@ -283,7 +285,7 @@ ALTER TABLE `fichamedica`
 -- AUTO_INCREMENT de tabela `ranimal`
 --
 ALTER TABLE `ranimal`
-  MODIFY `Id_RAnimal` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `Id_RAnimal` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `registocolab`
@@ -295,7 +297,7 @@ ALTER TABLE `registocolab`
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
